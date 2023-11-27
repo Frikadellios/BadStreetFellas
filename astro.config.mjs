@@ -4,8 +4,10 @@ import tailwind from "@astrojs/tailwind";
 import yaml from '@rollup/plugin-yaml';
 import sitemap from '@astrojs/sitemap';
 import cloudflare from "@astrojs/cloudflare";
-
 import partytown from "@astrojs/partytown";
+import keystatic from "@keystatic/astro";
+
+import markdoc from "@astrojs/markdoc";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +16,7 @@ export default defineConfig({
   vite: {
     plugins: [yaml()]
   },
-  integrations: [react(), sitemap({
+  integrations: [react(), keystatic(), sitemap({
     i18n: {
       defaultLocale: 'uk',
       // All urls that don't contain `es` or `fr` after `https://stargazers.club/` will be treated as default locale, i.e. `en`
@@ -27,7 +29,7 @@ export default defineConfig({
     }
   }), tailwind({
     applyBaseStyles: false
-  }), partytown()],
-  output: "server",
+  }), partytown(), markdoc()],
+  output: "hybrid",
   adapter: cloudflare()
 });
