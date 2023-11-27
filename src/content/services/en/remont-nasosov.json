@@ -1,0 +1,32 @@
+{
+  "title": "Pump Repair",
+  "offers": [],
+  "description": "If used properly by the owner, repairs to water wells are usually rarely required. \n",
+  "heading": "SIGNS THAT A WELL PUMP NEEDS REPAIR:",
+  "featuredMedia": {
+    "discriminant": "image",
+    "value": {
+      "asset": "../../assets/images/services/ru/remont-nasosov/featuredMedia/value/asset.jpg",
+      "alt": "Aquapumpers-pump-repair-kiev-ukraine"
+    }
+  },
+  "seo": {
+    "discriminant": true,
+    "value": {
+      "title": "Repair of pumps and pumping stations in Kyiv and Kyiv region",
+      "description": "The AquaPumpers company provides high-quality services with a guarantee of high results and efficiency in pump repair, prevention and maintenance of well pumping equipment. ",
+      "url": "https://aquapumpers.com"
+    }
+  },
+  "tags": [
+    "change in organoleptic properties of water",
+    "decrease in blood pressure",
+    "significant reduction in well flow rate",
+    "The water level and well filling rate dropped",
+    "silt or sand appeared in the water",
+    "high water turbidity due to bacteria",
+    "cloudy water caused by algae ",
+    "the appearance of cavitation",
+    "water from the well comes with air"
+  ]
+}
