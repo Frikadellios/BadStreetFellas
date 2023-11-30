@@ -15,7 +15,7 @@ export function PopoverLang({
     <Popover>
       <PopoverTrigger asChild>
         <Button
-          variant="outline"
+          variant="ghost"
           role="combobox"
           aria-labelledby="Language toggle"
         >
@@ -27,19 +27,19 @@ export function PopoverLang({
       <PopoverContent className="w-fit">
         <ul>
           <li>
-            <a className="transition-colors text-sm font-medium leading-none duration-200 hover:text-cyan-600" title="Вебсайт на Українській" href="/uk/">
+            <a className="transition-colors text-sm font-medium leading-none hover:text-emerald-500 transition-all duration-200" title="Вебсайт на Українській" href="/uk/">
               Українська
             </a>
           </li>
-          <hr className="my-2 h-[2px] w-full bg-white" />
+          <hr className="my-2 h-[2px] w-full bg-trancperent" />
           <li>
-            <a className="transition-colors text-sm font-medium leading-none duration-200 hover:text-cyan-600" title="Web Site in English" href="/en/">
+            <a className="transition-colors text-sm font-medium leading-none hover:text-emerald-500 transition-all duration-200" title="Web Site in English" href="/en/">
               English
             </a>
           </li>
-          <hr className="my-2 h-[2px] w-full bg-white" />
+          <hr className="my-2 h-[2px] w-full bg-trancperent" />
           <li>
-            <a className="transition-colors text-sm font-medium leading-none duration-200 hover:text-cyan-600" title="Вебсайт на Русском" href="/ru/">
+            <a className="transition-colors text-sm font-medium leading-none hover:text-emerald-500 transition-all duration-200" title="Вебсайт на Русском" href="/ru/">
               Русский
             </a>
           </li>

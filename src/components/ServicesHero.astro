@@ -3,6 +3,15 @@ import { Button } from "@/components/ui/button";
 import SmallText from "./typography/SmallText.astro";
 import H2 from "./typography/H2.astro";
 import Large from "./typography/Large.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Search from "@/assets/Search.png";
+import Logistic from "@/assets/Logistic.png";
+import Setting from "@/assets/Setting.png"
+import { Image } from "astro:assets";
+import { FormDialog } from "@/components/react/FormDialog";
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="py-10 sm:py-16 lg:py-24">
@@ -18,9 +27,16 @@ import Large from "./typography/Large.astro";
         <div class="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-3 lg:mt-20 lg:gap-x-12 text-center ">
             <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
                 <div class="py-10 px-9">
-                    <img class="w-full" src="/Worldtravel.png" alt="" />
-                    <Large>Secured Payments</Large>
-                    <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
+                    <Image
+                    class="w-full h-full object-cover rounded-xl overflow-hidden"
+                    width={400}
+                    height={200}
+                    src={Search}
+                    alt="descriptive text"
+                    transition:name={"img-"}
+                  />
+                    <Large>{t('scat1-name')}</Large>
+                    <SmallText>{t('scat1-desc')}</SmallText>
                     <Button variant="link" >
                         <svg class="w-5 h-5 mr-2 -ml-1 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -32,9 +48,16 @@ import Large from "./typography/Large.astro";
 
             <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
                 <div class="py-10 px-9">
-                    <img class="w-full" src="/Under-construction.png" alt="" />
-                    <Large>Secured Payments</Large>
-                    <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
+                    <Image
+                    class="w-full h-full object-cover rounded-xl overflow-hidden"
+                    width={400}
+                    height={200}
+                    src={Logistic}
+                    alt="descriptive text"
+                    transition:name={"img-"}
+                  />
+                  <Large>{t('scat2-name')}</Large>
+                  <SmallText>{t('scat2-desc')}</SmallText>
                     <Button variant="link" >
                         <svg class="w-5 h-5 mr-2 -ml-1 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
@@ -46,9 +69,16 @@ import Large from "./typography/Large.astro";
 
             <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
                 <div class="py-10 px-9">
-                    <img class="w-full" src="/Programming.png" alt="" />
-                    <Large>Secured Payments</Large>
-                    <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
+                    <Image
+                    class="w-full h-full object-cover rounded-xl overflow-hidden"
+                    width={400}
+                    height={200}
+                    src={Setting}
+                    alt="descriptive text"
+                    transition:name={"img-"}
+                  />
+                  <Large>{t('scat3-name')}</Large>
+                  <SmallText>{t('scat3-desc')}</SmallText>
                     <Button variant="link" >
                         <svg class="w-5 h-5 mr-2 -ml-1 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
