@@ -4,11 +4,7 @@ import { config, fields, collection, singleton } from '@keystatic/core';
 
 export default config({
     storage: {
-      kind: 'github',
-      repo: {
-        owner: 'aquaPumpers',
-        name: 'BadStreetFellas'
-      }   
+      kind: 'local',
     },
     singletons: {
         settings: singleton({
