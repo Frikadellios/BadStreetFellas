@@ -81,6 +81,10 @@ export const ui = {
     "f8-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
     "f9-tittle": "Fast & Secure Payments",
     "f9-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    "404-title": "Сторінка не знайдена",
+    "404-subtitle": "Упс...",
+    "404-button": "Повернутись на домашню сторінку",
+    "404-desc": "На жаль, ми не змогли знайти сторінку, яку ви шукаєте!",
   },
   en: {
     "home-metatitle": "Get Professional Installation and Repair Service for Water Pump and Water Wells in Kyiv and Kyiv Region | Book Now!",
@@ -115,6 +119,10 @@ export const ui = {
     "f8-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
     "f9-tittle": "Fast & Secure Payments",
     "f9-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    "404-title": "Page not found!",
+    "404-subtitle": "Ups...",
+    "404-button": "Back to the Homepage",
+    "404-desc": "Sorry, we couldn't find the page you're looking for!",
   },
   ru: {
     "home-metatitle": "Получите профессиональные услуги по установке и ремонту водяных насосов и водяных скважин в Киеве и Киевской области | Забронируйте сейчас!",
@@ -149,5 +157,9 @@ export const ui = {
     "f8-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
     "f9-tittle": "Fast & Secure Payments",
     "f9-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    "404-title": "Страница не найдена!",
+    "404-subtitle": "Упс...",
+    "404-desc": "К сожалению, мы не смогли найти страницу, которую вы ищете!",
+    "404-button": "Вернуться на главную страницу",
   },
 }
