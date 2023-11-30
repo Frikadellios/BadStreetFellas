@@ -34,15 +34,16 @@ const posts = await getPostsByCategory(category, 'en')
 export const prerender = true
 ---
 
+
 <BaseLayout
-  title={`AquaPumpers Blog - ${capitalizer(category)}`}
-  description=`Professional Installation and Repair Service - ${category}`
+  title={`AquaPumpers Blog Categories - Installation, Maintenance, and Repair Professional Services - ${capitalizer(category)}`}
+  description=`AquaPumpers - Professional Services for Water Pump Stations, Wells | Expert Installation, Maintenance, and Repair in the Kyiv and Kyiv Region - ${category}`
 >
   <section class="mx-auto max-w-[1680px] px-5">
     <h1 class="sr-only hidden">
-        Professional Installation and Repair Service ${category}
+       AquaPumpers - Info pages and blog posts for ${category}
     </h1>
-    <BlogHeader title="NFC Blog" subtitle="Deleitate con los articulos de" />
+    <BlogHeader title="AquaPumpers" subtitle="Effective services and professional solutions!" />
     <!-- Posts Card List -->
     <div
       class="lg:gap mb-5 grid grid-cols-1 gap-x-6 gap-y-9 px-5 md:grid-cols-2 md:gap-y-11 md:px-0 lg:grid-cols-3 lg:gap-x-8"

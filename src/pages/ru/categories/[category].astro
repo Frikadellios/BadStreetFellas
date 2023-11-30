@@ -28,21 +28,21 @@ if (!category) {
 }
 
 // Get Posts by categories
-const posts = await getPostsByCategory(category, 'en')
+const posts = await getPostsByCategory(category, 'ru')
 
 // create static page instead of SSR
 export const prerender = true
 ---
 
 <BaseLayout
-  title={`AquaPumpers Blog - ${capitalizer(category)}`}
-  description=`Professional Installation and Repair Service - ${category}`
+title={`Категории блога AquaPumpers — Профессиональные услуги по установке, техническому обслуживанию и ремонту - ${capitalizer(category)}`}
+description=`AquaPumpers - Профессиональные услуги для насосных станций, колодцев | Квалифицированый монтаж, обслуживание и ремонт в Киеве и Киевской области - ${category}`
 >
   <section class="mx-auto max-w-[1680px] px-5">
     <h1 class="sr-only hidden">
-        Professional Installation and Repair Service ${category}
+      AquaPumpers - Информационные страницы и блог пости для ${category}
     </h1>
-    <BlogHeader title="NFC Blog" subtitle="Deleitate con los articulos de" />
+    <BlogHeader title="AquaPumpers" subtitle="Эффективные услуги и профессиональные решения!" />
     <!-- Posts Card List -->
     <div
       class="lg:gap mb-5 grid grid-cols-1 gap-x-6 gap-y-9 px-5 md:grid-cols-2 md:gap-y-11 md:px-0 lg:grid-cols-3 lg:gap-x-8"

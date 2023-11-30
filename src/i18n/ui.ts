@@ -123,6 +123,10 @@ export const ui = {
     "404-subtitle": "Ups...",
     "404-button": "Back to the Homepage",
     "404-desc": "Sorry, we couldn't find the page you're looking for!",
+    "blog-subtitlecategory": "Professional Services for Water Pump Stations, Wells | Expert Installation, Maintenance, and Repair in the Kyiv Region",
+    "blog-title": "",
+    "blog-header": "",
+    "blog-subtitle": "",
   },
   ru: {
     "home-metatitle": "Получите профессиональные услуги по установке и ремонту водяных насосов и водяных скважин в Киеве и Киевской области | Забронируйте сейчас!",
