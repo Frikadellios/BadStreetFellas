@@ -24,7 +24,7 @@ export default defineConfig({
       locales: {
         uk: 'uk-UA',
         // The `defaultLocale` value must present in `locales` keys
-        ru: 'ru-UA',
+        ru: 'ru-RU',
         en: 'en-US'
       }
     }

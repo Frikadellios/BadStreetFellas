@@ -5,8 +5,8 @@ export async function GET(context) {
   const blog = await getCollection('blog');
   return rss({
     stylesheet: '/rss/styles.xsl',
-    title: 'Nano Fighters Club Blog',
-    description: 'Articulos actualizados sobre bienestar, deportes de combate y mucho mas',
+    title: 'AquaPumpers',
+    description: 'Professional Services for Water Pump Stations, Wells | Expert Installation, Maintenance, and Repair in the Kyiv Region',
     site: context.site,
     items: blog.map((post) => ({
       title: post.data.title,

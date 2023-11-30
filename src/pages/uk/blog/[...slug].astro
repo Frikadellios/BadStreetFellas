@@ -3,23 +3,21 @@
 import { Image } from 'astro:assets';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import SmallText from "@/components/typography/SmallText.astro";
+import Large from "@/components/typography/Large.astro";
 import Blockquote from "@/components/typography/Blockquote.astro";
 import H4 from "@/components/typography/H4.astro";
 import H2 from "@/components/typography/H2.astro";
 import SmallText from "@/components/typography/SmallText.astro";
-import H1 from "@/components/typography/H1.astro";
-import Prose from "@/components//typography/Prose.astro";
-import Large from "@/components/typography/Large.astro";
 
 
 // Utils Imports
 import { formatDate, capitalizer } from "@/lib/utils";
 import { getRelatedPosts } from "@/lib/fetchers";
-import { ChevronLeft } from 'lucide-react'
+import { ChevronLeft } from "lucide-react";
 
 // Function to create the path for all the blogs
 export async function getStaticPaths() {
@@ -58,8 +56,6 @@ if (!slug || !post) {
 
 // create static page instead of SSR
 export const prerender = true
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 
 ---
 
@@ -70,7 +66,7 @@ const t = useTranslations(lang)
   url={`${Astro.site}/${slug}`}
   post={post}
 >
-  <div class="container relative max-w-[1020px] px-5 py-10 pt-10">
+  <div class="container relative bg-background text-foreground max-w-[1020px] px-5 py-10 pt-10">
     
     <a
       title="Повернутись до Блогу"
@@ -101,12 +97,13 @@ const t = useTranslations(lang)
       <!-- Date and Author -->
       <div class="flex items-center justify-between">
         <span
-          class="font-medium text-muted-foreground"
+          class="font-medium text-foreground"
           transition:name={'date-' + slug}
         >
-        {formatDate(date)}
+        <SmallText> {formatDate(date)}</SmallText>
         </span>
-        <span class="font-medium text-muted-foreground">
+        <span><SmallText>{author}</SmallText></span>
+        <span class="font-medium mt-5 text-foreground">
           {
             categories.map((category) => (
             <Badge variant="secondary"><a
@@ -124,9 +121,10 @@ const t = useTranslations(lang)
       </div>
       
       <!-- Title and description -->
-      <h1 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0" transition:name={'title-' + slug}>
+      <h1 class="scroll-m-20 text-4xl font-extrabold  tracking-tight lg:text-5xl" transition:name={'title-' + slug}>
         {title}
       </h1>
+      <h2>{excerpt}</h2>
       
       <Separator className="my-6" />
       <!-- Content -->
@@ -150,7 +148,7 @@ const t = useTranslations(lang)
         }
       </div>
     </article>
-  </div>
+
 <section class="mt-5" >
 
     <div class="px-4 mx-auto rounded-md bg-emerald-700 max-w-7xl sm:px-6 lg:px-8">
@@ -164,7 +162,6 @@ const t = useTranslations(lang)
                         <H4><Large>{author}</Large></H4>
                         <div class="mx-5"><SmallText>Project Manager at Microsoft</SmallText></div>
                     </div>
-                    <H2>{excerpt}</H2>
                     <div class="mt-5">
                     <Button variant="outline">
                         <a class="hover:text-emerald-500 transition-all duration-200 hover:opacity-80 focus:opacity-80" href="/pricing "> Create your first website </a>
@@ -182,4 +179,5 @@ const t = useTranslations(lang)
         </div>
     </div>
 </section>
+</div>
 </BaseLayout>

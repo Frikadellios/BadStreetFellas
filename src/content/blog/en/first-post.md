@@ -1,5 +1,5 @@
 ---
-title: 'AquaPumpers - '
+title: 'AquaPumpers'
 date: 2023-06-22
 slug: 'first-post'
 excerpt: 'Discover the my first post and history of blog posts'

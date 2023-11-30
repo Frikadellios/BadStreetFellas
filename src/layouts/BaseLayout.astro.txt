@@ -5,8 +5,6 @@ import Footer from "@/components/Footer.astro";
 import Navbar from "@/components/Navbar.astro";
 import { type CollectionEntry } from "astro:content";
 import { getLangFromUrl } from "@/i18n/utils";
-import "@/styles/globals.css";
-import { ViewTransitions } from "astro:transitions";
 
 // Props imterface
 interface Props {
@@ -34,33 +32,6 @@ const lang = getLangFromUrl(Astro.url)
       url={url}
       post={post}
     />
-    <script is:inline>
-      const setDarkMode = () => {
-        const theme = (() => {
-          if (
-            typeof localStorage !== "undefined" &&
-            localStorage.getItem("theme")
-          ) {
-            return localStorage.getItem("theme");
-          }
-          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            return "dark";
-          }
-          return "light";
-        })();
-      
-        if (theme === "light") {
-          document.documentElement.classList.remove("dark");
-        } else {
-          document.documentElement.classList.add("dark");
-        }
-        window.localStorage.setItem("theme", theme);
-      };
-      
-      setDarkMode();
-      document.addEventListener("astro:after-swap", setDarkMode);
-      </script>
-      <ViewTransitions />
   </head>
   <body class="min-h-screen bg-background antialiased">
     <!-- Google Tag Manager (noscript) -->
@@ -81,4 +52,3 @@ const lang = getLangFromUrl(Astro.url)
     </div>
   </body>
 </html>
-

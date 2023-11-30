@@ -1,5 +1,5 @@
 ---
-title: 'AquaPumpers - '
+title: 'AquaPumpers'
 date: 2023-06-22
 slug: 'pershii-post'
 excerpt: 'Выдкрийте для себе історію моїх блог постів'
