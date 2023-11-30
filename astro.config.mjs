@@ -6,8 +6,9 @@ import sitemap from '@astrojs/sitemap';
 import cloudflare from "@astrojs/cloudflare";
 import partytown from "@astrojs/partytown";
 import keystatic from "@keystatic/astro";
-
 import markdoc from "@astrojs/markdoc";
+
+import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
@@ -29,7 +30,15 @@ export default defineConfig({
     }
   }), tailwind({
     applyBaseStyles: false
-  }), partytown(), markdoc()],
+  }), partytown({
+    config: {
+      forward: ["dataLayer.push"],
+      debug: false
+    }
+  }), markdoc(), robotsTxt({
+    sitemap: 'https://www.aquapumpers.com/sitemap-0.xml',
+    host: 'aquapumpers.com'
+  })],
   output: "hybrid",
   adapter: cloudflare()
 });

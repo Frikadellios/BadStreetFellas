@@ -1,0 +1,177 @@
+---
+// Atro Imports - Globals
+import { ViewTransitions } from 'astro:transitions'
+import { type CollectionEntry } from 'astro:content'
+
+// Lib Imports
+import jsonLDGenerator from "@/lib/jsonLd";
+
+// Style Imports
+import '@/styles/globals.css';
+
+// Props Types
+interface Props {
+  title?: string | undefined
+  description?: string | undefined
+  ogImage?: URL | undefined
+  url?: URL | undefined
+  post?: CollectionEntry<'blog'>
+}
+
+// Canonical URL for SEO
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+
+// Open Graph Image
+if (Astro.props.ogImage === undefined) {
+  Astro.props.ogImage = new URL('og-image.png', canonicalURL)
+}
+
+// Astro Props
+const { title, description, ogImage, post, url = Astro.url } = Astro.props
+
+// JsonLd Genearting acording to the page type
+const jsonLD = jsonLDGenerator({
+  type: post ? 'post' : 'website',
+  post: post,
+})
+
+// Translation Imports
+import { getLangFromUrl, changeLangFromUrl } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const newLangUrl = changeLangFromUrl(Astro.url, lang)
+---
+
+<!-- Google tag (gtag.js) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7CDGRPZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/ns.html?id=GTM-T7CDGRPZ"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'GTM-T7CDGRPZ')
+</script>
+
+<!-- Basic HTML Meta Tags -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script is:inline>
+    const getThemePreference = () => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+            return localStorage.getItem('theme');
+        }
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+      const isDark = getThemePreference() === 'dark';
+      document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+
+      if (typeof localStorage !== 'undefined') {
+      const observer = new MutationObserver(() => {
+        const isDark = document.documentElement.classList.contains('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+}
+</script>
+</script>
+<script
+  src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+  type="module"></script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="generator" content={Astro.generator} />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<meta name="subject" content="Professional Installation and Repair Service of Pumps and Pumping Stations in the Kyiv Region, Ukraine" />
+<meta name="language" content={lang.toUpperCase()} />
+<meta name="Classification" content="Business" />
+<meta
+  name="author"
+  content="AquaPumpers, info@aquapumpers.com, https://www.aquapumpers.com"
+/>
+<meta
+  name="designer"
+  content="Hrihorii 'DevOpSick' Ilin, devopsick@pm.me, https://www.devopsick.com"
+/>
+<meta
+  name="owner"
+  content="AquaPumpers, info@aquapumpers.com, https://www.aquapumpers.com"
+/>
+<link rel="canonical" href={canonicalURL} />
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="sitemap" href={`${Astro.site}sitemap-0.xml`} />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title="RSS Feed para mi Website"
+  href="rss.xml"
+/>
+<title>{title}</title>
+
+<!-- Language -->
+<link rel="alternate" href={Astro.url} hreflang=`${lang}-uk` />
+<link
+  rel="alternate"
+  href={`${Astro.site}${newLangUrl}`}
+  hreflang=`${lang === 'uk' ? 'ru' : 'en'}-uk`
+/>
+
+<!-- Favicon -->
+<link
+  rel="apple-touch-icon-precomposed"
+  href={`${Astro.site}apple-touch-icon.png`}
+/><!-- iPhone, iPod e Android 2.2+ -->
+<link
+  rel="shortcut icon"
+  type="image/x-icon"
+  href={`${Astro.site}favicon.ico`}
+/>
+
+<!-- Open Graph -->
+<meta property="og:type" content={post ? 'blog.articule' : 'website'} />
+<meta property="og:url" content={url ? url : canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImage} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={url ? url : canonicalURL} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={ogImage} />
+
+<!-- jsonLD -->
+<Fragment set:html={jsonLD} />
+
+<!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>
+   ;(function(w,d,s,l,i) {
+    w[l ]= w[l] || [];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=' +i +dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document, 'script', 'dataLayer', 'GTM-T7CDGRPZ');
+</script>
+    <!-- End Google Tag Manager -->
+
+<!-- Astro Page Transitions -->
+<ViewTransitions />
