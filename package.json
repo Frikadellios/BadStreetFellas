@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "astro check & astro dev --watch",
     "start": "astro dev --host 127.0.0.1",
-    "build": "astro check & astro build --force",
+    "build": "astro build --force",
     "preview": "bunx --bun astro preview",
     "format": "prettier -w . --cache",
     "astro": "astro"
