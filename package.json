@@ -8,9 +8,10 @@
   "version": "1.0.1",
   "scripts": {
     "dev": "astro check & astro dev --watch",
-    "start": "astro dev",
-    "build": "astro check & astro build --force",
+    "start": "astro dev --host 127.0.0.1",
+    "build": "astro check --watch & astro build --force",
     "preview": "bunx --bun astro preview",
+    "format": "prettier -w . --cache",
     "astro": "astro"
   },
   "dependencies": {
@@ -58,6 +59,9 @@
     "typescript": "latest",
     "zod": "^3.22.4"
   },
+  "trustedDependencies": [
+    "sharp"
+  ],
   "devDependencies": {
     "bun-types": "^1.0.14",
     "tailwindcss-animated": "^1.0.1"
