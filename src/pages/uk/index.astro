@@ -1,6 +1,6 @@
 ---
 import Container from "@/components/Container.astro";
-import Layout from "@/layouts/Layout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import Cta from "@/components/Cta.astro";
 import HeaderSection from "@/components/HeaderSection.astro";
 import Features from "@/components/Features.astro";
@@ -11,7 +11,10 @@ import HeroStarter from "@/components/HeroStarter.astro";
 export const prerender = true
 ---
 
-<Layout title="Домашня Сторінка">
+<BaseLayout
+  title="Nano Fighters Club"
+  description="Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals."
+>
 	<Container>
 		<HeroStarter />
 		<LogoHero />
@@ -19,4 +22,4 @@ export const prerender = true
 		<Features />
 	</Container>
 	<HeaderSection />
-</Layout>
+</BaseLayout>
