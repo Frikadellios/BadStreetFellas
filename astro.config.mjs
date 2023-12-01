@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import yaml from '@rollup/plugin-yaml';
@@ -11,6 +11,9 @@ import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
+  image: {
+    service: passthroughImageService()
+  },
   experimental: {
     contentCollectionCache: true
   },
