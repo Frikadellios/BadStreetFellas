@@ -1,28 +1,40 @@
 ---
 // Astro imports - Components
-import BaseLayout from '../../layouts/BaseLayout.astro'
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import H1 from "@/components/typography/H1.astro";
+import SmallText from "@/components/typography/SmallText.astro";
+import Large from "@/components/typography/Large.astro";
+import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-// Style Imports
-import { buttonVariants } from '../../components/ui/button'
+
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 // create static page instead of SSR
 export const prerender = true
 ---
 
 <BaseLayout
-  title="404 - Not Found"
-  description="404 Error — this page was not found"
+  title="404 - Страница не найдена"
+  description="404 Ошибка! — Эта страница не найдена"
 >
-  <div class="mt-32 flex flex-col items-center justify-center gap-2 px-8">
-    <p class="mb-5 text-6xl text-muted-foreground md:text-9xl">Ups!</p>
-    <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-      Pagina no encontrada!
-    </h1>
-    <p class="mb-4 leading-7 [&:not(:first-child)]:mt-6">
-      Lo Sentimos, no pudimos encontrar la pagina que esta buscando!
-    </p>
-    <a href="/" rel="noreferrer" class={buttonVariants()} title="back to the Home Page">
-      Volver a la Paginna Principal</a
-    >
+  
+  <div class="m-32 flex flex-col items-center justify-center gap-2 px-8">
+    <Large>{t('404-subtittle')}</Large>
+    <H1>
+      {t('404-tittle')}
+    </H1>
+    <SmallText>
+      {t('404-desc')}
+    </SmallText>
+    <Button variant="link">
+      <a class="hover:text-emerald-500 text-sm font-medium leading-none transition-all duration-200 hover:opacity-80 focus:opacity-80" href="/" rel="noreferrer" class={buttonVariants()} title="back to the Home Page"> {t('404-button')} </a>
+      <svg class="w-5 h-5 ml-2 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </Button> 
   </div>
 </BaseLayout>

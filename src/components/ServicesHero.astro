@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import SmallText from "./typography/SmallText.astro";
 import H2 from "./typography/H2.astro";
 import Large from "./typography/Large.astro";
+import { Image } from 'astro:assets';
+import Logo from "../assets/Logo.png";
 ---
 
 <section class="py-10 sm:py-16 lg:py-24">
@@ -18,7 +20,7 @@ import Large from "./typography/Large.astro";
         <div class="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-3 lg:mt-20 lg:gap-x-12 text-center ">
             <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
                 <div class="py-10 px-9">
-                    <img class="w-full" src="/Worldtravel.png" alt="" />
+                    <Image src={Logo} alt="" class="my-class" />
                     <Large>Secured Payments</Large>
                     <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
                     <Button variant="link" >
@@ -32,7 +34,7 @@ import Large from "./typography/Large.astro";
 
             <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
                 <div class="py-10 px-9">
-                    <img class="w-full" src="/Under-construction.png" alt="" />
+                    <Image src={Logo} alt="" class="my-class" />
                     <Large>Secured Payments</Large>
                     <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
                     <Button variant="link" >
@@ -46,7 +48,7 @@ import Large from "./typography/Large.astro";
 
             <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
                 <div class="py-10 px-9">
-                    <img class="w-full" src="/Programming.png" alt="" />
+                    <Image src={Logo} alt="" class="my-class" />
                     <Large>Secured Payments</Large>
                     <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
                     <Button variant="link" >

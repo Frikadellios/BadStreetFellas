@@ -7,8 +7,7 @@ import Large from "@/components/typography/Large.astro";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import { Image } from 'astro:assets';
-import Imagetest from "@/assets/Imagetest.png";
+
 
 
 const lang = getLangFromUrl(Astro.url)
@@ -24,7 +23,6 @@ export const prerender = true
 >
   
   <div class="m-32 flex flex-col items-center justify-center gap-2 px-8">
-      <Image src={Pagenotfound} alt="404 page" class="w-400 h-400 object-cover rounded-xl overflow-hidden" width={400} height={200}/>
     <Large>{t('404-subtittle')}</Large>
     <H1>
       {t('404-tittle')}

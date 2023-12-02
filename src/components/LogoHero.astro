@@ -1,5 +1,7 @@
 ---
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import { Image } from 'astro:assets';
+import Logo from "../assets/Logo.png";
 import SmallText from "./typography/SmallText.astro";
 import H1 from "./typography/H1.astro";
 ---
@@ -9,7 +11,7 @@ import H1 from "./typography/H1.astro";
         <div class="py-10 sm:py-16 lg:py-24 2xl:pl-24">
             <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
                 <div class="lg:order-2 2xl:-mr-24">
-                    <img class="w-full shadow-xl rounded-xl" src="/Code.png" alt="" />
+                    <Image src={Logo} alt="" class="my-class" />
                 </div>
                 <div class="lg:order-1">
                     <H1>Are you ready to <br class="hidden xl:block" />join Celebration?</H1>

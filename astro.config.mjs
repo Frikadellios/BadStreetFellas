@@ -11,7 +11,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   image: {
     service: {
-      entrypoint: 'astro/assets'
+      entrypoint: 'astro/assets/services/noop'
     }
   },
   experimental: {

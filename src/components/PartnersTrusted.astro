@@ -2,6 +2,8 @@
 import SmallText from "./typography/SmallText.astro";
 import H1 from "./typography/H1.astro";
 import Large from "./typography/Large.astro";
+import { Image } from 'astro:assets';
+import Logo from "../assets/Logo.png";
 ---
 
 <section class="bg-trancperent">
@@ -69,7 +71,7 @@ import Large from "./typography/Large.astro";
             </div>
 
             <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
-                <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="/Workspace.png" alt="">
+                <Image src={Logo} alt="" class="my-class" />
             </div>
         </div>
 
