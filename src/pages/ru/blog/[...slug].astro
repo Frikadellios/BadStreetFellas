@@ -107,7 +107,7 @@ export const prerender = true
             <Badge variant="secondary"><a
                 title={`Category - ${category}`}
                 class="mx-auto hover:text-emerald-500 transition-all duration-200 hover:opacity-80 focus:opacity-80 text-sm font-medium leading-none"
-                href={`/uk/categories/${category}`}
+                href={`/ru/categories/${category}`}
                 aria-label={`Categorie-link-${category}`}
               >
                 {capitalizer(category)}
@@ -146,35 +146,36 @@ export const prerender = true
         }
       </div>
     </article>
-  </div>
-<section class="mt-5" >
 
-    <div class="px-4 mx-auto rounded-md bg-emerald-700 max-w-7xl sm:px-6 lg:px-8">
-        <div class="2xl:pl-24">
-            <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
-                <div class="text-center md:py-16 xl:py-24 md:text-left">
-                    <Blockquote>
-                        “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
-                    </Blockquote>
-                    <div class="mt-6 mx-auto sm:flex sm:items-baseline sm:justify-center md:justify-start">
-                        <H4><Large>{author}</Large></H4>
-                        <div class="mx-5"><SmallText>Project Manager at Microsoft</SmallText></div>
+    <section class="mt-5" >
+    
+        <div class="px-4 mx-auto rounded-md bg-emerald-700 max-w-7xl sm:px-6 lg:px-8">
+            <div class="2xl:pl-24">
+                <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20">
+                    <div class="text-center md:py-16 xl:py-24 md:text-left">
+                        <Blockquote>
+                            “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.”
+                        </Blockquote>
+                        <div class="mt-6 mx-auto sm:flex sm:items-baseline sm:justify-center md:justify-start">
+                            <H4><Large>{author}</Large></H4>
+                            <div class="mx-5"><SmallText>Project Manager at Microsoft</SmallText></div>
+                        </div>
+                        <div class="mt-5">
+                        <Button variant="outline">
+                            <a class="hover:text-emerald-500 transition-all duration-200 hover:opacity-80 focus:opacity-80" href="/pricing "> Create your first website </a>
+                            <svg class="w-5 h-5 ml-2 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </Button> 
                     </div>
-                    <div class="mt-5">
-                    <Button variant="outline">
-                        <a class="hover:text-emerald-500 transition-all duration-200 hover:opacity-80 focus:opacity-80" href="/pricing "> Create your first website </a>
-                        <svg class="w-5 h-5 ml-2 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </Button> 
-                </div>
-                </div>
-
-                <div class="relative">
-                    <img class="md:absolute md:bottom-0 md:scale-110 md:origin-bottom-right lg:scale-75 2xl:scale-100 2xl:-mt-20" src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/11/smiling-man.png" alt="" />
+                    </div>
+    
+                    <div class="relative">
+                        <img class="md:absolute md:bottom-0 md:scale-110 md:origin-bottom-right lg:scale-75 2xl:scale-100 2xl:-mt-20" src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/11/smiling-man.png" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
     </div>
-</section>
-</BaseLayout>
+    </BaseLayout>
