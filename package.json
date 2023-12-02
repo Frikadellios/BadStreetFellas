@@ -52,7 +52,7 @@
     "react-dom": "^18.0.0",
     "react-hook-form": "^7.48.2",
     "run": "^1.4.0",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss": "^3.0.24",
     "tailwindcss-animate": "^1.0.7",
@@ -63,7 +63,7 @@
     "sharp"
   ],
   "devDependencies": {
-    "bun-types": "^1.0.14",
+    "bun-types": "^1.0.15",
     "tailwindcss-animated": "^1.0.1"
   }
 }

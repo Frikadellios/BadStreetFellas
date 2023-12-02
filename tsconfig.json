@@ -2,7 +2,8 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "types": [
-      "bun-types"
+      "bun-types",
+      "astro/client"
     ],
     "lib": [
       "ESNext",
@@ -10,6 +11,9 @@
       "DOM.Iterable"
     ],
     "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
     "target": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
