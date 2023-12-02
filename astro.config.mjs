@@ -5,13 +5,14 @@ import yaml from '@rollup/plugin-yaml';
 import cloudflare from "@astrojs/cloudflare";
 import sitemap from "@astrojs/sitemap";
 import partytown from "@astrojs/partytown";
-
 import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
 export default defineConfig({
   image: {
-    service: squooshImageService(),
+    service: {
+      entrypoint: 'astro/assets'
+    }
   },
   experimental: {
     contentCollectionCache: true
@@ -33,4 +34,4 @@ export default defineConfig({
   })],
   output: "hybrid",
   adapter: cloudflare()
-});  
+});

@@ -69,6 +69,7 @@ export const ui = {
     "hero-desc5": "Послуги з ремонту і технічне обслуговування шаф керування насосним устаткуванням",
     "hero-service6": "Автономна каналізація",
     "hero-desc6": "Монтаж і обслуговування каналізаційних насосних станцій (КНС), а також міні КНС",
+    "f1-tittle": "Fast & Secure Payments",
     "f4-tittle": "Fast & Secure Payments",
     "f4-description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
     "f5-tittle": "Fast & Secure Payments",
