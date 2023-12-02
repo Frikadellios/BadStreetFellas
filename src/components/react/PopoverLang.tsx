@@ -4,8 +4,9 @@ import {
     PopoverTrigger,
   } from "@/components/ui/popover"
   import { Button } from "../ui/button"
+  import { Separator } from "@/components/ui/separator"
   
-  export function PopoverLang({ lang, url }: { lang: 'uk' | 'ru' | 'en' , url: URL }) {
+  export function PopoverLang({ lang }: { lang: 'uk' | 'ru' | 'en'  }) {
     return (
       <Popover>
         <PopoverTrigger asChild>
@@ -14,9 +15,9 @@ import {
             role="combobox"
             aria-label="Language toggle"
           >
-             {lang === 'uk' ? 'uk' : ''}
-             {lang === 'en' ? 'en' : ''}
-             {lang === 'ru' ? 'ru' : ''}
+             {lang === 'uk' ? 'UA' : '' }
+             {lang === 'en' ? 'EN' : '' }
+             {lang === 'ru' ? 'RU' : ''}
           </Button></PopoverTrigger>
         <PopoverContent className="w-fit">
           <ul>
@@ -25,11 +26,11 @@ import {
               Українська
             </a>
             </li>
-            <hr className="w-full h-[2px] bg-white my-2" />
+            <Separator />
             <li>
               <a className="transition-colors text-sm font-medium leading-none duration-200 hover:text-cyan-600" title="Web Site in English" href="/en/">English</a>
             </li>
-            <hr className="my-2 h-[2px] w-full bg-white" />
+            <Separator />
             <li>
               <a className="transition-colors text-sm font-medium leading-none duration-200 hover:text-cyan-600" title="Вебсайт на Русском" href="/ru/">
                 Русский
