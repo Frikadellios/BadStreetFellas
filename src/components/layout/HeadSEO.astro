@@ -37,7 +37,7 @@ const newLangUrl = changeLangFromUrl(Astro.url, lang)
 
 // Open Graph Image
 if (Astro.props.ogImage === undefined) {
-  Astro.props.ogImage = `${Astro.site}${lang}/og-image.jpg`
+  Astro.props.ogImage = `${Astro.site}${lang}/og-image.png`
 }
 
 console.log(Astro.props.ogImage)
@@ -48,22 +48,26 @@ console.log(Astro.props.ogImage)
   type="text/partytown"
   async
   src="https://www.googletagmanager.com/ns.html?id=GTM-T7CDGRPZ"></script>
-  <script type="text/partytown">
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
-  
-    gtag('config', 'GTM-T7CDGRPZ')
-  </script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'GTM-T7CDGRPZ')
+</script>
 <!-- Basic HTML Meta Tags -->
 <meta charset="utf-8" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="robots" content="index, follow" />
 <meta name="googlebot" content="index, follow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
-<meta name="subject" content="Professional Installation and Repair Service of Pumps and Pumping Stations in the Kyiv Region, Ukraine" />
+<meta
+  name="subject"
+  content="Professional Installation and Repair Service of Pumps and Pumping Stations in the Kyiv Region, Ukraine"
+/>
 <meta name="language" content={lang.toUpperCase()} />
 <meta name="Classification" content="Business" />
 <meta
@@ -128,15 +132,17 @@ console.log(Astro.props.ogImage)
 
 <!-- Google Tag Manager -->
 <script>
-    ;(function(w,d,s,l,i) {
-     w[l ]= w[l] || [];
-     w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-     var f=d.getElementsByTagName(s)[0],
-         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-         j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=' +i +dl;
-         f.parentNode.insertBefore(j,f);
-     })(window,document, 'script', 'dataLayer', 'GTM-T7CDGRPZ');
- </script>
+  ;(function (w, d, s, l, i) {
+    w[l] = w[l] || []
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : ''
+    j.async = true
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+    f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-T7CDGRPZ')
+</script>
 <!-- End Google Tag Manager -->
 
 <!-- Astro Page Transitions -->

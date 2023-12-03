@@ -1,7 +1,13 @@
 import { type CollectionEntry } from 'astro:content'
 
 // Function to create a JsonLd acording to the type
-export default function jsonLDGenerator({ type, post }: {type: string, post: CollectionEntry<'blog'> }) {
+export default function jsonLDGenerator({
+  type,
+  post,
+}: {
+  type: string
+  post: CollectionEntry<'blog'>
+}) {
   if (type === 'post') {
     return `<script type="application/ld+json">
 {
@@ -23,7 +29,7 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
   },
   "datePublished": ${post.data.date}
 }
-</script>`;
+</script>`
   }
   return `<script type="application/ld+json">
       {
@@ -43,5 +49,5 @@ export default function jsonLDGenerator({ type, post }: {type: string, post: Col
           "addressCountry": "Україна"
         }  
       }
-      </script>`;
-      }
+      </script>`
+}

@@ -1,85 +1,157 @@
 ---
-import H4 from "./typography/H4.astro";
-import H2 from "./typography/H2.astro";
-import SmallText from "./typography/SmallText.astro";
-import Large from "./typography/Large.astro";
-import { Button } from "@/components/ui/button";
+import H4 from './typography/H4.astro'
+import H2 from './typography/H2.astro'
+import SmallText from './typography/SmallText.astro'
+import Large from './typography/Large.astro'
+import { Button } from '@/components/ui/button'
 ---
 
-<section class="py-10 bg-trancperent sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="max-w-2xl mx-auto text-left sm:text-center">
-            <H2>Get full access to Celebration</H2>
-            <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</SmallText>
-        </div>
-
-        <div class="mt-8 space-y-8 sm:space-x-12 sm:mt-12 sm:flex sm:items-start sm:justify-center sm:space-y-0 md:space-x-20 lg:mt-20">
-            <div class="flex items-start">
-                <svg class="flex-shrink-0 text-emerald-500 w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                <div class="ml-4">
-                    <H2>130+ Blocks </H2>
-                   
-                </div>
-            </div>
-
-            <div class="flex items-start">
-                <svg class="flex-shrink-0 text-emerald-500 w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                <div class="ml-4">
-                    <H2>14+ Pages</H2>
-                </div>
-            </div>
-
-            <div class="flex items-start">
-                <svg class="flex-shrink-0 text-emerald-500 w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                </svg>
-                <div class="ml-4">
-                    <H2>Easy Access</H2>
-                </div>
-            </div>
-        </div>
-
-        <form action="#" method="POST" class="max-w-xl mx-auto mt-12">
-            <div class="sm:p-2 sm:bg-trancperent sm:border-2 sm:border-transparent sm:rounded-full sm:focus-within:border-emerald-600 sm:focus-within:ring-1 sm:focus-within:ring-blue-600">
-                <div class="flex flex-col items-start sm:flex-row sm:justify-center">
-                    <div class="flex-1 w-full min-w-0">
-                        <div class="relative text-emerald-500 focus-within:text-emerald-700">
-                            <label for="email" class="sr-only"></label>
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
-                                </svg>
-                            </div>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Enter email address"
-                                class="block w-full py-4 pl-10 pr-4 text-sm font-medium leading-none placeholder-emerald-500 transition-all duration-200 border-transparent rounded-full focus:border-transparent focus:ring-0 caret-emerald-600"
-                                required=""
-                            />
-                        </div>
-                    </div>
-
-                    <Button variant="link">
-                        <a class="hover:text-emerald-500 text-sm font-medium leading-none transition-all duration-200 hover:opacity-80 focus:opacity-80" href="/pricing "> Create your first website </a>
-                        <svg class="w-5 h-5 ml-2 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </Button> 
-                </div>
-            </div>
-        </form>
-
-        <div class="flex items-center justify-start mt-8 sm:justify-center sm:px-0">
-            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-            </svg>
-            <span class="ml-2 text-sm text-emerald-500"> Your data is complely secured with us. We don’t share with anyone. </span>
-        </div>
+<section class="bg-trancperent py-10 sm:py-16 lg:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-left sm:text-center">
+      <H2>Get full access to Celebration</H2>
+      <SmallText>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </SmallText>
     </div>
+
+    <div
+      class="mt-8 space-y-8 sm:mt-12 sm:flex sm:items-start sm:justify-center sm:space-x-12 sm:space-y-0 md:space-x-20 lg:mt-20"
+    >
+      <div class="flex items-start">
+        <svg
+          class="h-7 w-7 flex-shrink-0 text-emerald-500"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <div class="ml-4">
+          <H2>130+ Blocks</H2>
+        </div>
+      </div>
+
+      <div class="flex items-start">
+        <svg
+          class="h-7 w-7 flex-shrink-0 text-emerald-500"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <div class="ml-4">
+          <H2>14+ Pages</H2>
+        </div>
+      </div>
+
+      <div class="flex items-start">
+        <svg
+          class="h-7 w-7 flex-shrink-0 text-emerald-500"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <div class="ml-4">
+          <H2>Easy Access</H2>
+        </div>
+      </div>
+    </div>
+
+    <form action="#" method="POST" class="mx-auto mt-12 max-w-xl">
+      <div
+        class="sm:bg-trancperent sm:rounded-full sm:border-2 sm:border-transparent sm:p-2 sm:focus-within:border-emerald-600 sm:focus-within:ring-1 sm:focus-within:ring-blue-600"
+      >
+        <div class="flex flex-col items-start sm:flex-row sm:justify-center">
+          <div class="w-full min-w-0 flex-1">
+            <div
+              class="relative text-emerald-500 focus-within:text-emerald-700"
+            >
+              <label for="email" class="sr-only"></label>
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+              >
+                <svg
+                  class="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email address"
+                class="block w-full rounded-full border-transparent py-4 pl-10 pr-4 text-sm font-medium leading-none placeholder-emerald-500 caret-emerald-600 transition-all duration-200 focus:border-transparent focus:ring-0"
+                required=""
+              />
+            </div>
+          </div>
+
+          <Button variant="link">
+            <a
+              class="text-sm font-medium leading-none transition-all duration-200 hover:text-emerald-500 hover:opacity-80 focus:opacity-80"
+              href="/pricing "
+            >
+              Create your first website
+            </a>
+            <svg
+              class="ml-2 h-5 w-5 text-emerald-500"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </Button>
+        </div>
+      </div>
+    </form>
+
+    <div class="mt-8 flex items-center justify-start sm:justify-center sm:px-0">
+      <svg
+        class="h-5 w-5 flex-shrink-0 text-emerald-500"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+        ></path>
+      </svg>
+      <span class="ml-2 text-sm text-emerald-500">
+        Your data is complely secured with us. We don’t share with anyone.
+      </span>
+    </div>
+  </div>
 </section>

@@ -1,38 +1,42 @@
 ---
-
-import { Button } from "@/components/ui/button"
-import SmallText from "./typography/SmallText.astro";
-import H2 from "@/components/typography/H2.astro";
-import H1 from "@/components/typography/H1.astro";
-
+import { Button } from '@/components/ui/button'
+import SmallText from './typography/SmallText.astro'
+import H2 from '@/components/typography/H2.astro'
+import H1 from '@/components/typography/H1.astro'
 ---
 
 <div class="bg-trancperent">
-    <section class="bg-trancperent bg-opacity-30 py-10 sm:py-16 lg:py-24">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                <div>
-                <div class="text-center">
-                    <SmallText>A social media for learners</SmallText>
-                </div>
-                    <H1>Connect & learn from the experts</H1>
-                    <H2>Grow your career fast with right mentor.</H2>
-                    <H2>Already joined us?</H2>
-                    <H2>Is that real?</H2>
-                    <div class="mt-5">
-                    <Button variant="ghost" >
-                        <a class="hover:text-emerald-500 transition-all duration-200 hover:underline" href="/about" >Get Started</a>
-                    </Button>
-                    <Button variant="ghost" >
-                        <a class="hover:text-emerald-500 transition-all duration-200 hover:underline" href="/about" >Get Started</a>
-                    </Button>
-                    </div>
-                </div>
-
-                <div>
-                    <img class="w-full" src="/Collaborate.png" alt="" />
-                </div>
-            </div>
+  <section class="bg-trancperent bg-opacity-30 py-10 sm:py-16 lg:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+        <div>
+          <div class="text-center">
+            <SmallText>A social media for learners</SmallText>
+          </div>
+          <H1>Connect & learn from the experts</H1>
+          <H2>Grow your career fast with right mentor.</H2>
+          <H2>Already joined us?</H2>
+          <H2>Is that real?</H2>
+          <div class="mt-5">
+            <Button variant="ghost">
+              <a
+                class="transition-all duration-200 hover:text-emerald-500 hover:underline"
+                href="/about">Get Started</a
+              >
+            </Button>
+            <Button variant="ghost">
+              <a
+                class="transition-all duration-200 hover:text-emerald-500 hover:underline"
+                href="/about">Get Started</a
+              >
+            </Button>
+          </div>
         </div>
-    </section>
+
+        <div>
+          <img class="w-full" src="/Collaborate.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

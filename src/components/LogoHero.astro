@@ -1,75 +1,139 @@
 ---
-import { Button } from "@/components/ui/button";
-import { Image } from 'astro:assets';
-import Logo from "../assets/Logo.png";
-import SmallText from "./typography/SmallText.astro";
-import H1 from "./typography/H1.astro";
+import { Button } from '@/components/ui/button'
+import { Image } from 'astro:assets'
+import Logo from '../assets/Logo.png'
+import SmallText from './typography/SmallText.astro'
+import H1 from './typography/H1.astro'
 ---
 
-<section class="bg-trancperent 2xl:py-24 2xl:bg-trancperent">
-    <div class="px-4 mx-auto bg-trancperent max-w-7xl sm:px-6 lg:px-8 2xl:rounded-xl">
-        <div class="py-10 sm:py-16 lg:py-24 2xl:pl-24">
-            <div class="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
-                <div class="lg:order-2 2xl:-mr-24">
-                    <Image src={Logo} alt="" class="my-class" />
-                </div>
-                <div class="lg:order-1">
-                    <H1>Are you ready to <br class="hidden xl:block" />join Celebration?</H1>
-
-                    <ul class="grid grid-cols-1 mt-4 sm:mt-10 sm:grid-cols-2 gap-x-10 xl:gap-x-16 gap-y-4 xl:gap-y-6">
-                        <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-3"><SmallText>120+ Coded Blocks</SmallText></span>
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-3"><SmallText>Free Icons Included</SmallText></span>
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-3"><SmallText>Made with TailwindCSS</SmallText></span>
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-3"><SmallText>Dark & Light Mode</SmallText></span>
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-3"><SmallText>Edit & Customize Easily</SmallText></span>
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg class="flex-shrink-0 w-5 h-5 text-emerald-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                            </svg>
-                            <span class="ml-3"><SmallText>Get Free Support</SmallText></span>
-                        </li>
-                    </ul>
-
-                    <div class="flex flex-col items-start mt-8 sm:space-x-4 sm:flex-row sm:items-center lg:mt-12">
-                        <Button variant="outline" >
-                            <a class="hover:text-emerald-500" href="/about">Download Now</a>
-                        </Button>
-                        <Button variant="ghost" >
-                            <a class="hover:text-emerald-500" href="/about">Get Started</a>
-                        </Button>
-                    </div>
-                </div>
-            </div>
+<section class="bg-trancperent 2xl:bg-trancperent 2xl:py-24">
+  <div
+    class="bg-trancperent mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 2xl:rounded-xl"
+  >
+    <div class="py-10 sm:py-16 lg:py-24 2xl:pl-24">
+      <div
+        class="grid grid-cols-1 items-center gap-y-8 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20"
+      >
+        <div class="lg:order-2 2xl:-mr-24">
+          <Image src={Logo} alt="" class="my-class" />
         </div>
+        <div class="lg:order-1">
+          <H1>
+            Are you ready to <br class="hidden xl:block" />join Celebration?
+          </H1>
+
+          <ul
+            class="mt-4 grid grid-cols-1 gap-x-10 gap-y-4 sm:mt-10 sm:grid-cols-2 xl:gap-x-16 xl:gap-y-6"
+          >
+            <li class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-emerald-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="ml-3"><SmallText>120+ Coded Blocks</SmallText></span>
+            </li>
+
+            <li class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-emerald-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="ml-3"
+                ><SmallText>Free Icons Included</SmallText></span
+              >
+            </li>
+
+            <li class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-emerald-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="ml-3"
+                ><SmallText>Made with TailwindCSS</SmallText></span
+              >
+            </li>
+
+            <li class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-emerald-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="ml-3"><SmallText>Dark & Light Mode</SmallText></span>
+            </li>
+
+            <li class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-emerald-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="ml-3"
+                ><SmallText>Edit & Customize Easily</SmallText></span
+              >
+            </li>
+
+            <li class="flex items-center">
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-emerald-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="ml-3"><SmallText>Get Free Support</SmallText></span>
+            </li>
+          </ul>
+
+          <div
+            class="mt-8 flex flex-col items-start sm:flex-row sm:items-center sm:space-x-4 lg:mt-12"
+          >
+            <Button variant="outline">
+              <a class="hover:text-emerald-500" href="/about">Download Now</a>
+            </Button>
+            <Button variant="ghost">
+              <a class="hover:text-emerald-500" href="/about">Get Started</a>
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>

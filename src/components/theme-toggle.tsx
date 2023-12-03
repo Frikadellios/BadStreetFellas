@@ -1,6 +1,6 @@
-import { useMounted } from "@/hooks/use-mounted";
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useMounted } from '@/hooks/use-mounted'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 const SunIcon = () => (
   <>
@@ -18,7 +18,7 @@ const SunIcon = () => (
         scale: 1,
         opacity: 1,
         rotate: 0,
-        transition: { duration: 0.2, type: "spring", stiffness: 100 },
+        transition: { duration: 0.2, type: 'spring', stiffness: 100 },
       }}
       exit={{
         scale: 0.5,
@@ -38,7 +38,7 @@ const SunIcon = () => (
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
     </motion.svg>
   </>
-);
+)
 
 const MoonIcon = () => (
   <>
@@ -56,7 +56,7 @@ const MoonIcon = () => (
         scale: 1,
         opacity: 1,
         rotate: 0,
-        transition: { duration: 0.2, type: "spring", stiffness: 100 },
+        transition: { duration: 0.2, type: 'spring', stiffness: 100 },
       }}
       exit={{
         scale: 0.5,
@@ -68,51 +68,51 @@ const MoonIcon = () => (
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     </motion.svg>
   </>
-);
+)
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState(() => {
     if (import.meta.env.SSR) {
-      return undefined;
+      return undefined
     }
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme')
     }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark'
     }
-    return "light";
-  });
+    return 'light'
+  })
 
   const toggleTheme = () => {
-    const t = theme === "light" ? "dark" : "light";
-    localStorage.setItem("theme", t);
-    setTheme(t);
-  };
+    const t = theme === 'light' ? 'dark' : 'light'
+    localStorage.setItem('theme', t)
+    setTheme(t)
+  }
 
-  const mounted = useMounted();
+  const mounted = useMounted()
 
   useEffect(() => {
-    const root = document.documentElement;
-    if (theme === "light") {
-      root.classList.remove("dark");
+    const root = document.documentElement
+    if (theme === 'light') {
+      root.classList.remove('dark')
     } else {
-      root.classList.add("dark");
+      root.classList.add('dark')
     }
-  }, [theme]);
+  }, [theme])
 
   return mounted ? (
     <button
       role="button"
       onClick={toggleTheme}
-      className="min-h-[40px] -mr-2 block focus:outline-none"
+      className="-mr-2 block min-h-[40px] focus:outline-none"
     >
       <span className="sr-only">Toggle mode</span>
       <AnimatePresence initial={false}>
-        {theme !== "dark" ? <SunIcon /> : <MoonIcon />}
+        {theme !== 'dark' ? <SunIcon /> : <MoonIcon />}
       </AnimatePresence>
     </button>
   ) : (
     <div />
-  );
+  )
 }

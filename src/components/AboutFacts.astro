@@ -1,36 +1,52 @@
 ---
-import H2 from "./typography/H2.astro";
-import SmallText from "./typography/SmallText.astro";
-
+import H2 from './typography/H2.astro'
+import SmallText from './typography/SmallText.astro'
 ---
 
 <section class="py-10 sm:py-16 lg:py-24">
-    <div class="max-w-5xl px-4 mx-auto sm:px-6 text-center lg:px-8">
-        <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</SmallText>
-        <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
-            <div>
-                <h3 class="font-bold text-7xl">
-                    <span class="bg-clip-text text-emerald-500 transition-all duration-200 hover:underline"> 6+ </span>
-                </h3>
-                <H2>Years in business</H2>
-                <SmallText>Creating the successful path</SmallText>
-            </div>
+  <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+    <SmallText>
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis.
+    </SmallText>
+    <div
+      class="mt-10 grid grid-cols-1 gap-8 text-center sm:gap-x-8 md:grid-cols-3 lg:mt-24"
+    >
+      <div>
+        <h3 class="text-7xl font-bold">
+          <span
+            class="bg-clip-text text-black dark:text-white transition-all duration-200 hover:underline"
+          >
+            6+
+          </span>
+        </h3>
+        <H2>Years in business</H2>
+        <SmallText>Creating the successful path</SmallText>
+      </div>
 
-            <div>
-                <h3 class="font-bold text-7xl">
-                    <span class="bg-clip-text text-emerald-500 transition-all duration-200 hover:underline"> 4821 </span>
-                </h3>
-                <H2>Projects delivered</H2>
-                <SmallText>In last 6 years</SmallText>
-            </div>
+      <div>
+        <h3 class="text-7xl font-bold">
+          <span
+            class="bg-clip-text text-black dark:text-white transition-all duration-200 hover:underline"
+          >
+            4821
+          </span>
+        </h3>
+        <H2>Projects delivered</H2>
+        <SmallText>In last 6 years</SmallText>
+      </div>
 
-            <div>
-                <h3 class="font-bold text-7xl">
-                    <span class="bg-clip-text text-emerald-500 transition-all duration-200 hover:underline"> 37+ </span>
-                </h3>
-                <H2>Team members</H2>
-                <SmallText>Working for your success</SmallText>
-            </div>
-        </div>
+      <div>
+        <h3 class="text-7xl font-bold">
+          <span
+            class="bg-clip-text text-black dark:text-white transition-all duration-200 hover:underline"
+          >
+            37+
+          </span>
+        </h3>
+        <H2>Team members</H2>
+        <SmallText>Working for your success</SmallText>
+      </div>
     </div>
+  </div>
 </section>

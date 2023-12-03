@@ -9,12 +9,11 @@ image: '../../../assets/imagetest.png'
 imageAlt: 'Rigondeaux celebrating his victory'
 ---
 
-
-## This century has brought several moments of glory for Cuba in professional boxing. The unprecedented influx of Antillean pugilists has been accompanied by top-notch results. ##
+## This century has brought several moments of glory for Cuba in professional boxing. The unprecedented influx of Antillean pugilists has been accompanied by top-notch results.
 
 Currently, the landscape is somewhat contradictory as the number of Cuban world champions is lower than in previous years, although some illustrious veterans continue to make waves in the ring. On the other hand, the number of young and highly skilled boxers is encouraging, suggesting that future times will be filled with glory in professional boxing.
 
-### 1. David Morrell Jr ###
+### 1. David Morrell Jr
 
 ![David Morrell Jr](https://phantom-marca-mx.unidadeditorial.es/a73edb91473599e1b50addfafb81572c/resize/828/f/jpg/mx/assets/multimedia/imagenes/2023/04/23/16822218488543.jpg)
 
@@ -22,7 +21,7 @@ When it comes to future stars, the Villa Clara native is the first name that com
 
 > I am the best at 168 pounds. None of these people can beat me.
 
-### 2. Erislandy "The Gold of Guantanamo" Lara ###
+### 2. Erislandy "The Gold of Guantanamo" Lara
 
 ![Erislandy Lara](https://www.espabox.com/wp-content/uploads/2020/08/Vendetti-Lara.jpg)
 
@@ -32,7 +31,7 @@ Despite all his accomplishments, "The American Dream" seems not to have received
 
 > People make excuses not to fight me, and it has a lot to do with my Cuban style.
 
-### 3. Yordenis "54 Miracles" Ugás ###
+### 3. Yordenis "54 Miracles" Ugás
 
 ![Yordenis Ugás](https://ca-times.brightspotcdn.com/dims4/default/5fdc079/2147483647/strip/true/crop/4398x2931+0+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F0e%2Fd6%2F92a209074f2ba13a30e46bbdfc0e%2Fpacquiao-ugas-boxing-42722.jpg)
 
@@ -40,7 +39,7 @@ Despite losing his WBA welterweight title to Errol Spence Jr. a few months ago, 
 
 > I am doing what no one else is doing, fighting against the best.
 
-### 4. Robeisy "The Train" Ramírez ###
+### 4. Robeisy "The Train" Ramírez
 
 ![Robeisy Ramírez](https://cdn.proboxtv.com/uploads/Robeisy_Ramirez_vs_Isaac_Dogboe_action10_f333538065.jpg)
 
@@ -50,7 +49,7 @@ His amateur background and professional evolution suggest that we have not seen 
 
 > I am the most handsome at 126 pounds, I am not afraid of anyone.
 
-### 5. Luis "King Kong" Ortiz ###
+### 5. Luis "King Kong" Ortiz
 
 ![Luis Ortiz](https://images.daznservices.com/di/library/DAZN_News/6a/d4/luis-ortiz-vs-chales-martin_7ke5gt1pke451gdxg3xm553w8.jpg?t=441783278&w=800)
 

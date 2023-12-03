@@ -1,15 +1,15 @@
 ---
 // import Astro - Components & Globals
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import BlogCard from "@/components/blog/BlogCard.astro";
-import BlogHeader from "@/components/blog/BlogHeader.astro";
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import BlogCard from '@/components/blog/BlogCard.astro'
+import BlogHeader from '@/components/blog/BlogHeader.astro'
 import { type CollectionEntry } from 'astro:content'
 
 // Import Utils
-import { getPosts } from "@/lib/fetchers";
+import { getPosts } from '@/lib/fetchers'
 
 // Translation Imports
-import { getLangFromUrl } from "@/i18n/utils";
+import { getLangFromUrl } from '@/i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 
 // Get all Posts
@@ -24,7 +24,10 @@ export const prerender = true
   description="Explore AquaPumpers Blog for expert installation, maintenance, and repair services for water pump stations and wells in Kyiv and the Kyiv region. Trust our professional services for all your waterrelated needs."
 >
   <section class="mx-auto max-w-[1680px] px-5">
-    <BlogHeader title="AquaPumpers Blog" subtitle="Effective services and professional solutions!" />
+    <BlogHeader
+      title="AquaPumpers Blog"
+      subtitle="Effective services and professional solutions!"
+    />
     <!-- Posts card Lists -->
     <div
       class="lg:gap mb-5 grid grid-cols-1 gap-x-6 gap-y-9 px-5 md:grid-cols-2 md:gap-y-11 md:px-0 lg:grid-cols-3 lg:gap-x-8"

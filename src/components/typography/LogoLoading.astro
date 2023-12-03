@@ -10,44 +10,43 @@ const t = useTranslations(lang)
 ---
 
 <div class="loader">
-    {title}
+  {title}
 </div>
 
 <style>
-    .loader {
-  font-size: 1rem;
-  font-family: sans-serif;
-  font-variant: small-caps;
-  font-weight: 900;
-  background: conic-gradient(
-    #010C80 0 25%,
-    #35D994 25% 50%,
-    #00A7E1 50% 75%,
-    #ffde2b 75%
-  );
-  background-size: 200% 200%;
-  animation: animateBackground 4.5s ease-in-out infinite;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-@keyframes animateBackground {
-  25% {
-    background-position: 0 100%;
+  .loader {
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: 900;
+    background: conic-gradient(
+      #010c80 0 25%,
+      #35d994 25% 50%,
+      #00a7e1 50% 75%,
+      #ffde2b 75%
+    );
+    background-size: 200% 200%;
+    animation: animateBackground 4.5s ease-in-out infinite;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
-  50% {
-    background-position: 100% 100%;
-  }
+  @keyframes animateBackground {
+    25% {
+      background-position: 0 100%;
+    }
 
-  75% {
-    background-position: 100% 0%;
-  }
+    50% {
+      background-position: 100% 100%;
+    }
 
-  100% {
-    background-position: 0 0;
-  }
-}
+    75% {
+      background-position: 100% 0%;
+    }
 
+    100% {
+      background-position: 0 0;
+    }
+  }
 </style>

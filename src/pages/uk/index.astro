@@ -1,27 +1,29 @@
 ---
-import Container from "@/components/Container.astro";
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import Cta from "@/components/Cta.astro";
-import HeaderSection from "@/components/HeaderSection.astro";
-import Features from "@/components/Features.astro";
-import LogoHero from "@/components/LogoHero.astro";
-import HeroStarter from "@/components/HeroStarter.astro";
-import ButtonEmergency from "../../components/typography/ButtonEmergency.astro";
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import HeaderSection from '@/components/HeaderSection.astro'
+import ServicesHero from '@/components/ServicesHero.astro'
+import PageHeader from '@/components/layout/PageHeader.astro'
+import AboutFacts from '@/components/AboutFacts.astro'
+import AboutSteps from '@/components/AboutSteps.astro'
+import AboutUsHero from '@/components/AboutUsHero.astro'
+import PartnersApp from '@/components/PartnersApp.astro'
+import MainPage from '../../components/layout/MainPage.astro'
 
+// React imports - Components
 
-export const prerender = true
 ---
 
 <BaseLayout
-  title="Nano Fighters Club"
-  description="Experience Excellence in Boxing and Kickboxing with Personalized In-Home Training, Designed to Fit Your Pace and Goals."
+  title="AquaPumpers - Надаємо професійні послуги з монтажу, технічного обслуговування та ремонту водонасосних пристроїв та водяних свердловин у Києві та Київській області! | Резервувати зараз!"
+  description="Потрібні надійне встановлення та ремонт? або послуги з технічного обслуговування вашої свердловини та систем каналізації? Наша команда фахівців гарантує першокласний сервіс у Києві та Київській області. Замовляйте зараз, щоб отримати ефективні та доступні рішення!"
 >
+	<MainPage />
 	<Container>
-		<HeroStarter />
-		<ButtonEmergency />
-		<LogoHero />
-		<Cta />
-		<Features />
-	</Container>
-	<HeaderSection />
+    <AboutSteps />
+	<ServicesHero />
+	<PartnersApp />
+	<AboutUsHero />
+  </Container>
+  <HeaderSection />
 </BaseLayout>

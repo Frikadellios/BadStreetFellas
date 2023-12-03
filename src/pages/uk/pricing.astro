@@ -1,25 +1,25 @@
 ---
-import Container from "@/components/Container.astro";
-import Layout from "@/layouts/Layout.astro";
-import PricingHero from "@/components/PricingHero.astro";
-import PricingLogos from "@/components/PricingLogos.astro";
-import PricingPlans from "@/components/PricingPlans.astro";
-import PricingDirector from "@/components/PricingDirector.astro";
-import PricingSubscriber from "@/components/PricingSubscriber.astro";
-import PricingQuestion from "@/components/PricingQuestion.astro";
-import PageHeader from "@/components/layout/PageHeader.astro";
+import Container from '@/components/Container.astro'
+import Layout from '@/layouts/Layout.astro'
+import PricingHero from '@/components/PricingHero.astro'
+import PricingLogos from '@/components/PricingLogos.astro'
+import PricingPlans from '@/components/PricingPlans.astro'
+import PricingDirector from '@/components/PricingDirector.astro'
+import PricingSubscriber from '@/components/PricingSubscriber.astro'
+import PricingQuestion from '@/components/PricingQuestion.astro'
+import PageHeader from '@/components/layout/PageHeader.astro'
 
 export const prerender = true
 ---
 
 <Layout title="Ціни">
-	<Container>
-		<PageHeader title="Тарифи та Ціни"/>
-		<PricingHero />
-		<PricingLogos />
-		<PricingPlans />
-		<PricingDirector />
-		<PricingQuestion />
-		<PricingSubscriber />
-	</Container>
+  <Container>
+    <PageHeader title="Тарифи та Ціни" />
+    <PricingHero />
+    <PricingLogos />
+    <PricingPlans />
+    <PricingDirector />
+    <PricingQuestion />
+    <PricingSubscriber />
+  </Container>
 </Layout>
