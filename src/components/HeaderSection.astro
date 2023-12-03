@@ -3,6 +3,15 @@ import Large from '@/components/typography/Large.astro'
 import H4 from '@/components/typography/H4.astro'
 import H1 from '@/components/typography/H1.astro'
 import H2 from '@/components/typography/H2.astro'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { FormDialog } from '@/components/react/FormDialog'
+import { Image } from 'astro:assets'
+import Phone from '@/assets/Phone.png'
+import Roadmap from '@/assets/Roadmap.png'
+import Repairs from '@/assets/Repairs.png'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <div
@@ -45,11 +54,12 @@ import H2 from '@/components/typography/H2.astro'
       <div
         class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10"
       >
+      <Image src={Phone} alt="" class="my-class pb-5" />
         <a
           href="#"
           title=""
           class="transition-all duration-200 hover:text-emerald-500 hover:underline"
-          ><H4>Log in <span aria-hidden="true">&rarr;</span></H4></a
+          ><H4>{t('scat1-desc')} <span aria-hidden="true">&rarr;</span></H4></a
         >
         <a
           href="#"

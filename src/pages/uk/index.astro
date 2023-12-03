@@ -1,15 +1,13 @@
 ---
 import Container from '@/components/Container.astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
-import HeaderSection from '@/components/HeaderSection.astro'
 import ServicesHero from '@/components/ServicesHero.astro'
-import PageHeader from '@/components/layout/PageHeader.astro'
-import AboutFacts from '@/components/AboutFacts.astro'
 import AboutSteps from '@/components/AboutSteps.astro'
 import AboutUsHero from '@/components/AboutUsHero.astro'
 import PartnersApp from '@/components/PartnersApp.astro'
-import MainPage from '../../components/layout/MainPage.astro'
-
+import MainPage from '@/components/layout/MainPage.astro'
+import PartnersCompany from '@/components/PartnersCompany.astro'
+import PartnersPush from '@/components/PartnersPush.astro'
 // React imports - Components
 
 ---
@@ -21,9 +19,9 @@ import MainPage from '../../components/layout/MainPage.astro'
 	<MainPage />
 	<Container>
     <AboutSteps />
-	<ServicesHero />
 	<PartnersApp />
 	<AboutUsHero />
+	<PartnersCompany />
+	<PartnersPush />
   </Container>
-  <HeaderSection />
 </BaseLayout>

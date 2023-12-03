@@ -1,6 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 import H2 from './typography/H2.astro'
+import Large from './typography/Large.astro'
 import SmallText from './typography/SmallText.astro'
 import { Image } from 'astro:assets'
 import Termins from '@/assets/Termins.png'
@@ -14,11 +15,12 @@ const t = useTranslations(lang)
 
 <section>
   <div class="mx-auto max-w-2xl text-center">
-    <H2>Numbers tell our story</H2>
+    <H2>{t('serv-tiitledop')}</H2>
+    <Large>{t('serv-tiitledopdesc')}</Large>
   </div>
   <div class="container mx-auto px-6 py-10">
     <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:gap-12">
-      <div class="rounded-xl border border-r-gray-200 p-6 dark:border-gray-700">
+      <div class="rounded-xl border border-r-blue-100 p-6 dark:border-blue-900">
         <div class="md:-mx-4 md:flex md:items-start">
           <Image src={Termins} alt="" class="my-class" />
 
@@ -34,7 +36,7 @@ const t = useTranslations(lang)
         </div>
       </div>
 
-      <div class="rounded-xl border border-r-gray-200 p-6 dark:border-gray-700">
+      <div class="rounded-xl border border-r-blue-100 p-6 dark:border-blue-900">
         <div class="md:-mx-4 md:flex md:items-start">
 
             <Image src={Car} alt="" class="my-class" />
@@ -50,7 +52,7 @@ const t = useTranslations(lang)
       </div>
     </div>
 
-      <div class="rounded-xl border border-r-gray-200 p-6 dark:border-gray-700">
+      <div class="rounded-xl border border-r-blue-100 p-6 dark:border-blue-900">
         <div class="md:-mx-4 md:flex md:items-start">
 
           <Image src={Companyserv} alt="" class="my-class" />
@@ -68,7 +70,7 @@ const t = useTranslations(lang)
         </div>
       </div>
 
-      <div class="rounded-xl border border-r-gray-200 p-6 dark:border-gray-700">
+      <div class="rounded-xl border border-r-blue-100 p-6 dark:border-blue-900">
         <div class="md:-mx-4 md:flex md:items-start">
           
           <Image src={Garanty} alt="" class="my-class" />

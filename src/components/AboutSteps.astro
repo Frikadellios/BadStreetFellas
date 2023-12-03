@@ -5,7 +5,7 @@ import H2 from './typography/H2.astro'
 import Large from './typography/Large.astro'
 import { Image } from 'astro:assets'
 import Roadmapsi from '@/assets/Roadmapsi.gif'
-import Notification from '@/assets/Notification.gif'
+import Phones from '@/assets/Phones.gif'
 import Done from '@/assets/Done.gif'
 
 const lang = getLangFromUrl(Astro.url)
@@ -15,11 +15,10 @@ const t = useTranslations(lang)
 <section class="py-10 sm:py-16 lg:py-24">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <H2>How does it work?</H2>
-      <SmallText>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis.
-      </SmallText>
+      <H2>{t('about-step-title')}</H2>
+      <Large>
+        {t('about-step-desc')}
+    </Large>
     </div>
 
     <div class="relative mt-12 lg:mt-20">
@@ -45,7 +44,7 @@ const t = useTranslations(lang)
               <div class="circle">
                 <Image
                  class="w-full"
-                 src={Notification}
+                 src={Phones}
                   alt=""
                 />
                 </div>

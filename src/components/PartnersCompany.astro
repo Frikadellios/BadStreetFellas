@@ -1,15 +1,23 @@
 ---
-import SmallText from './typography/SmallText.astro'
+import Large from './typography/Large.astro'
 import H2 from './typography/H2.astro'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { Image } from 'astro:assets'
+import Phone from '@/assets/Phone.png'
+import Roadmap from '@/assets/Roadmap.png'
+import Repairs from '@/assets/Repairs.png'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="py-10 sm:py-16 lg:py-24">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <H2>Trusted Partners</H2>
-      <SmallText>
-        Trusted by world class companies, design teams & popular designers
-      </SmallText>
+      <H2>{t('partner-brandtitle')}</H2>
+      <Large>
+        {t('partner-branddesc')}
+      </Large>
     </div>
 
     <div
@@ -119,7 +127,7 @@ import H2 from './typography/H2.astro'
     </div>
 
     <p class="mt-10 text-center text-base text-emerald-500 md:mt-20">
-      and, 1000+ more companies
+      {t('partner-text')}
     </p>
   </div>
 </section>

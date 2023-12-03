@@ -1,14 +1,22 @@
 ---
+import H1 from './typography/H1.astro'
 import H2 from './typography/H2.astro'
 import SmallText from './typography/SmallText.astro'
+import Large from '@/components/typography/Large.astro'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { FormDialog } from '@/components/react/FormDialog'
+import { Image } from 'astro:assets'
+
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="py-10 sm:py-16 lg:py-24">
   <div class="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
-    <SmallText>
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis.
-    </SmallText>
+    <Large>
+      {t('home-hero-subtitle')}
+    </Large>
     <div
       class="mt-10 grid grid-cols-1 gap-8 text-center sm:gap-x-8 md:grid-cols-3 lg:mt-24"
     >
@@ -20,8 +28,8 @@ import SmallText from './typography/SmallText.astro'
             6+
           </span>
         </h3>
-        <H2>Years in business</H2>
-        <SmallText>Creating the successful path</SmallText>
+        <H2>{t('home-hero-subtitle1')}</H2>
+        <SmallText>{t('home-hero-subdesc1')}</SmallText>
       </div>
 
       <div>
@@ -29,11 +37,11 @@ import SmallText from './typography/SmallText.astro'
           <span
             class="bg-clip-text text-black dark:text-white transition-all duration-200 hover:underline"
           >
-            4821
+            4821+
           </span>
         </h3>
-        <H2>Projects delivered</H2>
-        <SmallText>In last 6 years</SmallText>
+        <H2>{t('home-hero-subtitle2')}</H2>
+        <SmallText>{t('home-hero-subdesc2')}</SmallText>
       </div>
 
       <div>
@@ -44,8 +52,8 @@ import SmallText from './typography/SmallText.astro'
             37+
           </span>
         </h3>
-        <H2>Team members</H2>
-        <SmallText>Working for your success</SmallText>
+        <H2>{t('home-hero-subtitle3')}</H2>
+        <SmallText>{t('home-hero-subdesc3')}</SmallText>
       </div>
     </div>
   </div>
