@@ -326,51 +326,35 @@ export const features = [
 export const navLinks = [
   {
     label: {
-      uk: 'Про Нас',
-      en: 'About Us',
-      ru: 'Про Нас',
+      uk: 'Обслуговування свердловин',
+      en: 'Well servicing',
+      ru: 'Обслуживание скважин',
     },
-    link: '/about',
+    link: '/wells-service',
   },
   {
     label: {
-      uk: 'Компанія',
-      en: 'Company',
-      ru: 'Компания',
+      uk: 'Облаштування свердловин',
+      en: 'Well construction',
+      ru: 'Обустройство скважин',
     },
-    link: '/company',
+    link: '/well-construction',
   },
   {
     label: {
-      uk: 'Сервіси',
-      en: 'Services',
-      ru: 'Сервисы',
+      uk: 'Ремонт насосів',
+      en: 'Pump repair',
+      ru: 'Ремонт насосов',
     },
-    link: '/services',
+    link: '/pump-repair',
   },
   {
     label: {
-      uk: 'Портфоліо',
-      en: 'Portfolio',
-      ru: 'Портфолио',
+      uk: 'Автономна каналізація',
+      en: 'Autonomous sewerage',
+      ru: 'Автономная канализация',
     },
-    link: '/portfolio',
-  },
-  {
-    label: {
-      uk: 'Партнери',
-      en: 'Partners',
-      ru: 'Партнёры',
-    },
-    link: '/partners',
-  },
-  {
-    label: {
-      uk: 'Ціни',
-      en: 'Pricing',
-      ru: 'Цены',
-    },
-    link: '/pricing',
+    link: '/autonomous-sewerage',
   },
   {
     label: {
@@ -459,8 +443,8 @@ export const contacts = [
       en: 'Email',
       ru: 'Електронная Почта',
     },
-    link: 'mailto:email@example.com',
-    linkLabel: 'email@example.com',
+    link: 'mailto:info@aquapumpers.com',
+    linkLabel: 'info@aquapumpers.com',
   },
   {
     label: {
@@ -477,7 +461,34 @@ export const contacts = [
       en: 'Instagram',
       ru: 'Instagram',
     },
-    link: 'http://www.instagram.com',
+    link: 'https://www.instagram.com',
+    linkLabel: '@',
+  },
+  {
+    label: {
+      uk: 'Telegram',
+      en: 'Telegram',
+      ru: 'Telegram',
+    },
+    link: 'https://www.instagram.com',
+    linkLabel: '@',
+  },
+  {
+    label: {
+      uk: 'Viber',
+      en: 'Viber',
+      ru: 'Viber',
+    },
+    link: 'https://www.instagram.com',
+    linkLabel: '@',
+  },
+  {
+    label: {
+      uk: 'Watss Up',
+      en: 'Watss Up',
+      ru: 'Watss Up',
+    },
+    link: 'https://www.instagram.com',
     linkLabel: '@',
   },
 ]

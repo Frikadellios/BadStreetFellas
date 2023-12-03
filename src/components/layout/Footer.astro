@@ -1,6 +1,18 @@
 ---
 import SmallText from '@/components/typography/SmallText.astro'
-import Link from '@/components/typography/Link.astro'
+import H4 from '@/components/typography/H4.astro'
+import { Image } from 'astro:assets'
+import { Separator } from '@/components/ui/separator'
+import Roadmapsi from '@/assets/Roadmapsi.gif'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { FormDialog } from '@/components/react/FormDialog'
+import favicon from '@/assets/favicon.svg'
+import { Button } from '@/components/ui/button'
+import FooterLinks from '../typography/FooterLinks.astro'
+import LogoLoading from '../typography/LogoLoading.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <!-- Component: Five Columns Footer with Logo -->
@@ -14,37 +26,30 @@ import Link from '@/components/typography/Link.astro'
           aria-labelledby="footer-header"
         >
           <a
-            id="WindUI-5-logo"
-            aria-label="WindUI logo"
+            id="Aquapumpers-logo"
+            aria-label="AquaPumpers logo"
             aria-current="page"
-            class="mb-6 flex items-center gap-2 whitespace-nowrap text-base font-medium leading-6 text-slate-700 focus:outline-none"
-            href="javascript:void(0)"
+            class="mb-6 mt-5 flex scroll-m-20 items-center gap-2 whitespace-nowrap pb-2 text-2xl font-semibold leading-6 tracking-tight focus:outline-none"
+            href="#"
+            title=""
+            class="transition-all duration-200 hover:text-emerald-500 hover:underline"
           >
-            <svg
-              width="300"
-              height="300"
-              viewBox="0 0 300 300"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 shrink-0 bg-emerald-500"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M88.1121 88.1134L150.026 150.027L150.027 150.027L150.027 150.027L150.028 150.027L150.027 150.026L88.1133 88.1122L88.1121 88.1134ZM273.878 273.877C272.038 274.974 196.128 319.957 165.52 289.349L88.1124 211.942L26.1434 273.911C26.1434 273.911 -20.3337 196.504 10.651 165.519L88.1121 88.1134L26.1417 26.1433C26.1417 26.1433 69.6778 0.00338007 104.519 0H0V300H300V0H104.533C116.144 0.00112664 126.789 2.90631 134.534 10.651L211.941 88.1123L273.877 26.177C274.974 28.0159 319.957 103.926 289.349 134.535L211.942 211.942L273.878 273.877ZM273.878 273.877L273.912 273.857V273.911L273.878 273.877ZM273.877 26.177L273.911 26.1429H273.857C273.857 26.1429 273.863 26.1544 273.877 26.177Z"
-                fill="#f1f5f9"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 0H300V300H0V0ZM150.026 150.025C121.715 99.731 88.1131 88.1122 88.1131 88.1122L10.6508 165.519C10.6508 165.519 26.143 150.027 150.026 150.027H150.027C150.026 150.027 150.026 150.027 150.026 150.027L150.026 150.027C99.731 178.339 88.1124 211.941 88.1124 211.941L165.52 289.348C165.52 289.348 150.032 273.86 150.027 150.027H150.029C178.341 200.323 211.944 211.942 211.944 211.942L289.352 134.535C289.352 134.535 273.864 150.023 150.027 150.027V150.027L150.027 150.027C200.322 121.715 211.941 88.1125 211.941 88.1125L134.534 10.651C134.534 10.651 150.026 26.1431 150.026 150.025ZM150.027 150.027L150.026 150.027C150.026 150.026 150.026 150.026 150.026 150.025C150.026 150.025 150.027 150.026 150.027 150.027ZM150.027 150.027L150.027 150.026L150.027 150.027C150.027 150.027 150.027 150.027 150.027 150.027L150.027 150.027ZM150.027 150.027C150.027 150.027 150.027 150.027 150.027 150.027H150.027L150.027 150.027Z"
-                fill="rgba(255, 255, 255, .2)"></path>
-            </svg>
-             Brand
+            <div class="wrap">
+              <div class="circle">
+                <Image src={favicon} alt="" class="my-class" />
+              </div>
+            </div>
+            <LogoLoading title="AquaPumpers" />
+            <div class="flex gap-6 md:gap-10"></div>
           </a>
           <SmallText>
-            Expertly made, responsive, accessible components in React and HTML
-            ready to be used on your website or app. Just copy and paste them on
-            your Tailwind CSS project.
+            {t('home-footer-meta')}
+            <FormDialog
+              client:visible
+              text={t('dialog-text')}
+              &rarr;
+              lang={lang}
+            />
           </SmallText>
         </div>
         <nav
@@ -55,40 +60,36 @@ import Link from '@/components/typography/Link.astro'
             class="mb-6 bg-gradient-to-r from-sky-500 via-cyan-400 to-emerald-400 bg-clip-text text-base font-bold text-transparent"
             id="footer-product-5-logo"
           >
-            Product
+            <FooterLinks text={t('serv-title2')} , href={t('serv-href2')} />
           </h3>
-          <ul>
+          <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Features
-              </a>
+                <FooterLinks text={t('f1-tittle')} , href={t('f1-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Customers
-              </a>
+                <FooterLinks text={t('f2-tittle')} , href={t('f2-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Why us?
-              </a>
+                <FooterLinks text={t('f3-tittle')} , href={t('f3-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Pricing
-              </a>
+                <FooterLinks text={t('f4-tittle')} , href={t('f4-href')} />
+              </h4>
             </li>
           </ul>
         </nav>
@@ -98,50 +99,38 @@ import Link from '@/components/typography/Link.astro'
         >
           <h3
             class="mb-6 bg-gradient-to-r from-sky-500 via-cyan-400 to-emerald-400 bg-clip-text text-base font-bold text-transparent"
-            id="footer-docs-5-logo"
+            id="footer-product-5-logo"
           >
-            Docs & Help
+            <FooterLinks text={t('serv-title3')} , href={t('serv-href3')} />
           </h3>
-          <ul>
+          <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Documentation</a
-              >
+                <FooterLinks text={t('f5-tittle')} , href={t('f5-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Training
-              </a>
+                <FooterLinks text={t('f6-tittle')} , href={t('f6-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                System status
-              </a>
+                <FooterLinks text={t('f7-tittle')} , href={t('f7-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                FAQ's
-              </a>
-            </li>
-            <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
-                class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-              >
-                Help Center
-              </a>
+                <FooterLinks text={t('f8-tittle')} , href={t('f8-href')} />
+              </h4>
             </li>
           </ul>
         </nav>
@@ -151,50 +140,38 @@ import Link from '@/components/typography/Link.astro'
         >
           <h3
             class="mb-6 bg-gradient-to-r from-sky-500 via-cyan-400 to-emerald-400 bg-clip-text text-base font-bold text-transparent"
-            id="footer-about-5-logo"
+            id="footer-product-5-logo"
           >
-            About us
+            <FooterLinks text={t('serv-title4')} , href={t('serv-href4')} />
           </h3>
-          <ul>
+          <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                About us
-              </a>
+                <FooterLinks text={t('f9-tittle')} , href={t('f9-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Careers
-              </a>
+                <FooterLinks text={t('f10-tittle')} , href={t('f10-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Leadership
-              </a>
+                <FooterLinks text={t('f11-tittle')} , href={t('f11-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Blog</a
-              >
-            </li>
-            <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
-                class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
-              >
-                Events
-              </a>
+                <FooterLinks text={t('f12-tittle')} , href={t('f12-href')} />
+              </h4>
             </li>
           </ul>
         </nav>
@@ -204,42 +181,38 @@ import Link from '@/components/typography/Link.astro'
         >
           <h3
             class="mb-6 bg-gradient-to-r from-sky-500 via-cyan-400 to-emerald-400 bg-clip-text text-base font-bold text-transparent"
-            id="footer-get-in-touch-5-logo"
+            id="footer-product-5-logo"
           >
-            Get in touch
+            <FooterLinks text={t('serv-title1')} , href={t('serv-href1')} />
           </h3>
-          <ul>
+          <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Contact
-              </a>
+                <FooterLinks text={t('f13-tittle')} , href={t('f13-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Support
-              </a>
+                <FooterLinks text={t('f14-tittle')} , href={t('f14-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Partners
-              </a>
+                <FooterLinks text={t('f15-tittle')} , href={t('f15-href')} />
+              </h4>
             </li>
             <li class="mb-2 leading-6">
-              <a
-                href="javascript:void(0)"
+              <h4
                 class="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600"
               >
-                Join research
-              </a>
+                <FooterLinks text={t('f16-tittle')} , href={t('f16-href')} />
+              </h4>
             </li>
           </ul>
         </nav>
@@ -315,3 +288,38 @@ import Link from '@/components/typography/Link.astro'
     </div>
   </div>
 </footer>
+
+<style>
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+
+  .circle {
+    background: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 3s linear infinite;
+  }
+
+  .circle img {
+    width: 100%;
+  }
+
+  @keyframes morph {
+    0%,
+    100% {
+      border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+</style>

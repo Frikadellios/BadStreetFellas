@@ -1,17 +1,26 @@
 ---
-import SmallText from './typography/SmallText.astro'
-import H2 from './typography/H2.astro'
-import Large from './typography/Large.astro'
+import SmallText from '../typography/SmallText.astro'
+import H1 from '../typography/H1.astro'
+import Large from '../typography/Large.astro'
+import H2 from '../typography/H2.astro'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { Image } from 'astro:assets'
+import Phone from '@/assets/Phone.png'
+import Roadmap from '@/assets/Roadmap.png'
+import Repairs from '@/assets/Repairs.png'
+import { Separator } from '@/components/ui/separator'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="bg-trancperent dark:bg-trancperent">
   <div class="container mx-auto px-6 py-10">
     <div class="text-center">
-      <H2>Zero Configuration</H2>
+      <H2>{t('serv-hero4desc')}</H2>
 
       <SmallText>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-        nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+        {t('serv-title42')}
       </SmallText>
     </div>
     <div
@@ -37,11 +46,10 @@ import Large from './typography/Large.astro'
           </svg>
         </span>
 
-        <Large>Zero Configuration</Large>
-
+        <Large>{t('serv-reason41')}</Large>
+        <Separator className="my-2" />
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+          {t('serv-reason41fix')}
         </SmallText>
 
         <a
@@ -82,11 +90,10 @@ import Large from './typography/Large.astro'
           </svg>
         </span>
 
-        <Large>Zero Configuration</Large>
-
+        <Large>{t('serv-reason42')}</Large>
+        <Separator className="my-2" />
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+          {t('serv-reason42fix')}
         </SmallText>
 
         <a
@@ -127,11 +134,10 @@ import Large from './typography/Large.astro'
           </svg>
         </span>
 
-        <Large>Zero Configuration</Large>
-
+        <Large>{t('serv-reason43')}</Large>
+        <Separator className="my-2" />
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+          {t('serv-reason43fix')}
         </SmallText>
 
         <a
@@ -172,11 +178,10 @@ import Large from './typography/Large.astro'
           </svg>
         </span>
 
-        <Large>Zero Configuration</Large>
-
+        <Large>{t('serv-reason44')}</Large>
+        <Separator className="my-2" />
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+          {t('serv-reason44fix')}
         </SmallText>
 
         <a
@@ -217,13 +222,11 @@ import Large from './typography/Large.astro'
           </svg>
         </span>
 
-        <Large>Zero Configuration</Large>
-
+        <Large>{t('serv-reason45')}</Large>
+        <Separator className="my-2" />
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+          {t('serv-reason45fix')}
         </SmallText>
-
         <a
           href="#"
           class="-mx-1 inline-flex transform items-center text-sm capitalize text-emerald-500 transition-colors duration-300 hover:text-emerald-600 hover:underline dark:text-emerald-500 dark:hover:text-emerald-600"
@@ -262,11 +265,10 @@ import Large from './typography/Large.astro'
           </svg>
         </span>
 
-        <Large>Zero Configuration</Large>
-
+        <Large>{t('serv-reason46')}</Large>
+        <Separator className="my-2" />
         <SmallText>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab
-          nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
+          {t('serv-reason46fix')}
         </SmallText>
 
         <a

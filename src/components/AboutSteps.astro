@@ -18,7 +18,7 @@ const t = useTranslations(lang)
       <H2>{t('about-step-title')}</H2>
       <Large>
         {t('about-step-desc')}
-    </Large>
+      </Large>
     </div>
 
     <div class="relative mt-12 lg:mt-20">
@@ -40,13 +40,9 @@ const t = useTranslations(lang)
             class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow"
           >
             <span class="text-xl font-semibold text-gray-700">
-            <div class="wrap">
-              <div class="circle">
-                <Image
-                 class="w-full"
-                 src={Phones}
-                  alt=""
-                />
+              <div class="wrap">
+                <div class="circle">
+                  <Image class="w-full" src={Phones} alt="" />
                 </div>
               </div>
             </span>
@@ -61,14 +57,10 @@ const t = useTranslations(lang)
           <div
             class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow"
           >
-          <span class="text-xl font-semibold text-gray-700">
-            <div class="wrap">
-              <div class="circle">
-                <Image
-                 class="w-full"
-                 src={Roadmapsi}
-                  alt=""
-                />
+            <span class="text-xl font-semibold text-gray-700">
+              <div class="wrap">
+                <div class="circle">
+                  <Image class="w-full" src={Roadmapsi} alt="" />
                 </div>
               </div>
             </span>
@@ -83,14 +75,10 @@ const t = useTranslations(lang)
           <div
             class="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow"
           >
-          <span class="text-xl font-semibold text-gray-700">
-            <div class="wrap">
-              <div class="circle">
-                <Image
-                 class="w-full"
-                 src={Done}
-                  alt=""
-                />
+            <span class="text-xl font-semibold text-gray-700">
+              <div class="wrap">
+                <div class="circle">
+                  <Image class="w-full" src={Done} alt="" />
                 </div>
               </div>
             </span>
@@ -106,38 +94,36 @@ const t = useTranslations(lang)
 </section>
 
 <style>
-  
-
-.wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.circle {
-  background: plum;
-  width: 75px;
-  height: 75px;
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  overflow: hidden;
-  animation: morph 3s linear infinite;
-}
-
-.circle img {
-  width: 100%;
-}
-
-
-@keyframes morph{
-  0%, 100% {
-  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
-  34% {
-    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+
+  .circle {
+    background: plum;
+    width: 75px;
+    height: 75px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 3s linear infinite;
   }
-  67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+
+  .circle img {
+    width: 100%;
   }
-}
+
+  @keyframes morph {
+    0%,
+    100% {
+      border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
 </style>

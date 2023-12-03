@@ -1,11 +1,12 @@
 ---
 import Container from '@/components/Container.astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
-import Cta from '@/components/Cta.astro'
-import HeaderSection from '@/components/HeaderSection.astro'
-import Features from '@/components/Features.astro'
-import LogoHero from '@/components/LogoHero.astro'
-import HeroStarter from '@/components/HeroStarter.astro'
+import AboutSteps from '@/components/AboutSteps.astro'
+import AboutUsHero from '@/components/AboutUsHero.astro'
+import PartnersApp from '@/components/PartnersApp.astro'
+import MainPage from '@/components/layout/MainPage.astro'
+import PartnersCompany from '@/components/PartnersCompany.astro'
+import PartnersPush from '@/components/PartnersPush.astro'
 
 export const prerender = true
 ---
@@ -14,11 +15,12 @@ export const prerender = true
   title="AquaPumpers - Предоставляем профессиональные услуги по монтажу, техническому обслуживанию и ремонту водонасосных устройств и водных скважин в Киеве и Киевской области! | Резервировать сейчас!"
   description="Нужна надежная установка и ремонт? или услуги по техническому обслуживанию вашей скважины и систем канализации? Наша команда специалистов гарантирует первоклассный сервис в Киеве и в Киевской области. Заказывайте сейчас, чтобы получить эффективные и доступные решения!"
 >
+  <MainPage />
   <Container>
-    <HeroStarter />
-    <LogoHero />
-    <Cta />
-    <Features />
+    <AboutSteps />
+    <PartnersApp />
+    <AboutUsHero />
+    <PartnersCompany />
+    <PartnersPush />
   </Container>
-  <HeaderSection />
-</Layout>
+</BaseLayout>

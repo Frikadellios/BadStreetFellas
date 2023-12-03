@@ -31,10 +31,7 @@ export function FormDialog({
     <div className="mt-3 w-[fit-content]">
       <Dialog>
         <DialogTrigger asChild>
-          <button
-            className={`${buttonVariants()} link`}
-            aria-label={text}
-          >
+          <button className={`${buttonVariants()} link`} aria-label={text}>
             {text}
           </button>
         </DialogTrigger>
@@ -62,11 +59,11 @@ export function FormDialog({
             <small>
               Made with <span className="animate-pulse">❤️</span> and Powered by{' '}
               <a
-                href="https://www.adrian-alvarez.dev/es/"
+                href="https://www.aquapumpers.com"
                 target="_blank"
                 className="transition-colors duration-200 "
               >
-                Adrian
+                AquaPumpers
               </a>
             </small>
           </DialogFooter>
