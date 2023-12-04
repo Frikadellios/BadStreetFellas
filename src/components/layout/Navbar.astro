@@ -8,6 +8,8 @@ import { SheetNav } from '@/components/react/SheetNav'
 import { PopoverLang } from '@/components/react/PopoverLang'
 import { ThemeToggle } from '@/components/theme-toggle'
 import LogoLoading from '../typography/LogoLoading.astro'
+import { Image } from 'astro:assets'
+import LogoTrancparent from '@/assets/LogoTrancparent.png'
 
 const lang: 'uk' | 'en' | 'ru' = getLangFromUrl(Astro.url)
 ---
@@ -122,10 +124,10 @@ const lang: 'uk' | 'en' | 'ru' = getLangFromUrl(Astro.url)
     <!-- Logo -->
     <div class="flex gap-6 md:gap-10">
       <a href="/" class="flex items-center space-x-2" title="Home Link">
-        <span class="inline-block text-2xl font-bold">
-          <LogoLoading title="AquaPumpers" />
-        </span>
+
+          <Image class="w-auto h-12" src={LogoTrancparent} alt="" />
       </a>
+      
     </div>
     <div class="flex flex-1 items-center justify-end space-x-4">
       <!-- Navlinks Lists -->
