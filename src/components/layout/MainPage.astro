@@ -3,7 +3,7 @@ import PageHeader from './PageHeader.astro'
 import AboutFacts from '../AboutFacts.astro'
 import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 import { Image } from 'astro:assets'
-import imagetest from '@/assets/imagetest.png'
+import imagetest from '@/assets/PumpsBack.png'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -13,12 +13,10 @@ const t = useTranslations(lang)
   class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
 >
   <div class="conteiner">
-    <div class="blob"></div>
     <Image
-      class="w-full"
       src={imagetest}
       alt=""
-      class="animate-wiggle animate-infinite animate-duration-[6000ms] animate-ease-in-out absolute inset-0 -z-10 h-full w-full object-cover object-right backdrop-blur-sm md:object-center"
+      class="animate-wiggle w-full h-full  animate-infinite animate-duration-[6000ms] animate-ease-in-out absolute inset-0 -z-10 object-cover object-right backdrop-blur-sm md:object-center"
     />
 
     <div
