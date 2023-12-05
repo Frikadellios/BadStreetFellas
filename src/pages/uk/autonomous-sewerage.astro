@@ -1,26 +1,22 @@
 ---
 import Container from '@/components/Container.astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
-import AboutSteps from '@/components/AboutSteps.astro'
-import AboutUsHero from '@/components/AboutUsHero.astro'
-import PartnersApp from '@/components/PartnersApp.astro'
-import MainPage from '@/components/layout/MainPage.astro'
-import PartnersCompany from '@/components/PartnersCompany.astro'
-import PartnersPush from '@/components/PartnersPush.astro'
+import AseverageServices from '@/components/aseverage/AseverageServices.astro'
+import AseverageGservices from '@/components/aseverage/AseverageGservices.astro'
+import AseverageLogo from '@/components/aseverage/AseverageLogo.astro'
+
 
 export const prerender = true
+
 ---
 
 <BaseLayout
   title="Автономна Каналізація та безшовні каналізаційні рішення у Києві та Київській області! | Резервувуйте безкоштовну консультацію по телефону!"
   description="Компанія «AquaPumpers» - фахівці з проектування, монтажу та обслуговування каналізаційних насосних станцій. Пропонуємо монтаж, встановлення занурювальних насосів, ремонт шаф управління та інші послуги по Києву та Київській області. Замовляйте зараз, щоб отримати ефективні та доступні рішення!"
 >
-  <MainPage />
-  <Container>
-    <AboutSteps />
-    <PartnersApp />
-    <AboutUsHero />
-    <PartnersCompany />
-    <PartnersPush />
-  </Container>
+  <AseverageLogo />
+    <Container>
+      <AseverageServices />
+      <AseverageGservices />
+    </Container>
 </BaseLayout>
