@@ -13,7 +13,7 @@ const t = useTranslations(lang)
 
 
 <div
-class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
+class="bg-trancperent relative isolate mt-0 overflow-hidden py-1 sm:py-2"
 >
 <div class="conteiner">
   <div
@@ -42,7 +42,7 @@ class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
 <div
   class="bg-trancperent mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 2xl:rounded-xl"
 >
-  <div class="py-10 sm:py-16 lg:py-24 2xl:pl-24">
+  <div class="py-1 sm:py-3 lg:py-24 2xl:pl-24">
     <div
       class="grid grid-cols-1 items-center gap-y-8 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20"
     >
@@ -53,7 +53,7 @@ class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
 
       <div class="lg:order-1">
         <H1>
-          Are you ready to <br class="hidden xl:block" />join Celebration?
+          {t('serv-logo3')}<br class="hidden xl:block" />
         </H1>
 
         <ul
@@ -71,7 +71,7 @@ class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                 clip-rule="evenodd"></path>
             </svg>
-            <span class="ml-3"><SmallText>120+ Coded Blocks</SmallText></span>
+            <span class="ml-3"><SmallText>{t('serv-logo31desc')}</SmallText></span>
           </li>
 
           <li class="flex items-center">
@@ -86,39 +86,7 @@ class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                 clip-rule="evenodd"></path>
             </svg>
-            <span class="ml-3"><SmallText>Free Icons Included</SmallText></span>
-          </li>
-
-          <li class="flex items-center">
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-emerald-500"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="ml-3"
-              ><SmallText>Made with TailwindCSS</SmallText></span
-            >
-          </li>
-
-          <li class="flex items-center">
-            <svg
-              class="h-5 w-5 flex-shrink-0 text-emerald-500"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="ml-3"><SmallText>Dark & Light Mode</SmallText></span>
+            <span class="ml-3"><SmallText>{t('serv-logo32desc')}</SmallText></span>
           </li>
 
           <li class="flex items-center">
@@ -134,7 +102,7 @@ class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
                 clip-rule="evenodd"></path>
             </svg>
             <span class="ml-3"
-              ><SmallText>Edit & Customize Easily</SmallText></span
+              ><SmallText>{t('serv-logo33desc')}</SmallText></span
             >
           </li>
 
@@ -150,7 +118,39 @@ class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                 clip-rule="evenodd"></path>
             </svg>
-            <span class="ml-3"><SmallText>Get Free Support</SmallText></span>
+            <span class="ml-3"><SmallText>{t('serv-logo34desc')}</SmallText></span>
+          </li>
+
+          <li class="flex items-center">
+            <svg
+              class="h-5 w-5 flex-shrink-0 text-emerald-500"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="ml-3"
+              ><SmallText>{t('serv-logo35desc')}</SmallText></span
+            >
+          </li>
+
+          <li class="flex items-center">
+            <svg
+              class="h-5 w-5 flex-shrink-0 text-emerald-500"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="ml-3"><SmallText>{t('serv-logo36desc')}</SmallText></span>
           </li>
         </ul>
 

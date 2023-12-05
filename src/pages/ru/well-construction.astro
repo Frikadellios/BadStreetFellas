@@ -1,26 +1,21 @@
 ---
 import Container from '@/components/Container.astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
-import AboutSteps from '@/components/AboutSteps.astro'
-import AboutUsHero from '@/components/AboutUsHero.astro'
-import PartnersApp from '@/components/PartnersApp.astro'
-import MainPage from '@/components/layout/MainPage.astro'
-import PartnersCompany from '@/components/PartnersCompany.astro'
-import PartnersPush from '@/components/PartnersPush.astro'
+import ServicesMwells from '@/components/mwells/ServicesMwells.astro'
+import ServicesGMwells from '@/components/mwells/ServicesGMwells.astro'
+import LogoHeroMwells from '@/components/mwells/LogoHeroMwells.astro'
 
 export const prerender = true
 ---
 
 <BaseLayout
-  title="Будівництво водних свердловин у Києві та Київській області! Надаємо професійні та надійні послуги з технічного обслуговування. | Безкоштовна консультація по вашому технічному завданню!"
-  description="Компанія «AquaPumpers» - спеціалізується на монтажі насосів та насосних станцій у водну свердловину. Працюємо швидко, якісно та ефективно незалежно від обраної моделі насоса, глибини свердловини та інших її особливостей. Приймаємо замовлення у Києві та Київській області. Замовляйте зараз, щоб отримати ефективні та доступні рішення!"
->
-  <MainPage />
+  title="Строительство водных скважин в Киеве и Киевской области! Предоставляем профессиональные и надежные услуги по техническому обслуживанию. | Бесплатная консультация по вашему техническому заданию!"
+  description="Компания AquaPumpers - специализируется на монтаже насосов и насосных станций в водную скважину. Работаем быстро, качественно и эффективно независимо от выбранной модели насоса, глубины скважины и других ее особенностей. Принимаем заказы в Киеве и Киевской области. Заказывайте сейчас, чтобы получить эффективные и доступные решения!"
+  >
+  <LogoHeroMwells />
   <Container>
-    <AboutSteps />
-    <PartnersApp />
-    <AboutUsHero />
-    <PartnersCompany />
-    <PartnersPush />
+      <ServicesMwells />
+      <ServicesGMwells />
   </Container>
 </BaseLayout>
+
