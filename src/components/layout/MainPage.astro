@@ -3,7 +3,7 @@ import PageHeader from './PageHeader.astro'
 import AboutFacts from '../AboutFacts.astro'
 import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 import { Image } from 'astro:assets'
-import imagetest from '@/assets/PumpsBack.png'
+import collaborate from '@/assets/Collaborate.png'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -14,7 +14,7 @@ const t = useTranslations(lang)
 >
   <div class="conteiner">
     <Image
-      src={imagetest}
+      src={collaborate}
       alt=""
       class="animate-wiggle w-full h-full  animate-infinite animate-duration-[6000ms] animate-ease-in-out absolute inset-0 -z-10 object-cover object-right backdrop-blur-sm md:object-center"
     />
@@ -46,6 +46,7 @@ const t = useTranslations(lang)
   </div>
 
   <style>
+
     .container {
       width: 100%;
       display: flex;
@@ -93,4 +94,6 @@ const t = useTranslations(lang)
       }
     }
   </style>
-</div>
+
+
+<script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
