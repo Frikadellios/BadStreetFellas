@@ -67,7 +67,54 @@ export const ui = {
     'serv-href1': 'autonomous-sewerage',
     'serv-description1':
       'Компанія «AquaPumpers» - фахівці з проектування, монтажу та обслуговування каналізаційних насосних станцій. Пропонуємо монтаж, встановлення занурювальних насосів, ремонт шаф управління та інші послуги по Києву та Київській області.',
-    'serv-title2': 'Обслуговування свердловин',
+      'serv-logo1':
+      'Шукаєте спеціалістів з каналізаційних насосних станцій Києва та Київської області?',
+    'serv-logo11desc': 'Встановлення каналізаційної насосної станції',
+    'serv-logo12desc': 'Встановлення заглибних насосів',
+    'serv-logo13desc': 'Послуги з обслуговування каналізаційних насосних станцій',
+    'serv-logo14desc': 'Професійний ремонт каналізаційних насосів',
+    'serv-logo15desc':
+      'Досвідчені послуги з ремонту шаф управління',
+    'serv-logo16desc':
+      'Надійні та доступні фахівці з каналізації',
+    'serv-hero1': 'Повне рішення для каналізаційних насосних станцій.',
+    'serv-hero1desc':
+      'Автономна каналізація у Києві. Насосні станції, монтаж і обслуговування',
+    'serv-hero13title': 'Ремонт і технічне обслуговування шаф управління',
+    'serv-hero12title':
+      'Установка та ремонт заглибних насосів',
+    'serv-hero11title':
+      'Монтаж каналізаційних насосних станцій',
+    'serv-hero14title':
+      'Встановлення та технічне обслуговування міні каналізаціонної насосної станції (міні КНС)',
+    'serv-hero13desc':
+      'Шафи управління необхідні для безперебійної роботи каналізаційних насосних станцій. Ми пропонуємо послуги з ремонту та технічного обслуговування шаф управління, забезпечуючи оптимальну продуктивність і мінімізуючи час простою. Наші експерти діагностують будь-які проблеми, оперативно їх вирішать і забезпечать регулярне обслуговування, щоб запобігти майбутнім проблемам.',
+    'serv-hero12desc':
+      'Ми спеціалізуємося на монтажі глибинних насосів. Ці насоси є високоефективними та призначені для виконання найскладніших завдань з перекачування стічних вод. Наші кваліфіковані фахівці забезпечать точне встановлення, максимізуючи продуктивність і довговічність вашого насосного обладнання.',
+    'serv-hero11desc':
+      'Ми пропонуємо надійні та ефективні послуги з монтажу каналізаційних насосних станцій. Наша команда ретельно оцінить ваші вимоги та розробить індивідуальне рішення відповідно до ваших конкретних потреб. Від вибору правильного обладнання до забезпечення належного встановлення, ми враховуємо всі аспекти, щоб забезпечити безперебійну роботу. ',
+    'serv-hero14desc':
+      'Окрім наших основних послуг, ми також надаємо різні інші послуги, пов’язані з каналізаційними насосними станціями. Незалежно від того, чи потрібна вам допомога з оновленням системи, усуненням несправностей або оптимізацією продуктивності, наша кваліфікована команда готова допомогти.',
+      'serv-reason11': 'Розрахунок і проектування насосних станцій',
+      'serv-reason11fix':
+        'Правильний розрахунок і проектування насосних станцій мають вирішальне значення для ефективного управління стічними водами. Завдяки нашому досвіду в цій галузі ми проводимо ретельний аналіз і проектуємо високоефективні насосні станції відповідно до ваших вимог.',
+      'serv-reason12': 'Надійне та ефективне управління стічними водами',
+      'serv-reason12fix':
+        'Ми розуміємо важливість безперебійного управління стічними водами для здорового та гігієнічного середовища. Наша команда експертів надає першокласні послуги, які забезпечують безперебійну роботу ваших насосних станцій.',
+      'serv-reason13': 'Встановлення каналізаційних насосних станцій',
+      'serv-reason13fix':
+        'Наші кваліфіковані майстри спеціалізуються на монтажі каналізаційних насосних станцій. Використовуючи новітнє обладнання та дотримуючись найкращих галузевих практик, ми забезпечуємо безперебійний процес встановлення.',
+      'serv-reason14': 'Встановлення насосів і шаф управління',
+      'serv-reason14fix':
+        'Щоб ще більше підвищити ефективність вашої насосної станції, ми також пропонуємо установку насосів і шаф керування. Наші експерти ретельно відбирають і встановлюють надійні насоси, здатні задовольнити конкретні потреби вашої системи управління стічними водами.',
+      'serv-reason15': 'Якісний ремонт і технічне обслуговування',
+      'serv-reason15fix':
+        'Насосні станції неминуче можуть вимагати ремонту або планового технічного обслуговування для забезпечення оптимальної роботи. Наша спеціальна команда готова надати швидкі та ефективні послуги з ремонту та технічного обслуговування.',
+      'serv-reason16': 'Революціонізуйте свою каналізаційну систему',
+      'serv-reason16fix':
+        'Відкрийте для себе майбутнє каналізаційних систем з автономною каналізацією. Попрощайтеся з ручним обслуговуванням і підвищте ефективність. Дізнайтеся більше про переваги та функції.',
+    
+      'serv-title2': 'Обслуговування свердловин',
     'serv-description2':
       'AquaPumpers - гарантійне обслуговування свердловин як унікальна послуга, яка знижує Ваші витрати на експлуатацію систем водопостачання. Проводимо регулярні перевірки для оперативного усунення та ремонту виявлених несправностей.',
     'serv-logo2':
@@ -349,7 +396,54 @@ export const ui = {
     'serv-title1': 'Autonomous sewage system',
     'serv-description1':
       'AquaPumpers company - specialists in the design, installation and maintenance of sewage pumping stations. We offer installation, installation of submersible pumps, repair of control cabinets and other services in Kyiv and the Kyiv region.',
+    'serv-logo1':
+        'Looking for sewage pumping stations experts in Kyiv and Kyiv Region?',
+      'serv-logo11desc': 'Sewage pumping station installation',
+      'serv-logo12desc': 'Submersible pump installation',
+      'serv-logo13desc': 'Sewage pumping station maintenance services',
+      'serv-logo14desc': 'Professional sewage pump repair',
+      'serv-logo15desc':
+        'Experienced control cabinet repair services',
+      'serv-logo16desc':
+        'Trustworthy and affordable sewage specialists',
+      'serv-hero1': 'Complete Solution for Sewage Pumping Stations.',
+      'serv-hero1desc':
+        'Autonomous Sewage Specialists in Kyiv | Pumping Stations, Installation & Maintenance',
+      'serv-hero13title': 'Repair and Maintenance of Control Cabinets',
+      'serv-hero12title':
+        'Submersible Pump Installation and Repair service',
+      'serv-hero11title':
+        'Installation of Sewage Pumping Stations',
+      'serv-hero14title':
+        'Mini Sevage Pumping Station Installation & Maintenance',
+      'serv-hero13desc':
+        'Control cabinets are essential for the smooth functioning of sewage pumping stations. We offer repair and maintenance services for control cabinets, ensuring optimal performance and minimizing downtime.',
+      'serv-hero12desc':
+        'We specialize in the installation of submersible pumps. These pumps are highly efficient and designed to handle the toughest sewage pumping tasks. Our skilled technicians will ensure accurate installation, maximizing the performance and longevity of your pumping equipment.',
+      'serv-hero11desc':
+        'We offer reliable and efficient installation services for sewage pumping stations. Our team will carefully assess your requirements and design a customized solution to meet your specific needs. ',
+      'serv-hero14desc':
+        'In addition to our core services, we also provide various other services related to sewage pumping stations. Whether you need assistance with system upgrades, troubleshooting, or performance optimization, our skilled team is here to help.',
+      'serv-reason11': 'Calculation and Design of Pumping Stations',
+      'serv-reason11fix':
+        'ОProper calculation and design of pumping stations are crucial for effective sewage management. With our expertise in the field, we conduct thorough analysis and design highly efficient pumping stations tailored to your requirements.',
+      'serv-reason12': 'Reliable and Efficient Sewage Management',
+      'serv-reason12fix':
+        'We understand the importance of uninterrupted sewage management for a healthy and hygienic environment. Our expert team excels in providing top-notch services that ensure the smooth operation of your pumping stations.',
+      'serv-reason13': 'Installation of Sewage Pumping Stations',
+      'serv-reason13fix':
+        'Our skilled technicians specialize in the installation of sewage pumping stations. Using the latest equipment and adhering to industry best practices, we ensure a seamless installation process.',
+      'serv-reason14': 'Installation of Pumps and Control Cabinets',
+      'serv-reason14fix':
+        'To further enhance the efficiency of your pumping station, we also offer the installation of pumps and control cabinets. Our experts carefully select and install reliable pumps that are capable of handling the specific needs of your sewage management system.',
+      'serv-reason15': 'Quality Repair and Maintenance Services',
+      'serv-reason15fix':
+        'Inevitably, pumping stations may require repairs or routine maintenance to ensure optimal performance. Our dedicated team is available to provide prompt and efficient repair and maintenance services.',
+      'serv-reason16': 'Revolutionize Your Sewer System',
+      'serv-reason16fix':
+        'Discover the future of sewer systems with autonomous sewerage. Say goodbye to manual maintenance and improve efficiency. Learn more about the benefits and features.',
 
+        
     'serv-title2': 'Maintenance of water wells',
     'serv-description2':
       'AquaPumpers company - warranty maintenance of water wells as a unique service that reduces your costs for the operation of water supply systems. We carry out regular inspections for prompt elimination and repair of detected malfunctions.',
@@ -666,10 +760,61 @@ export const ui = {
       'Технические эксперты предлагают первоклассные услуги по обслуживанию всех типов неисправностей скважин! Профессиональные услуги по монтажу, обслуживанию и ремонту водонасосных станций и колодцев в Киевской области',
     'sheetNav-title': 'На нашей странице',
     'sheetNav-description': 'Полезные ссылки',
+    
     'serv-title1': 'Автономная Канализация',
     'serv-description1':
       'Компания «AquaPumpers» – специалисты по проектированию, монтажу и обслуживанию канализационных насосных станций. Предлагаем монтаж, установку погружных насосов, ремонт шкафов управления и другие услуги по Киеву и Киевской области.',
-    'serv-title2': 'Обслуживание скважин',
+      'serv-logo1':
+      'Ищете специалистов по канализационным насосным станциям в Киеве и Киевской области?',
+      'serv-logo11desc': 'Установка канализационной насосной станции',
+      'serv-logo12desc': 'Установка погружного насоса',
+      'serv-logo13desc': 'Услуги по техническому обслуживанию канализационных насосных станций',
+      'serv-logo14desc': 'Профессиональный ремонт канализационных насосов',
+      'serv-logo15desc':
+        'Опытные услуги по ремонту шкафов управления',
+      'serv-logo16desc':
+        'Надежные и доступные специалисты по канализации',
+      'serv-hero1': 'Комплексное решение для канализационных насосных станций.',
+      'serv-hero1desc':
+        'Автономные канализации в Киеве». Насосные станции, монтаж и обслуживание',
+      'serv-hero13title': 'Ремонт и обслуживание шкафов управления',
+      'serv-hero12title':
+        'Услуги по установке и ремонту погружных насосов',
+      'serv-hero11title':
+        'Монтаж канализационных насосных станций',
+      'serv-hero14title':
+        'Установка и обслуживание малогабаритной канализационной насосной станции (Мини КНС)',
+      'serv-hero13desc':
+        'Шкафы управления необходимы для бесперебойной работы канализационных насосных станций. Мы предлагаем услуги по ремонту и техническому обслуживанию шкафов управления, обеспечивая оптимальную производительность и минимизируя время простоя. Наши специалисты проведут диагностику любых проблем, оперативно их устранят и проведут регулярное техническое обслуживание, чтобы предотвратить проблемы в будущем.',
+      'serv-hero12desc':
+        'Мы специализируемся на установке погружных насосов. Эти насосы высокоэффективны и предназначены для решения самых сложных задач по перекачиванию сточных вод. Наши квалифицированные специалисты обеспечат точную установку, максимизируя производительность и долговечность вашего насосного оборудования.',
+      'serv-hero11desc':
+        'Мы предлагаем надежные и эффективные услуги по установке канализационных насосных станций. Наша команда тщательно оценит ваши требования и разработает индивидуальное решение, отвечающее вашим конкретным потребностям. От выбора подходящего оборудования до обеспечения правильной установки, мы учитываем каждый аспект, чтобы обеспечить бесперебойную работу. ',
+      'serv-hero14desc':
+        'Помимо наших основных услуг, мы также предоставляем различные другие услуги, связанные с канализационными насосными станциями. Если вам нужна помощь в обновлении системы, устранении неполадок или оптимизации производительности, наша квалифицированная команда всегда готова помочь.',
+    
+
+        'serv-reason11': 'Расчет и проектирование насосных станций',
+        'serv-reason11fix':
+          'Правильный расчет и проектирование насосных станций имеют решающее значение для эффективного управления сточными водами. Благодаря нашему опыту в этой области мы проводим тщательный анализ и проектируем высокоэффективные насосные станции с учетом ваших требований.',
+        'serv-reason12': 'Надежное и эффективное управление сточными водами',
+        'serv-reason12fix':
+          'Мы понимаем важность бесперебойной очистки сточных вод для здоровой и гигиеничной окружающей среды. Наша команда экспертов превосходно предоставляет первоклассные услуги, обеспечивающие бесперебойную работу ваших насосных станций.',
+        'serv-reason13': 'Монтаж канализационных насосных станций',
+        'serv-reason13fix':
+          'Наши квалифицированные специалисты специализируются на установке канализационных насосных станций. Используя новейшее оборудование и придерживаясь лучших отраслевых практик, мы обеспечиваем бесперебойный процесс установки.',
+        'serv-reason14': 'Монтаж насосов и шкафов управления',
+        'serv-reason14fix':
+          'Для дальнейшего повышения эффективности вашей насосной станции мы также предлагаем установку насосов и шкафов управления. Наши специалисты тщательно подбирают и устанавливают надежные насосы, способные удовлетворить конкретные потребности вашей системы канализации.',
+        'serv-reason15': 'Качественные услуги по ремонту и техническому обслуживанию',
+        'serv-reason15fix':
+          'Неизбежно насосным станциям может потребоваться ремонт или регулярное техническое обслуживание для обеспечения оптимальной производительности. Наша преданная своему делу команда готова обеспечить быстрый и эффективный ремонт и техническое обслуживание.',
+        'serv-reason16': 'Революционируйте свою канализационную систему',
+        'serv-reason16fix':
+          'Откройте для себя будущее канализационных систем с автономной канализацией. Попрощайтесь с ручным обслуживанием и повысьте эффективность. Узнайте больше о преимуществах и функциях.',
+    
+    
+      'serv-title2': 'Обслуживание скважин',
     'serv-description2':
       'AquaPumpers – гарантийное обслуживание скважин как уникальная услуга, снижающая ваши затраты на эксплуатацию системы водоснабжения. Проводим регулярные проверки для оперативного устранения и ремонта обнаруженных неисправностей.',
     'serv-logo2':
