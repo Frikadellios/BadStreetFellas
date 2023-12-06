@@ -5,9 +5,7 @@ import AseverageServices from '@/components/aseverage/AseverageServices.astro'
 import AseverageGservices from '@/components/aseverage/AseverageGservices.astro'
 import AseverageLogo from '@/components/aseverage/AseverageLogo.astro'
 
-
 export const prerender = true
-
 ---
 
 <BaseLayout
@@ -15,8 +13,8 @@ export const prerender = true
   description="Компанія «AquaPumpers» - фахівці з проектування, монтажу та обслуговування каналізаційних насосних станцій. Пропонуємо монтаж, встановлення занурювальних насосів, ремонт шаф управління та інші послуги по Києву та Київській області. Замовляйте зараз, щоб отримати ефективні та доступні рішення!"
 >
   <AseverageLogo />
-    <Container>
-      <AseverageServices />
-      <AseverageGservices />
-    </Container>
+  <Container>
+    <AseverageServices />
+    <AseverageGservices />
+  </Container>
 </BaseLayout>

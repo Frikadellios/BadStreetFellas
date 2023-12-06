@@ -16,7 +16,7 @@ const t = useTranslations(lang)
     <Image
       src={collaborate}
       alt=""
-      class="animate-wiggle w-full h-full  animate-infinite animate-duration-[6000ms] animate-ease-in-out absolute inset-0 -z-10 object-cover object-right backdrop-blur-sm md:object-center"
+      class="animate-wiggle animate-infinite animate-duration-[6000ms] animate-ease-in-out absolute inset-0 -z-10 h-full w-full object-cover object-right backdrop-blur-sm md:object-center"
     />
 
     <div
@@ -46,7 +46,6 @@ const t = useTranslations(lang)
   </div>
 
   <style>
-
     .container {
       width: 100%;
       display: flex;
@@ -95,5 +94,12 @@ const t = useTranslations(lang)
     }
   </style>
 
-
-<script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      window.setTimeout(
+        document.querySelector('svg').classList.add('animated'),
+        1000,
+      )
+    })
+  </script>
+</div>
