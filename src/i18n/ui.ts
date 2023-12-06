@@ -68,9 +68,52 @@ export const ui = {
     'serv-description1':
       'Компанія «AquaPumpers» - фахівці з проектування, монтажу та обслуговування каналізаційних насосних станцій. Пропонуємо монтаж, встановлення занурювальних насосів, ремонт шаф управління та інші послуги по Києву та Київській області.',
     'serv-title2': 'Обслуговування свердловин',
-    'serv-description2':
-      'Компанія «AquaPumpers» - гарантійне обслуговування водних свердловин як унікальна послуга, що знижує Ваші витрати на експлуатацію систем водопостачання. Проводимо регулярний огляд для оперативного усунення та ремонту виявлених несправностей.',
-    'serv-title3': 'Облаштування колодязів та свердловин',
+    'serv-description2': 'AquaPumpers - гарантійне обслуговування свердловин як унікальна послуга, яка знижує Ваші витрати на експлуатацію систем водопостачання. Проводимо регулярні перевірки для оперативного усунення та ремонту виявлених несправностей.',
+    'serv-logo2': 'Бажаєте забезпечити оптимальну роботу та довговічність вашої свердловини в Києві?',
+    'serv-logo21desc': 'Діагностика системи водопостачання колодязів',
+    'serv-logo22desc': 'Налагодження пристроїв автоматизації',
+    'serv-logo23desc': 'Профілактичні роботи в електромережах та водопостачанні',
+    'serv-logo24desc': 'Перевірка герметичності головки',
+    'serv-logo25desc': 'Обробка металевих поверхонь антикорозійними засобами',
+    'serv-logo26desc': 'Професійні послуги з технічного обслуговування та ремонту',
+    'serv-hero2': 'Комплексне технічне обслуговування свердловин.',
+    'serv-hero2desc':
+      'Забезпечте довговічність та ефективність вашої системи водопостачання | Надання експертних рішень для підйому, ремонту та технічного обслуговування',
+    'serv-hero23title':
+      'Швидке та досвідчене встановлення водонасосних станцій',
+    'serv-hero22title': 'Послуги з технічного обслуговування та ремонту колодязних насосів',
+    'serv-hero21title': 'Комплексні рішення для підйому насосів для свердловин',
+    'serv-hero24title': 'Експертний ремонт шаф керування водяної свердловини',
+    'serv-hero23desc':
+      'Спеціалізуючись на облаштуванні та будівництві свердловин для води, ми надаємо першокласні рішення для встановлення та обслуговування насосів відповідно до ваших потреб',
+      'serv-hero22desc':
+      'Регулярні та комплексні послуги з технічного обслуговування, включаючи ретельні перевірки, випробування, очищення та змащування для того, щоб ваша свердловина і насосна система працювали оптимально.',
+    'serv-hero21desc':
+      'Підйомний ремонт насосних станцій необхідний для ефективного відбору води. Підвищте продуктивність, максимізуйте термін служби та оптимізуйте вихід води завдяки професійному ремонту.',
+    'serv-hero24desc':
+      'Шафа керування є серцем вашої системи водної свердловини, відповідальною за моніторинг та регулювання її роботи. Збільште термін служби ваших шаф керування свердловинами та отримайте професійну допомогу сьогодні!',
+    'serv-title22': 'Які основні ознаки того, що ваш насос потребує ремонту?',
+    'serv-reason21': 'Огляд і діагностика',
+    'serv-reason21fix':
+      'Випереджайте потенційні проблеми завдяки нашим ретельним оглядам і діагностиці свердловинних водопостачальних сисием. Довіртеся нашій комплексній перевірці та діагностиці системи свердловини для отримання безцінної інформації. ',
+    'serv-reason22': 'Технічне обслуговування та ремонт',
+    'serv-reason22fix':
+      'Підвищте продуктивність вашої системи водопостачання за допомогою досвідчених експертних рішень, адаптованих до ваших потреб. Скористайтеся послугами професійного технічного обслуговування та ремонту для бездоганного досвіду.',
+    'serv-reason23': 'Налаштування пристрою автоматизації',
+    'serv-reason23fix':
+      'Підвищте продуктивність ваших пристроїв автоматизації та забезпечте надійну та ефективну систему водопостачання за допомогою наших експертних рішень. Довіртеся нам, щоб ваша вода текла безперешкодно.',
+    'serv-reason24': 'Електрична мережа та водопостачання',
+    'serv-reason24fix':
+      'Профілактичні заходи для збільшення терміну служби вашої системи водопостачання. Захистіть свою електромережу та водопостачання за допомогою наших профілактичних робіт і заощадьте час і гроші за допомогою наших професійних послуг.',
+    'serv-reason25': 'Обробка металевих поверхонь',
+    'serv-reason25fix':
+      'Запобігайте витокам системи водопостачання та максимізуйте ефективність і довговічність вашої системи водопостачання. Довіртеся нашим експертним рішенням для обробки металевих поверхонь антикорозійними засобами',
+    'serv-reason26': 'Комплексне технічне обслуговування',
+    'serv-reason26fix':
+      'Збільште термін служби та продуктивність вашої системи водопостачання за допомогою наших експертних рішень. Отримайте переваги від комплексних послуг з технічного обслуговування для гарантії ефективної роботи.',
+
+
+      'serv-title3': 'Облаштування колодязів та свердловин',
     'serv-description3':
       'Компанія «AquaPumpers» - спеціалізується на установці насосів і насосних станцій у колодязях та свердловинах с водою. Ми працюємо швидко, якісно та якісно, ​​незалежно від обраної моделі насоса, глибини свердловини та інших її особливостей.',
     'serv-href3': 'well-construction',
@@ -294,8 +337,7 @@ export const ui = {
     'serv-title1': 'Autonomous sewage system',
     'serv-description1':
       'AquaPumpers company - specialists in the design, installation and maintenance of sewage pumping stations. We offer installation, installation of submersible pumps, repair of control cabinets and other services in Kyiv and the Kyiv region.',
-    
-    
+
     'serv-title2': 'Maintenance of water wells',
     'serv-description2':
       'AquaPumpers company - warranty maintenance of water wells as a unique service that reduces your costs for the operation of water supply systems. We carry out regular inspections for prompt elimination and repair of detected malfunctions.',
@@ -305,19 +347,16 @@ export const ui = {
     'serv-logo22desc': 'Adjustment of Automation Devices',
     'serv-logo23desc':
       'Preventive Works in the Electrical Network and Water Supply',
-    'serv-logo24desc':
-      'Checking the Tightness of the Head',
+    'serv-logo24desc': 'Checking the Tightness of the Head',
     'serv-logo25desc': 'Treatment of Metal Surfaces with Anti-Corrosion Agents',
-    'serv-logo26desc':
-      'Professional Maintenance and Repair Services',
+    'serv-logo26desc': 'Professional Maintenance and Repair Services',
     'serv-hero2': 'Comprehensive Maintenance Water Wells Service.',
     'serv-hero2desc':
-      'Ensure the Longevity and Efficiency of Your Water Supply System  | Providing Expert Solutions for Lifting, Repair, and Maintenance in Kyiv',
+      'Ensure the Longevity and Efficiency of Your Water Supply System  | Providing Expert Solutions for Lifting, Repair, and Maintenance',
     'serv-hero23title':
       'Fast and Experienced Installations for Water Pumping Stations',
     'serv-hero22title': 'Maintenance and Repair Services for Water Well Pumps',
-    'serv-hero21title':
-      'Comprehensive Lifting Solutions for Water Well Pumps',
+    'serv-hero21title': 'Comprehensive Lifting Solutions for Water Well Pumps',
     'serv-hero24title': 'Expert Repair of Water Well Control Cabinets',
     'serv-hero23desc':
       'Specializing in the Arrangement and Construction of Water Wells, we provide top-notch pump installation and maintenance solutions tailored to your specific needs.',
@@ -328,26 +367,24 @@ export const ui = {
     'serv-hero24desc':
       'The control cabinet is the heart of your water well system, responsible for monitoring and regulating its operation. Increase the Lifespan of Your Well Control Cabinets and Get Professional Help Today!',
     'serv-title22': 'Які основні ознаки того, що ваш насос потребує ремонту?',
-    'serv-reason21': 'Experienced construction methods',
+    'serv-reason21': 'Inspection and Diagnostics',
     'serv-reason21fix':
-      'From well arrangement to pump stations, our Kyiv-based experts offer top-notch construction techniques for water wells. Trust our advanced techniques for reliable and efficient water sources.',
-    'serv-reason22': 'Modern construction equipment',
+      'Stay ahead of potential issues through our meticulous water well system inspection and diagnostics services. Trust our comprehensive water well system inspection and diagnostics for invaluable insights. ',
+    'serv-reason22': 'Maintenance and Repair',
     'serv-reason22fix':
-      'Our skilled team combines modern equipment and expertise for reliable and efficient solutions. Harness the power and Experience the benefits of modern equipment for efficient water solutions',
-    'serv-reason23': 'Professional installation services',
+      'Enhance the performance of your water supply system with experience expert solutions tailored to your needs. Benefit from professional maintenance and repair services for a seamless experience.',
+    'serv-reason23': 'Automation Device Adjustment',
     'serv-reason23fix':
-      'Discover top-notch water well solutions in Kyiv with expert pump installation services. Trust our experts for efficient solutions and get high-quality construction services for a reliable water supply.',
-    'serv-reason24': 'Safe drilling practices',
+      'Enhance the performance of your automation devices and ensure a reliable and efficient water supply system with our expert solutions. Trust us to keep your water flowing smoothly.',
+    'serv-reason24': 'Electrical Network and Water Supply',
     'serv-reason24fix':
-      'Transform your water well arrangement into a reliable and efficient system with our expert solutions and maximize your pumping systems with our advanced techniques that ensure a continuous and efficient water supply',
-    'serv-reason25': 'Best wells equipment',
+      'Preventive measures to boost the longevity of your water supply system. Protect your electrical network and water supply with our preventive works and save time and money with our professional services.',
+    'serv-reason25': 'Treatment of Metal Surfaces ',
     'serv-reason25fix':
-      'Find the ultimate solution and Enhance your water system with premium wells and pumping station equipment in Kyiv. Maximize efficiency for ensure uninterrupted water flow and Increase water supply reliability for enjoy long-lasting performance. ',
-    'serv-reason26': 'Lowcost and affordable techniques',
+      'Prevent water system leaks and maximize efficiency and durability of your water supply system. Trust our expert solutions for Treatment of Metal Surfaces with Anti-Corrosion Agents',
+    'serv-reason26': 'Comprehensive Maintenance Service',
     'serv-reason26fix':
-      'Discover the top-notch arrangements and affordable technologies for  perfect balance between affordability and uncompromised performance.  Experience seamless water management with our budget-friendly solutions tailored to meet your needs.',
-
-
+      'Enhance the lifespan and performance of your water supply system with our expert solutions. Benefit from comprehensive maintenance services for guarantee efficient performance.',
 
     'serv-title3': 'Arrangement of Wells Construction',
     'serv-description3':
@@ -436,8 +473,7 @@ export const ui = {
       'Remedies and Real Reasons for repairing your water pump and eliminating air from your well water',
     'serv-description4':
       'AquaPumpers company - quality services with a guarantee of high results and efficiency in pump repair, prevention and maintenance of well pumping equipment. Elimination of all types of problems during the operation of pumping equipment for autonomous sewage.',
-    
-    
+
     'home-footer-meta':
       'We provide professional installation, maintenance and repair services for water pumping devices, water wells and sewage systems in Kyiv and the Kyiv region!',
     'home-about-description':
@@ -471,8 +507,7 @@ export const ui = {
     'about-step3': 'Urgent repair',
     'about-step3desc':
       'Free phone consultation. You will immediately understand the cost of the work and the terms for putting the pumping equipment into operation!',
-    
-    
+
     'serv-href1': 'autonomous-sewerage',
     'serv-href2': 'wells-service',
     'serv-href3': 'well-construction',
@@ -614,10 +649,52 @@ export const ui = {
     'serv-title1': 'Автономная Канализация',
     'serv-description1':
       'Компания «AquaPumpers» – специалисты по проектированию, монтажу и обслуживанию канализационных насосных станций. Предлагаем монтаж, установку погружных насосов, ремонт шкафов управления и другие услуги по Киеву и Киевской области.',
-    'serv-title2': 'Обслуживание водных скважин',
-    'serv-description2':
-      'Компания «AquaPumpers» – гарантийное обслуживание водных скважин как уникальная услуга, снижающая Ваши затраты на эксплуатацию систем водоснабжения. Проводим регулярный осмотр для оперативного устранения и ремонта обнаруженных неисправностей.',
-    
+    'serv-title2': 'Обслуживание скважин',
+    'serv-description2': 'AquaPumpers – гарантийное обслуживание скважин как уникальная услуга, снижающая ваши затраты на эксплуатацию системы водоснабжения. Проводим регулярные проверки для оперативного устранения и ремонта обнаруженных неисправностей.',
+    'serv-logo2': 'Хотите обеспечить оптимальную работу и долговечность вашей скважины в Киеве?',
+    'serv-logo21desc': 'Диагностика системы водоснабжения скважин',
+    'serv-logo22desc': 'Настройка устройств автоматизации',
+    'serv-logo23desc':
+      'Профилактические работы в электросетях и водоснабжении',
+    'serv-logo24desc': 'Проверка герметичности головки',
+    'serv-logo25desc': 'Обработка металлических поверхностей антикоррозионными средствами',
+    'serv-logo26desc': 'Профессиональные услуги по техническому обслуживанию и ремонту',
+    'serv-hero2': 'Комплексное обслуживание водяных скважин.',
+    'serv-hero2desc':
+      'Обеспечит долговечность и эффективность вашей системы водоснабжения | Предоставление экспертных решений для подъема, ремонта и технического обслуживания',
+    'serv-hero23title':
+      'Быстрый и опытный монтаж водонасосных станций',
+    'serv-hero22title': 'Услуги по техническому обслуживанию и ремонту насосов для водяных скважин',
+    'serv-hero21title': 'Комплексные решения по подъему насосов для водяных скважин',
+    'serv-hero24title': 'Профессиональный ремонт шкафов управления водяными скважинами',
+    'serv-hero23desc':
+      'Специализируясь на обустройстве и строительстве водяных скважин, мы предоставляем первоклассные решения по установке и техническому обслуживанию насосов, адаптированные к вашим конкретным потребностям.',
+      'serv-hero22desc':
+      'Регулярное техническое обслуживание имеет решающее значение для оптимального функционирования колодца и насосной системы. Мы предлагаем комплексные услуги по техническому обслуживанию, включая тщательные проверки, испытания, очистку и смазку.',
+    'serv-hero21desc':
+      'Подъемно-ремонтные работы насосных станций необходимы для обеспечения эффективного забора воды. Повышайте производительность, увеличивая срок службы и оптимизируя расход воды.',
+    'serv-hero24desc':
+      'Шкаф управления — это сердце вашей системы водяных скважин, отвечающее за мониторинг и регулирование ее работы. Увеличьте срок службы шкафов управления скважиной и получите профессиональную помощь уже сегодня!',
+    'serv-reason21': 'Проверка и диагностика',
+    'serv-reason21fix':
+      'Остерегайтесь потенциальных проблем благодаря нашим тщательным услугам по проверке и диагностике систем водяных скважин. Доверьтесь нашей комплексной проверке и диагностике систем водяных скважин, чтобы получить бесценную информацию. ',
+    'serv-reason22': 'Обслуживание и ремонт',
+    'serv-reason22fix':
+      'Повысьте производительность вашей системы водоснабжения с помощью опытных экспертных решений, адаптированных к вашим потребностям. Воспользуйтесь профессиональными услугами по техническому обслуживанию и ремонту, чтобы обеспечить бесперебойную работу.',
+    'serv-reason23': 'Настройка устройства автоматизации',
+    'serv-reason23fix':
+      'Повысьте производительность ваших устройств автоматизации и обеспечьте надежную и эффективную систему водоснабжения с помощью наших экспертных решений. Доверьтесь нам, чтобы ваша вода текла бесперебойно.',
+    'serv-reason24': 'Электрические сети и водоснабжение',
+    'serv-reason24fix':
+      'Профилактические меры для увеличения срока службы вашей системы водоснабжения. Защитите свою электрическую сеть и водоснабжение с помощью наших профилактических работ и сэкономьте время и деньги с помощью наших профессиональных услуг.',
+    'serv-reason25': 'Обработка металлических поверхностей',
+    'serv-reason25fix':
+      'Предотвратите утечки в системе водоснабжения и максимизируйте эффективность и долговечность вашей системы водоснабжения. Доверьтесь нашим экспертным решениям по обработке металлических поверхностей антикоррозионными средствами.',
+    'serv-reason26': 'Комплексное техническое обслуживание',
+    'serv-reason26fix':
+      'Увеличьте срок службы и производительность вашей системы водоснабжения с помощью наших экспертных решений. Воспользуйтесь комплексными услугами по техническому обслуживанию, гарантирующими эффективную работу.',
+
+
     'serv-title3': 'Обустройство водных скважин',
     'serv-description3':
       'Компанія «AquaPumpers» - спеціалізується на монтажі насосів та насосних станцій у водну свердловину. Працюємо швидко, якісно та ефективно незалежно від обраної моделі насоса, глибини свердловини та інших її особливостей.',

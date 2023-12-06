@@ -5,9 +5,12 @@ import Large from '../typography/Large.astro'
 import H2 from '../typography/H2.astro'
 import { getLangFromUrl, useTranslations } from '@/i18n/utils'
 import { Image } from 'astro:assets'
-import Phone from '@/assets/Phone.png'
-import Roadmap from '@/assets/Roadmap.png'
-import Repairs from '@/assets/Repairs.png'
+import Pic1 from '@/assets/diagnostic.gif'
+import Pic2 from '@/assets/mainrepair.gif'
+import Pic3 from '@/assets/automation.gif'
+import Pic4 from '@/assets/electricity.gif'
+import Pic5 from '@/assets/Corozian.gif'
+import Pic6 from '@/assets/wellservicesmain.gif'
 import { Separator } from '@/components/ui/separator'
 
 const lang = getLangFromUrl(Astro.url)
@@ -17,10 +20,10 @@ const t = useTranslations(lang)
 <section class="bg-trancperent dark:bg-trancperent">
   <div class="container mx-auto px-6 py-10">
     <div class="text-center">
-      <H2>{t('serv-tit')}</H2>
+      <H2>{t('serv-hero2')}</H2>
 
       <SmallText>
-        {t('serv-title42')}
+        {t('serv-hero2desc')}
       </SmallText>
     </div>
     <div
@@ -28,28 +31,15 @@ const t = useTranslations(lang)
     >
       <div class="space-y-3">
         <span
-          class="inline-block rounded-xl bg-blue-100 p-2 text-emerald-500 dark:bg-cyan-100 dark:text-emerald-500 md:mx-4"
+          class="inline-block rounded-xl bg-white p-2 text-emerald-500 dark:text-emerald-500 md:mx-4"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-            ></path>
-          </svg>
+          <Image class="h-16 w-16" src={Pic1} alt="" />
         </span>
 
-        <Large>{t('serv-reason41')}</Large>
+        <Large>{t('serv-reason21')}</Large>
         <Separator className="my-2" />
         <SmallText>
-          {t('serv-reason41fix')}
+          {t('serv-reason21fix')}
         </SmallText>
 
         <a
@@ -72,28 +62,15 @@ const t = useTranslations(lang)
 
       <div class="space-y-3">
         <span
-          class="inline-block rounded-xl bg-blue-100 p-2 text-emerald-500 dark:bg-cyan-100 dark:text-emerald-500 md:mx-4"
+          class="inline-block rounded-xl bg-white p-2 text-emerald-500 dark:text-emerald-500 md:mx-4"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-            ></path>
-          </svg>
+          <Image class="h-16 w-16" src={Pic2} alt="" />
         </span>
 
-        <Large>{t('serv-reason42')}</Large>
+        <Large>{t('serv-reason22')}</Large>
         <Separator className="my-2" />
         <SmallText>
-          {t('serv-reason42fix')}
+          {t('serv-reason22fix')}
         </SmallText>
 
         <a
@@ -116,28 +93,15 @@ const t = useTranslations(lang)
 
       <div class="space-y-3">
         <span
-          class="inline-block rounded-xl bg-blue-100 p-2 text-emerald-500 dark:bg-cyan-100 dark:text-emerald-500 md:mx-4"
+          class="inline-block rounded-xl bg-white p-2 text-emerald-500 dark:text-emerald-500 md:mx-4"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-            ></path>
-          </svg>
+          <Image class="h-16 w-16" src={Pic3} alt="" />
         </span>
 
-        <Large>{t('serv-reason43')}</Large>
+        <Large>{t('serv-reason23')}</Large>
         <Separator className="my-2" />
         <SmallText>
-          {t('serv-reason43fix')}
+          {t('serv-reason23fix')}
         </SmallText>
 
         <a
@@ -160,28 +124,15 @@ const t = useTranslations(lang)
 
       <div class="space-y-3">
         <span
-          class="inline-block rounded-xl bg-blue-100 p-2 text-emerald-500 dark:bg-cyan-100 dark:text-emerald-500 md:mx-4"
+          class="inline-block rounded-xl bg-white p-2 text-emerald-500 dark:text-emerald-500 md:mx-4"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-            ></path>
-          </svg>
+          <Image class="h-16 w-16" src={Pic4} alt="" />
         </span>
 
-        <Large>{t('serv-reason44')}</Large>
+        <Large>{t('serv-reason24')}</Large>
         <Separator className="my-2" />
         <SmallText>
-          {t('serv-reason44fix')}
+          {t('serv-reason24fix')}
         </SmallText>
 
         <a
@@ -204,28 +155,15 @@ const t = useTranslations(lang)
 
       <div class="space-y-3">
         <span
-          class="inline-block rounded-xl bg-blue-100 p-2 text-emerald-500 dark:bg-cyan-100 dark:text-emerald-500 md:mx-4"
+          class="inline-block rounded-xl bg-white p-2 text-emerald-500 dark:text-emerald-500 md:mx-4"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-            ></path>
-          </svg>
+          <Image class="h-16 w-16" src={Pic5} alt="" />
         </span>
 
-        <Large>{t('serv-reason45')}</Large>
+        <Large>{t('serv-reason25')}</Large>
         <Separator className="my-2" />
         <SmallText>
-          {t('serv-reason45fix')}
+          {t('serv-reason25fix')}
         </SmallText>
         <a
           href="#"
@@ -247,28 +185,15 @@ const t = useTranslations(lang)
 
       <div class="space-y-3">
         <span
-          class="inline-block rounded-xl bg-blue-100 p-2 text-emerald-500 dark:bg-cyan-100 dark:text-emerald-500 md:mx-4"
+          class="inline-block rounded-xl bg-white p-2 text-emerald-500 dark:text-emerald-500 md:mx-4"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-            ></path>
-          </svg>
+          <Image class="h-16 w-16" src={Pic6} alt="" />
         </span>
 
-        <Large>{t('serv-reason46')}</Large>
+        <Large>{t('serv-reason26')}</Large>
         <Separator className="my-2" />
         <SmallText>
-          {t('serv-reason46fix')}
+          {t('serv-reason26fix')}
         </SmallText>
 
         <a
