@@ -1,3 +1,5 @@
+import { testimonial } from '@/assets/index'
+
 export const services = [
   {
     title: 'Boxing',
@@ -209,6 +211,69 @@ export const faqs = [
   },
 ]
 
+export const faqssps = [
+  {
+    title: {
+      uk: 'Що таке каналізаційна насосна станція і для чого вона потрібна?',
+      en: 'What is a sewage pumping station and why is it needed? ',
+      ru: 'Что такое канализационная насосная станция и зачем она нужна?',
+    },
+    text: {
+      uk: 'Каналізаційна насосна станція – це споруда, яка збирає та перекачує стічні води з одного місця в інше, як правило, на очисні споруди або на більшу висоту. Це необхідно для забезпечення належного та ефективного потоку стічних вод, запобігання резервним копіям і підтримки чистої та функціональної каналізаційної системи.',
+      en: 'A sewage pumping station is a facility that collects and pumps wastewater from one location to another, typically to a treatment plant or a higher elevation. It is needed to ensure the proper and efficient flow of sewage, preventing backups and maintaining a clean and functioning sewage system.',
+      ru: 'Канализационная насосная станция — это сооружение, которое собирает и перекачивает сточные воды из одного места в другое, обычно на очистные сооружения или на возвышенность. Он нужен для обеспечения правильного и эффективного отвода сточных вод, предотвращения дублирования и поддержания чистой и работоспособной канализационной системы.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи може AquaPumpers встановлювати каналізаційні насосні станції в житлових масивах?',
+      en: 'Can AquaPumpers install sewage pumping stations in residential areas?',
+      ru: 'Может ли компания AquaPumpers устанавливать канализационные насосные станции в жилых помещениях?',
+    },
+    text: {
+      uk: 'Так, AquaPumpers може встановлювати каналізаційні насосні станції як в житлових, так і в комерційних приміщеннях. Ми маємо досвід у проектуванні та встановленні насосних систем, які адаптовані до конкретних потреб кожного місця.',
+      en: 'Yes, AquaPumpers can install sewage pumping stations in both residential and commercial areas. We have expertise in designing and installing pumping systems that are tailored to meet the specific needs of each location.',
+      ru: 'Да, AquaPumpers может установить канализационные насосные станции как в жилых, так и в коммерческих помещениях. У нас есть опыт проектирования и установки насосных систем, адаптированных к конкретным потребностям каждого места.',
+    },
+  },
+  {
+    title: {
+      uk: 'Ви пропонуєте установку глибинних насосів як частину своїх послуг?',
+      en: 'Do you offer submersible pump installation as part of your services? ',
+      ru: 'Предлагаете ли вы установку погружного насоса в рамках своих услуг?',
+    },
+    text: {
+      uk: 'Так, ми пропонуємо установку заглибних насосів в рамках нашої послуги з монтажу каналізаційних насосних станцій. Занурювальні насоси зазвичай використовуються на каналізаційних насосних станціях завдяки їх здатності ефективно та ефективно перекачувати стічні води.',
+      en: 'Yes, we offer installation of submersible pumps as part of our sewage pumping station installation service. Submersible pumps are commonly used in sewage pumping stations due to their ability to pump wastewater effectively and efficiently.',
+      ru: 'Да, мы предлагаем установку погружных насосов в рамках наших услуг по монтажу канализационных насосных станций. Погружные насосы обычно используются на канализационных насосных станциях из-за их способности эффективно и результативно перекачивать сточные воды.',
+    },
+  },
+  {
+    title: {
+      uk: 'Які ще послуги надає AquaPumpers, окрім встановлення каналізаційної насосної станції?',
+      en: 'What other services does AquaPumpers provide besides sewage pumping station installation? ',
+      ru: 'Какие еще услуги предоставляет AquaPumpers помимо установки канализационной насосной станции?',
+    },
+    text: {
+      uk: 'Окрім встановлення каналізаційних насосних станцій, AquaPumpers також пропонує послуги з ремонту та технічного обслуговування шаф управління, які є основними компонентами насосних станцій. Ми також можемо допомогти з проектуванням та проектуванням каналізаційних насосних систем для забезпечення оптимальної продуктивності.',
+      en: 'In addition to sewage pumping station installation, AquaPumpers also offers repair and maintenance services for control cabinets, which are essential components of the pumping stations. We can also assist with the design and engineering of sewage pumping systems to ensure optimal performance.',
+      ru: 'Помимо установки канализационных насосных станций, AquaPumpers также предлагает услуги по ремонту и техническому обслуживанию шкафов управления, которые являются важными компонентами насосных станций. Мы также можем помочь с проектированием и проектированием канализационных насосных систем для обеспечения оптимальной производительности',
+    },
+  },
+  {
+    title: {
+      uk: 'Де AquaPumpers надає послуги з монтажу каналізаційної насосної станції?',
+      en: 'Where does AquaPumpers provide its sewage pumping station installation services? ',
+      ru: 'Где компания AquaPumpers предоставляет услуги по установке канализационных насосных станций?',
+    },
+    text: {
+      uk: 'AquaPumpers надає послуги з монтажу каналізаційних насосних станцій в Києві та Київській області. Ми прагнемо обслуговувати цю територію та гарантувати, що системи каналізації належним чином спроектовані, встановлені та обслуговуються відповідно до потреб громади.',
+      en: 'AquaPumpers provides sewage pumping station installation services in Kyiv and the Kyiv region. We are dedicated to serving this area and ensuring that the sewage systems are properly designed, installed, and maintained to meet the needs of the community.',
+      ru: 'AquaPumpers предоставляет услуги по монтажу канализационных насосных станций в Киеве и Киевской области. Мы стремимся обслуживать эту область и обеспечивать правильное проектирование, установку и обслуживание канализационных систем для удовлетворения потребностей общества.',
+    },
+  },
+]
+
 export const features = [
   {
     f1: {
@@ -375,54 +440,61 @@ export const navLinks = [
 ]
 
 // Translation Completed
-export const testimonios = [
+export const testimonials = [
   {
     name: 'Dayana',
     review: {
       uk: 'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
       en: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
-      ru: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
+      ru: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊'
     },
+    image: testimonial
   },
   {
     name: 'Pablo RR',
     review: {
-      uk: 'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
-      en: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
-      ru: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
+      uk: 'Adrián es un gran profesor, me ha enseñado mucho en estos meses que llevamos. Hace un entrenamiento muy enfocado en ti y te ayuda a cumplir tus objetivos. Es muy flexible y siempre está dispuesto a ayudar🙃. Totalmente recomendable💪🏻💪🏻…',
+      en: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊',
+      ru: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊'
     },
+    image: testimonial
   },
   {
     name: 'Rogelio',
     review: {
-      uk: 'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
-      en: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
-      ru: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
+      uk: 'Muy buen entrenador, clases excelentes,  se lo recomiendo a todos los q quieran estar en forma y quieran aprender a defenderse',
+      en: 'A very good trainer, excellent classes, I recommend him to everyone who wants to get in shape and learn self-defense.',
+      ru: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊'
     },
+    image: testimonial
   },
   {
     name: 'Rachel Castellanos',
     review: {
-      uk: 'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
-      en: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
-      ru: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
+      uk: 'Mi entrenador muchas gracias por los cambios que estoy viendo diariamente. Y ante todo por las ganas que me das para seguir esforzándome. 💪💪💪…',
+      en: 'Thank you so much to my trainer for the changes I see every day. And above all, for the motivation you give me to keep pushing myself. 💪💪💪...',
+      ru: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊'
     },
+    image: testimonial
   },
   {
     name: 'Rodrigo Manzanares',
     review: {
-      uk: 'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
-      en: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
-      ru: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
+      uk: 'El mejor entrenador!! Sabe mucho y se aprende mucho con Adrian. Muy recomendable',
+      en: 'The best coach!! Adrian knows a lot, and you learn a great deal from him. Highly recommended.',
+      ru: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊'
     },
+    image: testimonial
   },
   {
     name: 'Javier Escribano',
     review: {
-      uk: 'Adrian es un excelente entrenador. Es muy profesional y tiene muchos conocimientos sobre cómo hacer que sus clientes alcancen sus objetivos. Lo recomiendo 100%.',
-      en: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
-      ru: 'Adrian is an excellent coach. He is highly professional and possesses extensive knowledge on how to help his clients achieve their goals. I wholeheartedly recommend him 100%.',
+      uk: 'Muy buen entrenador y muy buenas clases con un seguimiento personalizado excelente lo recomiendo totalmente',
+      en: 'A very good coach with excellent personalized guidance in his classes. I highly recommend him.',
+      ru: 'Adrián is a great teacher; he has taught me a lot during the months we&apos;ve been working together. His training is highly personalized and helps you achieve your goals. He is very flexible and always ready to assist. Highly recommended! 💪🏻💪🏻😊'
     },
+    image: testimonial
+
   },
 ]
 

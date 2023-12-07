@@ -377,6 +377,10 @@ export const ui = {
     'partner-branddesc':
       'Здійснюємо ремонт насосів та насосних станцій усіх брендів :',
     'partner-text': 'Докладніше...',
+    'testimonial-title': 'Відгуки',
+    'testimonial-subtitle': 'Наші клієнти',
+    'faq-title': 'FAQ',
+    'faq-subtitle': 'Питання та відповіді'
   },
   en: {
     'home-metatitle':
@@ -744,6 +748,11 @@ export const ui = {
     'blog-title': '',
     'blog-header': '',
     'blog-subtitle': '',
+
+    'testimonial-title': 'Відгуки',
+    'testimonial-subtitle': 'Наші клієнти',
+    'faq-title': 'FAQS',
+    'faq-subtitle': 'Questions and ansvers'
   },
   ru: {
     'home-metatitle':
@@ -1108,5 +1117,9 @@ export const ui = {
     'hero-service6': 'Автономная канализация',
     'hero-desc6':
       'Монтаж и обслуживание канализационных насосных станций (КНС), а также мини КНС',
+    'testimonial-title': 'Отзывы',
+    'testimonial-subtitle': 'Наши Клиенты',
+    'faq-title': 'FAQ',
+    'faq-subtitle': 'Вопросы и ответы'
   },
 }

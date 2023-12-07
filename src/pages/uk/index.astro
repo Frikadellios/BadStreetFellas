@@ -7,6 +7,8 @@ import PartnersApp from '@/components/PartnersApp.astro'
 import MainPage from '@/components/layout/MainPage.astro'
 import PartnersCompany from '@/components/PartnersCompany.astro'
 import PartnersPush from '@/components/PartnersPush.astro'
+import Testimonials from '@/components/services/Testimonials.astro'
+import Faqs from '@/components/services/Faqs.astro'
 
 export const prerender = true
 ---
@@ -19,6 +21,8 @@ export const prerender = true
   <Container>
     <AboutSteps />
     <PartnersApp />
+    <Faqs />
+    <Testimonials />
     <AboutUsHero />
     <PartnersCompany />
     <PartnersPush />
