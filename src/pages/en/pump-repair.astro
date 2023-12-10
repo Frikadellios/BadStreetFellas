@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import ServicesPumpRepair from '@/components/pumpserv/ServicesPumpRepair.astro'
+import ServicesGPumpRepair from '@/components/pumpserv/ServicesGPumpRepair.astro'
+import PumpLogo from '@/components/pumpserv/PumpLogo.astro'
+import FaqsPump from '@/components/services/FaqsPump.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Professional and reliable repair of water pumps of all types in Kyiv and the Kyiv region. Say goodbye to water supply problems! | Book a free consultation by phone!"
+  description="AquaPumpers company - quality services with a guarantee of high results and efficiency in pump repair, prevention and maintenance of well pumping equipment. Elimination of all types of problems in the operation of pumping equipment in Kyiv and the Kyiv region. Order now to get effective and affordable solution!"
+>
+  <PumpLogo />
+  <Container>
+    <ServicesPumpRepair />
+    <ServicesGPumpRepair />
+    <FaqsPump />
+  </Container>
+</BaseLayout>

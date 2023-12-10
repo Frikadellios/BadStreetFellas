@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import AseverageServices from '@/components/aseverage/AseverageServices.astro'
+import AseverageGservices from '@/components/aseverage/AseverageGservices.astro'
+import AseverageLogo from '@/components/aseverage/AseverageLogo.astro'
+import FaqsSeverage from '@/components/aseverage/FaqsSeverage.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Autonomous Sewage Specialists in Kyiv | Pumping Stations, Installation & Maintenance"
+  description="AquaPumpers is a specialist in the design, installation and maintenance of sewage pumping stations. We offer installation, installation of submersible pumps, repair of control cabinets and other services in Kyiv and the Kyiv region. Order now for efficient and affordable solutions!"
+>
+  <AseverageLogo />
+  <Container>
+    <AseverageServices />
+    <AseverageGservices />
+    <FaqsSeverage />
+  </Container>
+</BaseLayout>

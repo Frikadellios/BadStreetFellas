@@ -1,117 +1,197 @@
 ---
-import SmallText from "./typography/SmallText.astro";
-import H1 from "./typography/H1.astro";
-import H2 from "./typography/H2.astro";
-import Large from "./typography/Large.astro";
+import SmallText from './typography/SmallText.astro'
+import H2 from './typography/H2.astro'
+import Large from './typography/Large.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { Image } from 'astro:assets'
+import severage from '@/assets/severage.gif'
+import shkaf from '@/assets/shkaf.png'
+import wells from '@/assets/wells.png'
+import Car from '@/assets/Car.png'
+import pumprepair from '@/assets/pumprepair.png'
+import wellsetup from '@/assets/wellsetup.png'
+import FooterLinks from './typography/FooterLinks.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class="py-10 sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="max-w-2xl mx-auto text-center">
-            <H2>Integrate with apps</H2>
-            <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</SmallText>
-        </div>
-
-        <div class="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="overflow-hidden rounded shadow">
-                <div class="p-8">
-                    <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/gmail-logo.png" alt="" />
-                        <div class="ml-5 mr-auto">
-                            <Large>Gmail</Large>
-                            <small class="text-sm font-medium leading-none">Direct Integration</small>
-                        </div>
-                        <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </div>
-                    <SmallText>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</SmallText>
-                </div>
-            </div>
-
-            <div class="overflow-hidden rounded shadow">
-                <div class="p-8">
-                    <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/slack-logo.png" alt="" />
-                        <div class="ml-5 mr-auto">
-                            <Large>Slack</Large>
-                            <small class="text-sm font-medium leading-none">Direct Integration</small>
-                        </div>
-                        <svg class="block w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </div>
-                    <SmallText>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</SmallText>
-                </div>
-            </div>
-
-            <div class="overflow-hidden rounded shadow">
-                <div class="p-8">
-                    <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/shopify-logo.png" alt="" />
-                        <div class="ml-5 mr-auto">
-                            <Large>Shopify</Large>
-                            <small class="text-sm font-medium leading-none">Direct Integration</small>
-                        </div>
-                        <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </div>
-                    <SmallText>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</SmallText>
-                </div>
-            </div>
-
-            <div class="overflow-hidde rounded shadow">
-                <div class="p-8">
-                    <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/intercom-logo.png" alt="" />
-                        <div class="ml-5 mr-auto">
-                            <Large>Intercom</Large>
-                            <small class="text-sm font-medium leading-none">Direct Integration</small>
-                        </div>
-                        <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </div>
-                    <SmallText>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</SmallText>
-                </div>
-            </div>
-
-            <div class="overflow-hidden rounded shadow">
-                <div class="p-8">
-                    <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/twitter-logo.png" alt="" />
-                        <div class="ml-5 mr-auto">
-                            <Large>Twitter</Large>
-                            <small class="text-sm font-medium leading-none">Direct Integration</small>
-                        </div>
-                        <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </div>
-                    <SmallText>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</SmallText>
-                </div>
-            </div>
-
-            <div class="overflow-hidden rounded shadow">
-                <div class="p-8">
-                    <div class="flex items-center">
-                        <img class="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/sketch-logo.png" alt="" />
-                        <div class="ml-5 mr-auto">
-                            <Large>Sketch</Large>
-                            <small class="text-sm font-medium leading-none">Direct Integration</small>
-                        </div>
-                        <svg class="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </div>
-                    <SmallText>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</SmallText>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-12 text-center">
-            <a href="#" title="" class="inline-flex p-3 font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"> Check all 1,593 applications </a>
-        </div>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <H2>{t('hero-title')}</H2>
+      <Large>
+        {t('hero-subtitle')}
+      </Large>
     </div>
+
+    <div
+      class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 xl:gap-10"
+    >
+      <div class="overflow-hidden rounded shadow">
+        <div class="p-8">
+          <div class="flex items-center">
+            <div class="wrap">
+              <div class="circle">
+                <Image src={severage} alt="" class="" />
+              </div>
+            </div>
+
+            <div class="ml-5 mr-auto">
+              <h3
+                class="mb-6 mt-3 bg-gradient-to-r from-sky-500 via-cyan-400 to-emerald-400 bg-clip-text text-lg font-semibold text-transparent"
+                id="footer-product-5-logo"
+              >
+                <FooterLinks text={t('hero-service6')} , href={t('f10-href')} />
+              </h3>
+            </div>
+          </div>
+          <SmallText>
+            {t('hero-desc6')}
+          </SmallText>
+        </div>
+        <div class="text-center"></div>
+      </div>
+
+      <div class="overflow-hidden rounded shadow">
+        <div class="p-8">
+          <div class="flex items-center">
+            <Image src={Car} alt="" class="" />
+            <div class="ml-5 mr-auto">
+              <Large>{t('hero-service1')}</Large>
+            </div>
+          </div>
+          <SmallText>
+            {t('hero-desc1')}
+          </SmallText>
+        </div>
+        <div class="text-center">
+          <small class="text-sm font-medium leading-none"
+            >Direct Integration
+          </small>
+        </div>
+      </div>
+
+      <div class="overflow-hidden rounded shadow">
+        <div class="p-8">
+          <div class="flex items-center">
+            <Image src={wells} alt="" class="" />
+            <div class="ml-5 mr-auto">
+              <Large>{t('hero-service2')}</Large>
+            </div>
+          </div>
+          <SmallText>
+            {t('hero-desc2')}
+          </SmallText>
+        </div>
+        <div class="text-center">
+          <small class="text-sm font-medium leading-none"
+            >Direct Integration
+          </small>
+        </div>
+      </div>
+
+      <div class="overflow-hidde rounded shadow">
+        <div class="p-8">
+          <div class="flex items-center">
+            <Image src={wellsetup} alt="" class="" />
+            <div class="ml-5 mr-auto">
+              <Large>{t('hero-service3')}</Large>
+            </div>
+          </div>
+          <SmallText>
+            {t('hero-desc3')}
+          </SmallText>
+        </div>
+        <div class="text-center">
+          <small class="text-sm font-medium leading-none"
+            >Direct Integration
+          </small>
+        </div>
+      </div>
+
+      <div class="overflow-hidden rounded shadow">
+        <div class="p-8">
+          <div class="flex items-center">
+            <Image src={pumprepair} alt="" class="" />
+            <div class="ml-5 mr-auto">
+              <Large>{t('hero-service4')}</Large>
+            </div>
+          </div>
+          <SmallText>
+            {t('hero-desc4')}
+          </SmallText>
+        </div>
+        <div class="text-center">
+          <small class="text-sm font-medium leading-none"
+            >Direct Integration
+          </small>
+        </div>
+      </div>
+
+      <div class="overflow-hidden rounded shadow">
+        <div class="p-8">
+          <div class="flex items-center">
+            <Image src={shkaf} alt="" class="" />
+            <div class="ml-5 mr-auto">
+              <Large>{t('hero-service5')}</Large>
+            </div>
+          </div>
+          <SmallText>
+            {t('hero-desc5')}
+          </SmallText>
+        </div>
+        <div class="text-center">
+          <small class="text-sm font-medium leading-none"
+            >Direct Integration
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <a
+        href="#"
+        title=""
+        class="inline-flex p-3 font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700"
+      >
+        Check all 1,593 applications
+      </a>
+    </div>
+  </div>
 </section>
+
+<style>
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+  }
+
+  .circle {
+    background: plum;
+    width: 75px;
+    height: 75px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 3s linear infinite;
+  }
+
+  .circle img {
+    width: 100%;
+  }
+
+  @keyframes morph {
+    0%,
+    100% {
+      border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+</style>

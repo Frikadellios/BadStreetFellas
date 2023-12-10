@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import ServicesMwells from '@/components/mwells/ServicesMwells.astro'
+import ServicesGMwells from '@/components/mwells/ServicesGMwells.astro'
+import LogoHeroMwells from '@/components/mwells/LogoHeroMwells.astro'
+import FaqsCwell from '@/components/services/FaqsCwell.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Будівництво водних свердловин у Києві та Київській області! Надаємо професійні та надійні послуги з технічного обслуговування. | Безкоштовна консультація по вашому технічному завданню!"
+  description="Компанія «AquaPumpers» - спеціалізується на монтажі насосів та насосних станцій у водну свердловину. Працюємо швидко, якісно та ефективно незалежно від обраної моделі насоса, глибини свердловини та інших її особливостей. Приймаємо замовлення у Києві та Київській області. Замовляйте зараз, щоб отримати ефективні та доступні рішення!"
+>
+  <LogoHeroMwells />
+  <Container>
+    <ServicesMwells />
+    <ServicesGMwells />
+    <FaqsCwell />
+  </Container>
+</BaseLayout>

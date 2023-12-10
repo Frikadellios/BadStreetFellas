@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import ServicesPumpRepair from '@/components/pumpserv/ServicesPumpRepair.astro'
+import ServicesGPumpRepair from '@/components/pumpserv/ServicesGPumpRepair.astro'
+import PumpLogo from '@/components/pumpserv/PumpLogo.astro'
+import FaqsPump from '@/components/services/FaqsPump.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Профессиональный и надежный ремонт водяных насосов всех типов в Киеве и Киевской области. Прощайтесь с проблемами водоснабжения! | Резервируйте бесплатную консультацию по телефону!"
+  description="Компания «AquaPumpers» - качественные услуги с гарантией на высокий результат и оперативность ремонта насосов, профилактики и обслуживания скважинного насосного оборудования. Устранение всех видов проблем при эксплуатации насосного оборудования в Киеве и Киевской области. Заказывайте сейчас, чтобы получить эффективные и доступные решение!"
+>
+  <PumpLogo />
+  <Container>
+    <ServicesPumpRepair />
+    <ServicesGPumpRepair />
+    <FaqsPump />
+  </Container>
+</BaseLayout>

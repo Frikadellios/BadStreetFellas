@@ -7,89 +7,90 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import CheckIcon from "./typography/CheckIcon.astro";
-import H2 from "./typography/H2.astro";
-
+} from '@/components/ui/table'
+import CheckIcon from './typography/CheckIcon.astro'
+import H2 from './typography/H2.astro'
 ---
-<div class="text-center mt-10">
-    <H2>Pricing Plans</H2>
+
+<div class="mt-10 text-center">
+  <H2>Pricing Plans</H2>
 </div>
 <Table>
-    <TableCaption>A list of your recent invoices.</TableCaption>
-    <TableHeader>
-      <TableRow>
-        <TableHead className="text-left">Plan</TableHead>
-        <TableHead className="text-center">Free</TableHead>
-        <TableHead className="text-center">Team</TableHead>
-        <TableHead className="text-center">Popular</TableHead>
-        <TableHead className="text-center">Enterprise</TableHead>
-      </TableRow>
-    </TableHeader>
-    <TableBody>
-      <TableRow>
-        <TableCell className="text-left font-medium">Price</TableCell>
-        <TableCell className="text-center">$0</TableCell>
-        <TableCell className="text-center">$99.00</TableCell>
-        <TableCell className="text-center">$150.00</TableCell>
-        <TableCell className="text-center">$499.00</TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">Website number</TableCell>
-        <TableCell className="text-center">1</TableCell>
-        <TableCell className="text-center">10</TableCell>
-        <TableCell className="text-center">50</TableCell>
-        <TableCell className="text-center">Unlimited</TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">Server storage</TableCell>
-        <TableCell className="text-center">100 GB</TableCell>
-        <TableCell className="text-center">500 GB</TableCell>
-        <TableCell className="text-center">1 TB</TableCell>
-        <TableCell className="text-center">Unlimited</TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">Database</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center">15</TableCell>
-        <TableCell className="text-center">Unlimited</TableCell>
-        <TableCell className="text-center">Unlimited</TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">Unmetered Bandwidth</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">SSD Disk</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">VCPUS Fontworld</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">WordPress install</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-      </TableRow>
-      <TableRow>
-        <TableCell className="text-left font-medium">Server speed</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center">-</TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-        <TableCell className="text-center"><CheckIcon /></TableCell>
-      </TableRow>
-    </TableBody>
-  </Table>
-  
+  <TableCaption>A list of your recent invoices.</TableCaption>
+  <TableHeader>
+    <TableRow>
+      <TableHead className="text-left">Plan</TableHead>
+      <TableHead className="text-center">Free</TableHead>
+      <TableHead className="text-center">Team</TableHead>
+      <TableHead className="text-center">Popular</TableHead>
+      <TableHead className="text-center">Enterprise</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    <TableRow>
+      <TableCell className="text-left font-medium">Price</TableCell>
+      <TableCell className="text-center">$0</TableCell>
+      <TableCell className="text-center">$99.00</TableCell>
+      <TableCell className="text-center">$150.00</TableCell>
+      <TableCell className="text-center">$499.00</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">Website number</TableCell>
+      <TableCell className="text-center">1</TableCell>
+      <TableCell className="text-center">10</TableCell>
+      <TableCell className="text-center">50</TableCell>
+      <TableCell className="text-center">Unlimited</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">Server storage</TableCell>
+      <TableCell className="text-center">100 GB</TableCell>
+      <TableCell className="text-center">500 GB</TableCell>
+      <TableCell className="text-center">1 TB</TableCell>
+      <TableCell className="text-center">Unlimited</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">Database</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center">15</TableCell>
+      <TableCell className="text-center">Unlimited</TableCell>
+      <TableCell className="text-center">Unlimited</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">
+        Unmetered Bandwidth
+      </TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">SSD Disk</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">VCPUS Fontworld</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">WordPress install</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell className="text-left font-medium">Server speed</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center">-</TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+      <TableCell className="text-center"><CheckIcon /></TableCell>
+    </TableRow>
+  </TableBody>
+</Table>

@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import AwellsServices from '@/components/awells/AwellsServices.astro'
+import AwellsGServices from '@/components/awells/AwellsGServices.astro'
+import AwellsLogo from '@/components/awells/AwellsLogo.astro'
+import FaqsMwells from '@/components/services/FaqsMwells.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Professional maintenance and repair services for water pumping devices and water wells in Kyiv and the Kyiv region! | Keep your water wells in optimal condition!"
+  description="AquaPumpers company - warranty maintenance of water wells as a unique service that reduces your costs for operating water supply systems. We conduct regular inspections for prompt elimination and repair of detected malfunctions in Kyiv and the Kyiv region. Order now to receive effective and affordable solutions !"
+>
+  <AwellsLogo />
+  <Container>
+    <AwellsServices />
+    <AwellsGServices />
+    <FaqsMwells />
+  </Container>
+</BaseLayout>

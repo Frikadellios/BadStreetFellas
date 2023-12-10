@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import AwellsServices from '@/components/awells/AwellsServices.astro'
+import AwellsGServices from '@/components/awells/AwellsGServices.astro'
+import AwellsLogo from '@/components/awells/AwellsLogo.astro'
+import FaqsMwells from '@/components/services/FaqsMwells.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Профессиональные услуги и сервисы по техническому обслуживанию и ремонту водонасосных устройств и водяных скважин в Киеве и Киевской области! | Поддерживайте свои водные скважины в оптимальном состоянии!"
+  description="Компания «AquaPumpers» - гарантийное обслуживание водных скважин как уникальная услуга, снижающая Ваши затраты на эксплуатацию систем водоснабжения. Проводим регулярный обзор для оперативного устранения и ремонта обнаруженных неисправностей в Киеве и Киевской области. Заказывайте сейчас, чтобы получить эффективные и доступные решения !"
+>
+  <AwellsLogo />
+  <Container>
+    <AwellsServices />
+    <AwellsGServices />
+    <FaqsMwells />
+  </Container>
+</BaseLayout>

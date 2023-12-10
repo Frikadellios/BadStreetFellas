@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import AwellsServices from '@/components/awells/AwellsServices.astro'
+import AwellsGServices from '@/components/awells/AwellsGServices.astro'
+import AwellsLogo from '@/components/awells/AwellsLogo.astro'
+import FaqsMwells from '@/components/services/FaqsMwells.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Професійні послуги та сервіси з технічного обслуговування та ремонту водонасосних пристроїв та водяних свердловин у Києві та Київській області! | Підтримуйте свої водні свердловини в оптимальному стані!"
+  description="Компанія «AquaPumpers» - гарантійне обслуговування водних свердловин як унікальна послуга, що знижує Ваші витрати на експлуатацію систем водопостачання. Проводимо регулярний огляд для оперативного усунення та ремонту виявлених несправностей у Києві та Київській області. Замовляйте зараз, щоб отримати ефективні та доступні рішення!"
+>
+  <AwellsLogo />
+  <Container>
+    <AwellsServices />
+    <AwellsGServices />
+    <FaqsMwells />
+  </Container>
+</BaseLayout>

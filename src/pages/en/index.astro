@@ -1,22 +1,26 @@
 ---
-import Container from "@/components/Container.astro";
-import Layout from "@/layouts/Layout.astro";
-import Cta from "@/components/Cta.astro";
-import HeaderSection from "@/components/HeaderSection.astro";
-import Features from "@/components/Features.astro";
-import LogoHero from "@/components/LogoHero.astro";
-import HeroStarter from "@/components/HeroStarter.astro";
-
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import AboutSteps from '@/components/AboutSteps.astro'
+import AboutUsHero from '@/components/AboutUsHero.astro'
+import PartnersApp from '@/components/PartnersApp.astro'
+import MainPage from '@/components/layout/MainPage.astro'
+import PartnersCompany from '@/components/PartnersCompany.astro'
+import PartnersPush from '@/components/PartnersPush.astro'
 
 export const prerender = true
 ---
 
-<Layout title="Homepage">
-	<Container>
-		<HeroStarter />
-		<LogoHero />
-		<Cta />
-		<Features />
-	</Container>
-	<HeaderSection />
-</Layout>
+<BaseLayout
+  title="AquaPumpers - We provide professional installation, maintenance and repair services for water pumping devices and water wells in Kyiv and the Kyiv region! | Reserve now!"
+  description="Need reliable installation and repair? or maintenance services for your well and sewer systems? Our team of specialists guarantees first-class service in Kyiv and the Kyiv region. Order now for efficient and affordable solutions!"
+>
+  <MainPage />
+  <Container>
+    <AboutSteps />
+    <PartnersApp />
+    <AboutUsHero />
+    <PartnersCompany />
+    <PartnersPush />
+  </Container>
+</BaseLayout>

@@ -1,0 +1,105 @@
+---
+import PageHeader from './PageHeader.astro'
+import AboutFacts from '../AboutFacts.astro'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { Image } from 'astro:assets'
+import collaborate from '@/assets/Collaborate.png'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<div
+  class="bg-trancperent relative isolate mt-0 overflow-hidden py-12 sm:py-16"
+>
+  <div class="conteiner">
+    <Image
+      src={collaborate}
+      alt=""
+      class="animate-wiggle animate-infinite animate-duration-[6000ms] animate-ease-in-out absolute inset-0 -z-10 h-full w-full object-cover object-right backdrop-blur-sm md:object-center"
+    />
+
+    <div
+      class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+      aria-hidden="true"
+    >
+      <div
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4662ff] to-[#3027df] opacity-20"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
+      </div>
+    </div>
+    <div
+      class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+      aria-hidden="true"
+    >
+      <div
+        class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#4652ff] to-[#0f0a6e] opacity-20"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
+      </div>
+    </div>
+
+    <PageHeader title="AquaPumpers" />
+    <slot />
+    <AboutFacts />
+  </div>
+
+  <style>
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(
+        180deg,
+        rgba(47, 184, 255, 0.42) 31.77%,
+        #5c9df1 100%
+      );
+      mix-blend-mode: color-dodge;
+      -webkit-animation: move 25s infinite alternate;
+      animation: move 25s infinite alternate;
+      transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    }
+
+    @-webkit-keyframes move {
+      from {
+        transform: translate(-50px, -25px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+      }
+
+      to {
+        transform: translate(500px, 100px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+      }
+    }
+
+    @keyframes move {
+      from {
+        transform: translate(-50px, -25px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+      }
+
+      to {
+        transform: translate(500px, 100px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      window.setTimeout(
+        document.querySelector('svg').classList.add('animated'),
+        1000,
+      )
+    })
+  </script>
+</div>

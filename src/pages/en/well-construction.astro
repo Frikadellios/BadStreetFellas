@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import ServicesMwells from '@/components/mwells/ServicesMwells.astro'
+import ServicesGMwells from '@/components/mwells/ServicesGMwells.astro'
+import LogoHeroMwells from '@/components/mwells/LogoHeroMwells.astro'
+import FaqsCwell from '@/components/services/FaqsCwell.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Arrangement of Water Wells and Well Construction | Pump Installation and Pumping Stations in Kyiv and the Kyiv region!"
+  description="AquaPumpers company - specializes in the installation of pumps and pumping stations in water wells. We work quickly, qualitatively and efficiently, regardless of the selected model of the pump, the depth of the well and its other features."
+>
+  <LogoHeroMwells />
+  <Container>
+    <ServicesMwells />
+    <ServicesGMwells />
+    <FaqsCwell />
+  </Container>
+</BaseLayout>

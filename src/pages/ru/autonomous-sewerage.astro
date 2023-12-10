@@ -1,0 +1,22 @@
+---
+import Container from '@/components/Container.astro'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import AseverageServices from '@/components/aseverage/AseverageServices.astro'
+import AseverageGservices from '@/components/aseverage/AseverageGservices.astro'
+import AseverageLogo from '@/components/aseverage/AseverageLogo.astro'
+import FaqsSeverage from '@/components/aseverage/FaqsSeverage.astro'
+
+export const prerender = true
+---
+
+<BaseLayout
+  title="Специалисты по автономной канализации в Киеве | Насосные станции, монтаж и обслуживание"
+  description="AquaPumpers - специалист по проектированию, монтажу и обслуживанию канализационных насосных станций. Предлагаем монтаж, монтаж погружных насосов, ремонт шкафов управления и другие услуги в Киеве и Киевской области. Закажите прямо сейчас, чтобы получить эффективные и доступные решения! "
+>
+  <AseverageLogo />
+  <Container>
+    <AseverageServices />
+    <AseverageGservices />
+    <FaqsSeverage />
+  </Container>
+</BaseLayout>

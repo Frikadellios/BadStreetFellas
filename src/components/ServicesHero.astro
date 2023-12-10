@@ -1,62 +1,123 @@
 ---
-import { Button } from "@/components/ui/button";
-import SmallText from "./typography/SmallText.astro";
-import H2 from "./typography/H2.astro";
-import Large from "./typography/Large.astro";
+import { Button } from '@/components/ui/button'
+import SmallText from './typography/SmallText.astro'
+import H2 from './typography/H2.astro'
+import Large from './typography/Large.astro'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+import { FormDialog } from '@/components/react/FormDialog'
+import { Image } from 'astro:assets'
+import Phone from '@/assets/Phone.png'
+import Roadmap from '@/assets/Roadmap.png'
+import Repairs from '@/assets/Repairs.png'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
-<section class="py-10 sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="max-w-xl mx-auto text-center">
-            <div class="inline-flex px-4 py-1.5 mx-auto rounded-full bg-trancperent">
-                <Button variant="link"><a class="hover:text-emerald-500">130+ Handcoded Blocks</a></Button>
-            </div>
-            <H2>Celebration helps you build beautiful website</H2>
-            <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
-        </div>
-
-        <div class="grid grid-cols-1 gap-5 mt-12 sm:grid-cols-3 lg:mt-20 lg:gap-x-12 text-center ">
-            <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
-                <div class="py-10 px-9">
-                    <img class="w-full" src="/Worldtravel.png" alt="" />
-                    <Large>Secured Payments</Large>
-                    <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
-                    <Button variant="link" >
-                        <svg class="w-5 h-5 mr-2 -ml-1 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                        <a class="hover:text-emerald-500 transition-colors duration-300" href="/pricing">Our Pricing</a>
-                    </Button>
-                </div>
-            </div>
-
-            <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
-                <div class="py-10 px-9">
-                    <img class="w-full" src="/Under-construction.png" alt="" />
-                    <Large>Secured Payments</Large>
-                    <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
-                    <Button variant="link" >
-                        <svg class="w-5 h-5 mr-2 -ml-1 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-                        </svg>
-                        <a class="hover:text-emerald-500 transition-colors duration-300" href="/pricing">Our Pricing</a>
-                    </Button>
-                </div>
-            </div>
-
-            <div class="transition-all duration-200 bg-trancperent hover:shadow-xl">
-                <div class="py-10 px-9">
-                    <img class="w-full" src="/Programming.png" alt="" />
-                    <Large>Secured Payments</Large>
-                    <SmallText>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</SmallText>
-                    <Button variant="link" >
-                        <svg class="w-5 h-5 mr-2 -ml-1 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-                        </svg>
-                        <a class="hover:text-emerald-500" href="/pricing">Our Pricing</a>
-                    </Button>
-                </div>
-            </div>
-        </div>
+<section class="py-5 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-xl text-center">
+      <div class="bg-trancperent mx-auto inline-flex rounded-full px-4 py-1.5">
+        <FormDialog client:visible text={t('dialog-text')} lang={lang} />
+      </div>
+      <H2>Celebration helps you build beautiful website</H2>
+      <SmallText>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </SmallText>
     </div>
+
+    <div
+      class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-3 lg:mt-20 lg:gap-x-12"
+    >
+      <div class="bg-trancperent transition-all duration-200 hover:shadow-xl">
+        <div class="px-9 py-10">
+          <Image src={Phone} alt="" class="my-class pb-5" />
+          <Large>{t('scat1-name')}</Large>
+          <SmallText>
+            {t('scat1-desc')}
+          </SmallText>
+          <Button variant="link">
+            <svg
+              class="-ml-1 mr-2 h-5 w-5 text-emerald-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              ></path>
+            </svg>
+            <a
+              class="transition-colors duration-300 hover:text-emerald-500"
+              href="/pricing">Our Pricing</a
+            >
+          </Button>
+        </div>
+      </div>
+
+      <div class="bg-trancperent transition-all duration-200 hover:shadow-xl">
+        <div class="px-9 py-10">
+          <Image src={Roadmap} alt="" class="my-class pb-5" />
+          <Large>{t('scat2-name')}</Large>
+          <SmallText>
+            {t('scat2-desc')}
+          </SmallText>
+          <Button variant="link">
+            <svg
+              class="-ml-1 mr-2 h-5 w-5 text-emerald-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+              ></path>
+            </svg>
+            <a
+              class="transition-colors duration-300 hover:text-emerald-500"
+              href="/pricing">Our Pricing</a
+            >
+          </Button>
+        </div>
+      </div>
+
+      <div
+        class="bg-trancperent items-center transition-all duration-200 hover:shadow-xl"
+      >
+        <div class="px-9 py-10">
+          <Image src={Repairs} alt="" />
+          <Large>{t('scat3-name')}</Large>
+          <SmallText>
+            {t('scat3-desc')}
+          </SmallText>
+          <Button variant="link">
+            <svg
+              class="-ml-1 mr-2 h-5 w-5 text-emerald-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+              ></path>
+            </svg>
+            <a class="hover:text-emerald-500" href="/pricing">Our Pricing</a>
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

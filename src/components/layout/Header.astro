@@ -1,0 +1,25 @@
+---
+import H2 from '@/components/typography/H2.astro'
+import SmallText from '@/components/typography/SmallText.astro'
+// Props Types
+type Props = {
+  title: string
+  subtitle: string
+}
+
+// Astro Props
+const { title, subtitle } = Astro.props
+
+// Splitting the title for the Header
+const sliceTitle = title.split(' ')
+---
+
+<div class="w-fit px-10">
+  <H2>
+    {sliceTitle[0]}{' '}
+    <span class="text-muted-foreground">{sliceTitle[1]}</span>
+  </H2>
+  <SmallText>
+    {subtitle}
+  </SmallText>
+</div>

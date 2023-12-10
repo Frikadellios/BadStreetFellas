@@ -1,0 +1,204 @@
+---
+// Astro Imports - Layout & Globals
+import { Image } from 'astro:assets'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { getCollection, type CollectionEntry } from 'astro:content'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Separator } from '@/components/ui/separator'
+import SmallText from '@/components/typography/SmallText.astro'
+import Large from '@/components/typography/Large.astro'
+import Blockquote from '@/components/typography/Blockquote.astro'
+import H4 from '@/components/typography/H4.astro'
+import Logo from '@/assets/aquapumpers-high-resolution-logo-transparent.png'
+
+// Utils Imports
+import { formatDate, capitalizer } from '@/lib/utils'
+import { getRelatedPosts } from '@/lib/fetchers'
+import { ChevronLeft } from 'lucide-react'
+// Function to create the path for all the blogs
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ id }) => {
+    return id.startsWith('en/')
+  })
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }))
+}
+
+// Props types
+type Props = CollectionEntry<'blog'>
+
+// Astro Props
+const post = Astro.props
+const { title, description, date, excerpt, author, categories, image, quote, category } = post.data
+
+// Astro Params
+const slug = Astro.params.slug
+
+// Special function to render the content of the MD
+const { Content } = await post.render()
+
+// Get realated Posts
+const relatedPosts = await getRelatedPosts(categories[0], title)
+
+// Redirect in case the path dosent exits
+if (!slug || !post) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not found',
+  })
+}
+
+// create static page instead of SSR
+export const prerender = true
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage={image}
+  url={`${Astro.site}/${slug}`}
+  post={post}
+>
+  <div class="container relative max-w-[1020px] px-5 py-10 pt-10">
+    <a
+      title="Return to all posts"
+      href="/en/blog"
+      class="text-bold absolute left-[-150px] top-10 hidden items-center justify-center transition-all duration-200 hover:text-emerald-500 hover:opacity-80 focus:opacity-80 xl:flex"
+      transition:animate="slide"
+    >
+      <ChevronLeft height="40px" />
+    </a>
+
+    <!-- Category List -->
+
+    <article
+      class="prose-heading:scroll-m-20 prose-heading:border-b prose-heading:pb-2 prose-heading:text-3xl prose-heading:font-semibold prose-heading:tracking-tight prose-heading:first:mt-0 prose-p:text-md prose max-w-none prose-p:font-semibold prose-p:leading-7 prose-p:text-foreground prose-a:text-emerald-500 dark:prose-headings:text-emerald-500 dark:prose-strong:text-white dark:prose-ul:text-white/50"
+    >
+      <!-- Image -->
+      <Image
+        class="my-6 overflow-hidden rounded-xl"
+        width={1020}
+        height={510}
+        src={image}
+        alt={title}
+        transition:name={'img-' + slug}
+      />
+
+      <!-- Date and Author -->
+      <div class="flex items-center justify-between">
+        <span
+          class="font-medium text-foreground"
+          transition:name={'date-' + slug}
+        >
+          <SmallText>{formatDate(date)}</SmallText>
+        </span>
+        <span><SmallText>{author}</SmallText></span>
+        <span class="mt-5 font-medium text-foreground">
+          {
+            categories.map((category) => (
+              <Badge variant="secondary">
+                <a
+                  title={`Category - ${category}`}
+                  class="mx-auto text-sm font-medium leading-none transition-all duration-200 hover:text-emerald-500 hover:opacity-80 focus:opacity-80"
+                  href={`/en/categories/${category}`}
+                  aria-label={`Categorie-link-${category}`}
+                >
+                  {capitalizer(category)}
+                </a>
+              </Badge>
+            ))
+          }
+        </span>
+      </div>
+
+      <!-- Title and description -->
+      <h1
+        class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"
+        transition:name={'title-' + slug}
+      >
+        {title}
+      </h1>
+      <h2>{excerpt}</h2>
+
+      <Separator className="my-6" />
+      <!-- Content -->
+      <Content />
+      <Separator className="my-6" />
+      <!-- related posts -->
+      <div
+        class="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0"
+      >
+        {
+          relatedPosts.slice(0, 2).map((item) => (
+            <a
+              title={`Link to ${item.data.title}`}
+              class="text-secondary no-underline transition-colors duration-200 hover:text-secondary/70"
+              href={`/en/blog/${item.slug}`}
+              aria-label={`Related-link-${item.slug}`}
+            >
+              {item.data.title}
+            </a>
+          ))
+        }
+      </div>
+    </article>
+
+    <section class="mt-5">
+      <div
+        class="mx-auto max-w-7xl rounded-md bg-emerald-700 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="2xl:pl-24">
+          <div
+            class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-8 2xl:gap-x-20"
+          >
+            <div class="text-center md:py-16 md:text-left xl:py-24">
+              <Blockquote>
+                {quote}
+              </Blockquote>
+              <div
+                class="mx-auto mt-6 sm:flex sm:items-baseline sm:justify-center md:justify-start"
+              >
+                <H4><Large>{author}</Large></H4>
+                <div class="mx-5">
+                  <SmallText>{category}</SmallText>
+                </div>
+              </div>
+              <div class="mt-5">
+                <Button variant="outline">
+                  <a
+                    class="transition-all duration-200 hover:text-emerald-500 hover:opacity-80 focus:opacity-80"
+                    href="/pricing "
+                  >
+                    Create your first website
+                  </a>
+                  <svg
+                    class="ml-2 h-5 w-5 text-emerald-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </Button>
+              </div>
+            </div>
+
+            <div class="relative">
+              <Image
+                class="md:absolute md:bottom-12 md:origin-right md:scale-55 lg:scale-30 2xl:-mt-10 2xl:scale-100"
+                src={Logo}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

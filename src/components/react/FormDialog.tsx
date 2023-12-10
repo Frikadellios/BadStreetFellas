@@ -9,13 +9,14 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogFooter,
 } from '@/components/ui/dialog'
 
 // Info imports
-import { contacts } from '@/constants/index'
+import { contacts } from '@/constants'
 
 // Translation Imports
-import { useTranslations } from '@/i18n/utils'
+import { useTranslations } from '../../i18n/utils'
 
 export function FormDialog({
   text,
@@ -30,12 +31,9 @@ export function FormDialog({
     <div className="mt-3 w-[fit-content]">
       <Dialog>
         <DialogTrigger asChild>
-          <div
-            className={`${buttonVariants()} cursor-pointer`}
-            aria-label={text}
-          >
+          <button className={`${buttonVariants()} link`} aria-label={text}>
             {text}
-          </div>
+          </button>
         </DialogTrigger>
         <DialogContent className="w-auto pt-16 md:pt-10">
           <DialogHeader>
@@ -50,13 +48,25 @@ export function FormDialog({
                   title={item.label[lang]}
                   href={item.link}
                   target="_blank"
-                  className="text-secondary transition-colors duration-200 hover:text-secondary/70"
+                  className=" transition-colors duration-200 "
                 >
                   {item.linkLabel}
                 </a>
               </div>
             ))}
           </div>
+          <DialogFooter>
+            <small>
+              Made with <span className="animate-pulse">❤️</span> and Powered by{' '}
+              <a
+                href="https://www.aquapumpers.com"
+                target="_blank"
+                className="transition-colors duration-200 "
+              >
+                AquaPumpers
+              </a>
+            </small>
+          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>

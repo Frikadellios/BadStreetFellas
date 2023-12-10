@@ -1,0 +1,38 @@
+---
+// Assets Imports - Info & Icon
+import { faqssps } from '@/constants/index'
+import { ChevronDown } from 'lucide-react'
+import { Separator } from "@/components/ui/separator"
+
+// Atro Imports - Components
+import HeaderFaq from '@/components/layout/HeaderFaq.astro'
+
+// Translation Imports
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<section
+  class="flex flex-col items-center justify-center gap-10 py-10 md:py-16"
+  id="faq"
+>
+    <Separator className="my-1" />
+  <HeaderFaq title={t('faq-title')} subtitle={t('faq-subtitle')} />
+  <div
+    class="flex w-full max-w-[1680px] flex-col items-center justify-center px-10 md:px-20"
+  >
+    <!-- Frequently Asked Questions Lists -->
+    {
+      faqssps.map((item) => (
+        <details class="w-full border-b" id="details">
+          <summary class="flex flex-1 items-center justify-between py-4 font-medium hover:underline">
+            {item.title[lang]}
+            <ChevronDown className="h-4 w-4 shrink-0" />
+          </summary>
+          <div class="py-5">{item.text[lang]}</div>
+        </details>
+      ))
+    }
+  </div>
+</section>

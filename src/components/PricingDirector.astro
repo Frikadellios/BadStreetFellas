@@ -1,31 +1,39 @@
 ---
-import PricingTable from "./PricingTable.astro";
-import Blockquote from "./typography/Blockquote.astro";
-import H4 from "./typography/H4.astro";
-import H2 from "./typography/H2.astro";
-import SmallText from "./typography/SmallText.astro";
-import Large from "./typography/Large.astro";
-import PricingQuestion from "./PricingQuestion.astro";
-
+import PricingTable from './PricingTable.astro'
+import Blockquote from './typography/Blockquote.astro'
+import H4 from './typography/H4.astro'
+import H2 from './typography/H2.astro'
+import SmallText from './typography/SmallText.astro'
+import Large from './typography/Large.astro'
+import PricingQuestion from './PricingQuestion.astro'
 ---
 
-<section class="py-10 bg-trancperent sm:py-16 lg:py-24">
-    <div class="max-w-4xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="md:flex md:items-center md:justify-center md:space-x-14">
-            <div class="relative flex-shrink-0 w-48 h-48">
-                <div class="absolute w-48 h-48 bg-emerald-500 rounded-full -bottom-2 -right-1"></div>
-                <img class="relative object-cover w-48 h-48 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/2/avatar.jpg" alt="" />
-                <SmallText>Project Manager at Microsoft</SmallText>
-            </div>
-
-            <div class="mt-10 md:mt-0">
-                <H2>Jenny Wilson</H2>
-                <Blockquote>
-                    “Amet minim mollit non deserunt ullam co est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.”
-                </Blockquote>
-                <PricingQuestion />
-            </div>
+<section class="bg-trancperent py-10 sm:py-16 lg:py-24">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+    <div class="md:flex md:items-center md:justify-center md:space-x-14">
+      <div class="relative h-48 w-48 flex-shrink-0">
+        <div
+          class="absolute -bottom-2 -right-1 h-48 w-48 rounded-full bg-emerald-500"
+        >
         </div>
-        <PricingTable />
+        <img
+          class="relative h-48 w-48 rounded-full object-cover"
+          src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/2/avatar.jpg"
+          alt=""
+        />
+        <SmallText>Project Manager at Microsoft</SmallText>
+      </div>
+
+      <div class="mt-10 md:mt-0">
+        <H2>Jenny Wilson</H2>
+        <Blockquote>
+          “Amet minim mollit non deserunt ullam co est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat.”
+        </Blockquote>
+        <PricingQuestion />
+      </div>
     </div>
+    <PricingTable />
+  </div>
 </section>
