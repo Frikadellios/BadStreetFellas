@@ -6,6 +6,7 @@ const blogCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string().max(60),
+      description: z.string().max(160),
       date: z.date(),
       excerpt: z.string().max(160),
       author: z.enum(['AquaPumpers']),

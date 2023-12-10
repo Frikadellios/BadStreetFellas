@@ -32,7 +32,7 @@ type Props = CollectionEntry<'blog'>
 
 // Astro Props
 const post = Astro.props
-const { title, date, excerpt, author, categories, image, quote, category } = post.data
+const { title, description, date, excerpt, author, categories, image, quote, category } = post.data
 
 // Astro Params
 const slug = Astro.params.slug
@@ -58,7 +58,7 @@ export const prerender = true
 
 <BaseLayout
   title={title}
-  description={excerpt}
+  description={description}
   ogImage={image}
   url={`${Astro.site}/${slug}`}
   post={post}
