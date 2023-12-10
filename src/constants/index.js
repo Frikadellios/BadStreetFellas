@@ -211,6 +211,195 @@ export const faqs = [
   },
 ]
 
+export const faqspump = [
+  {
+    title: {
+      uk: 'Скільки часу займає установка водонасосу або cвердловини?',
+      en: 'How long does it take to install a water pumping device or water well?',
+      ru: 'Сколько времени занимает установка водонасосного устройства или скважины?',
+    },
+    text: {
+      uk: 'Час монтажу залежить від конкретного проекту та його вимог. Однак ми прагнемо завершити встановлення в найкоротші терміни, забезпечуючи при цьому якісне виконання.',
+      en: 'The installation time varies depending on the specific project and its requirements. However, we strive to complete installations in the shortest time possible while ensuring quality workmanship.',
+      ru: 'Время установки варьируется в зависимости от конкретного проекта и его требований. Однако мы стремимся выполнить монтаж в кратчайшие сроки, гарантируя при этом качество выполнения работ.',
+    },
+  },
+  {
+    title: {
+      uk: 'Які види послуг з обслуговування водонасосних пристроїв і водних свердловин ви пропонуєте?',
+      en: 'What types of maintenance services do you offer for water pumping devices and water wells?',
+      ru: 'Какие виды услуг по техническому обслуживанию водонасосных устройств и водных    скважин вы предлагаете?',
+    },
+    text: {
+      uk: 'Ми надаємо комплексні послуги з технічного обслуговування, включаючи регулярні перевірки, очищення, змащування та тестування обладнання. Наша мета — забезпечити оптимальну продуктивність і запобігти потенційним проблемам, перш ніж вони стануть серйозними.',
+      en: 'We provide comprehensive maintenance services, including regular inspections, cleaning, lubrication, and testing of the equipment. Our goal is to ensure optimal performance and prevent potential issues before they become major problems.',
+      ru: 'Мы предоставляем комплексные услуги по техническому обслуживанию, включая регулярные проверки, чистку, смазку и тестирование оборудования. Наша цель — обеспечить оптимальную производительность и предотвратить потенциальные проблемы до того, как они станут серьезными.',
+    },
+  },
+  {
+    title: {
+      uk: 'Як часто мені слід планувати технічне обслуговування моєї водонасосної установки або свердловини?',
+      en: 'How often should I schedule maintenance for my water pumping device or water well? ',
+      ru: 'Как часто мне следует планировать техническое обслуживание моего водонасосного устройства или скважины?',
+    },
+    text: {
+      uk: 'Рекомендується проводити планове технічне обслуговування принаймні раз на рік. Однак частота може змінюватися залежно від таких факторів, як використання, якість води та вимоги до конкретного обладнання. Наші експерти можуть оцінити вашу ситуацію та надати індивідуальні рекомендації.',
+      en: 'It is recommended to schedule regular maintenance at least once a year. However, the frequency may vary depending on factors such as usage, water quality, and specific equipment requirements. Our experts can assess your situation and provide personalized recommendations',
+      ru: 'Рекомендуется проводить регулярное техническое обслуживание не реже одного раза в год. Однако частота может варьироваться в зависимости от таких факторов, как использование, качество воды и требования к конкретному оборудованию. Наши специалисты смогут оценить вашу ситуацию и дать индивидуальные рекомендации.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи можете ви ремонтувати насосні станції та дренажні насоси?',
+      en: 'Can you repair pumping stations and drainage pumps? ',
+      ru: 'Умеете ли вы ремонтировать насосные станции и дренажные насосы?',
+    },
+    text: {
+      uk: 'Так, наша команда має досвід ремонту та обслуговування насосних станцій та дренажних насосів. У нас є інструменти та досвід для діагностики проблем, заміни несправних компонентів і відновлення належної функціональності.',
+      en: 'Yes, our team is experienced in repairing and maintaining pumping stations and drainage pumps. We have the tools and expertise to diagnose issues, replace faulty components, and restore proper functionality.',
+      ru: 'Да, наша команда имеет опыт ремонта и обслуживания насосных станций и дренажных насосов. У нас есть инструменты и опыт для диагностики проблем, замены неисправных компонентов и восстановления надлежащей функциональности.',
+    },
+  },
+  {
+    title: {
+      uk: 'Ви пропонуєте послуги з монтажу та ремонту занурювальних насосів для колодязної води та каналізаційних насосів?',
+      en: 'Do you offer installation and repair services for submersible well water pumps and sewage pumps? ',
+      ru: 'Предлагаете ли вы услуги по установке и ремонту погружных колодезных и канализационных насосов?',
+    },
+    text: {
+      uk: 'Безумовно, ми спеціалізуємося на установці, ремонті та обслуговуванні заглибних колодязних водяних насосів і каналізаційних насосів. Наші технічні спеціалісти навчені працювати з різними моделями та можуть забезпечити ефективну роботу цих основних систем.',
+      en: 'Absolutely, we specialize in the installation, repair, and maintenance of submersible well water pumps and sewage pumps. Our technicians are trained to handle various models and can ensure the efficient operation of these essential systems.',
+      ru: 'Безусловно, мы специализируемся на установке, ремонте и обслуживании погружных колодезных водяных насосов и канализационных насосов. Наши специалисты обучены работе с различными моделями и могут обеспечить эффективную работу этих важнейших систем.',
+    },
+  },
+]
+
+export const faqscwells = [
+  {
+    title: {
+      uk: 'Як компанія AquaPumpers спеціалізується на установці насосів і насосних станцій в водних вердовиних?',
+      en: 'How does the AquaPumpers company specialize in the installation of pumps and pumping stations in water wells?',
+      ru: 'Как компания AquaPumpers специализируется на установке насосов и насосных станций в водяные скважины?',
+    },
+    text: {
+      uk: 'Ми спеціалізуємося на встановленні насосів і насосних станцій у водних свердловинах, використовуючи наші знання та досвід для забезпечення ефективних та ефективних рішень водопостачання.',
+      en: 'We specialize in the installation of pumps and pumping stations in water wells by using our expertise and experience to ensure efficient and effective water supply solutions.',
+      ru: 'Мы специализируемся на установке насосов и насосных станций в водяных скважинах, используя наши знания и опыт для обеспечения эффективных и действенных решений водоснабжения.',
+    },
+  },
+  {
+    title: {
+      uk: 'Які фактори слід враховувати при виборі насоса для свердловини?',
+      en: 'What factors should be considered when selecting a pump for a water well?',
+      ru: 'Какие факторы следует учитывать при выборе насоса для водяной скважины?',
+    },
+    text: {
+      uk: 'При виборі насоса для свердловини важливими факторами, які слід враховувати, є бажана витрата, глибина свердловини, якість води та необхідний тиск.',
+      en: 'When selecting a pump for a water well, important factors to consider include the desired flow rate, the depth of the well, the water quality, and the required pressure.',
+      ru: 'При выборе насоса для водяной скважины важными факторами, которые следует учитывать, являются желаемая скорость потока, глубина скважины, качество воды и необходимое давление.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи може AquaPumpers встановлювати насоси в свердовину будь-якої глибини?',
+      en: 'Can AquaPumpers install pumps in wells of any depth? ',
+      ru: 'Можно ли устанавливать насосы AquaPumpers в скважины любой глубины?',
+    },
+    text: {
+      uk: 'Так, AquaPumpers прагне надавати швидкі та ефективні послуги встановлення, забезпечуючи мінімальне порушення вашої щоденної роботи.',
+      en: 'Yes, regardless of the depth of the well, AquaPumpers has the capability and expertise to install pumps and pumping stations efficiently.',
+      ru: 'Да, независимо от глубины скважины, AquaPumpers обладает возможностями и опытом для эффективной установки насосов и насосных станций.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи гарантує AquaPumpers якість своєї роботи?',
+      en: 'Does AquaPumpers guarantee the quality of their work?',
+      ru: 'Гарантирует ли AquaPumpers качество своей работы?',
+    },
+    text: {
+      uk: 'Безумовно, ми пишаємося своєю роботою та гарантуємо якість наших установок, щоб забезпечити тривалу та надійну роботу насосів та насосних станцій.',
+      en: 'Absolutely, we take pride in our work and guarantee the quality of our installations to ensure long-lasting and reliable performance of the pumps and pumping stations.',
+      ru: 'Безусловно, мы гордимся своей работой и гарантируем качество наших установок, чтобы обеспечить длительную и надежную работу насосов и насосных станций.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи швидкий і ефективний процес встановлення?',
+      en: 'Is the installation process quick and efficient? ',
+      ru: 'Является ли процесс установки быстрым и эффективным?',
+    },
+    text: {
+      uk: 'Так, AquaPumpers прагне надавати швидкі та ефективні послуги встановлення, забезпечуючи мінімальне порушення вашої щоденної роботи.',
+      en: 'Yes, AquaPumpers is committed to providing quick and efficient installation services, ensuring minimal disruption to your daily routine.',
+      ru: 'Да, AquaPumpers стремится предоставлять быстрые и эффективные услуги по установке, обеспечивая минимальное нарушение вашей повседневной жизни.',
+    },
+  },
+]
+
+export const faqsmwells = [
+  {
+    title: {
+      uk: 'Які види водонасосних пристроїв ви надаєте послуги з обслуговування та ремонту у Києві та Київській області?',
+      en: 'What types of water pumping devices do you provide maintenance and repair services for in Kyiv and the Kyiv region?',
+      ru: 'Какие виды водонасосных устройств вы оказываете услуги по обслуживанию и ремонту в Киеве и Киевской области?',
+    },
+    text: {
+      uk: 'Ми надаємо послуги з технічного обслуговування та ремонту різних типів водонасосних пристроїв, включаючи занурювальні насоси, відцентрові насоси та струменеві насоси.',
+      en: 'We provide maintenance and repair services for various types of water pumping devices, including submersible pumps, centrifugal pumps, and jet pumps.',
+      ru: 'Мы предоставляем услуги по техническому обслуживанию и ремонту различных типов водонасосных устройств, включая погружные насосы, центробежные насосы и струйные насосы.',
+    },
+  },
+  {
+    title: {
+      uk: 'Як часто я повинен обслуговувати мій водонасосний пристрій?',
+      en: 'How often should I get my water pumping device serviced? ',
+      ru: 'Как часто мне следует обслуживать мое водонасосное устройство?',
+    },
+    text: {
+      uk: 'Рекомендується проводити технічне обслуговування вашого водонасосного пристрою не рідше одного разу на рік, щоб забезпечити оптимальну роботу та виявити будь-які потенційні проблеми до того, як вони стануть серйозними.',
+      en: 'It is recommended to have your water pumping device serviced at least once a year to ensure optimal performance and identify any potential issues before they become major problems.',
+      ru: 'Рекомендуется проводить техническое обслуживание вашего водонасосного устройства не реже одного раза в год, чтобы обеспечить оптимальную работу и выявить любые потенциальные проблемы до того, как они станут серьезными.',
+    },
+  },
+  {
+    title: {
+      uk: 'Предлагаете ли вы услуги срочного ремонта водонасосных устройств?',
+      en: 'Do you offer emergency repair services for water pumping devices? ',
+      ru: 'Чи пропонуєте послуги термінового ремонту водонасосних пристроїв?',
+    },
+    text: {
+      uk: 'Так, ми пропонуємо послуги термінового ремонту водонасосних пристроїв для усунення будь-яких раптових поломок або несправностей, які можуть виникнути.',
+      en: 'Yes, we offer emergency repair services for water pumping devices to address any sudden breakdowns or malfunctions that may occur.',
+      ru: 'Да, мы предлагаем услуги срочного ремонта водонасосных устройств для устранения любых внезапных поломок или неисправностей, которые могут возникнуть.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи можете ви відремонтувати шафи керування водяними свердловинами?',
+      en: 'Can you repair water well control cabinets?',
+      ru: 'Можете ли вы отремонтировать шкафы управления водяными скважинами?',
+    },
+    text: {
+      uk: 'Так, ми спеціалізуємося на професійному ремонті шаф управління водяними свердловинами, щоб забезпечити правильне функціонування та контроль вашої насосної системи.',
+      en: 'Yes, we specialize in expert repair of water well control cabinets to ensure proper functioning and control of your water pumping system.',
+      ru: ' Да, мы специализируемся на профессиональном ремонте шкафов управления водяными скважинами, чтобы обеспечить правильное функционирование и контроль вашей насосной системы.',
+    },
+  },
+  {
+    title: {
+      uk: 'Чи надаєте ви комплексні рішення щодо підйому насосів для водяних свердловин?',
+      en: 'Do you provide comprehensive lifting solutions for water well pumps?',
+      ru: 'Предоставляете ли вы комплексные решения по подъему насосов для водяных скважин?',
+    },
+    text: {
+      uk: "Так, ми пропонуємо комплексні рішення щодо підйому насосів для водяних свердловин, включаючи послуги з встановлення, демонтажу та технічного обслуговування, щоб ефективно вирішувати будь-які завдання підйому, пов'язані з вашим насосом для водяних свердловин.",
+      en: 'Yes, we offer comprehensive lifting solutions for water well pumps, including installation, removal, and maintenance services to effectively handle any lifting needs associated with your water well pump.',
+      ru: 'Да, мы предлагаем комплексные решения по подъему насосов для водяных скважин, включая услуги по установке, демонтажу и техническому обслуживанию, чтобы эффективно решать любые задачи по подъему, связанные с вашим насосом для водяных скважин.',
+    },
+  },
+]
+
 export const faqssps = [
   {
     title: {
@@ -506,8 +695,8 @@ export const contacts = [
       en: 'Cellphone',
       ru: 'Телефон',
     },
-    link: 'tel:+11-111-11-11-11',
-    linkLabel: '+11 111 11 11 11',
+    link: 'tel:+38-097-114-70-70',
+    linkLabel: '+38 097 114 70 70',
   },
   {
     label: {
@@ -524,16 +713,16 @@ export const contacts = [
       en: 'Location',
       ru: 'Локация',
     },
-    link: 'https://maps.app.goo.gl/*******',
-    linkLabel: 'Street, Town, Place, Country',
+    link: 'https://www.google.com.ua/maps/place/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0+%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%B0+%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B0,+100,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.3630699,30.4650846,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c85e5edcb549:0xe3822e2551683eaa!8m2!3d50.3630665!4d30.4676595?hl=ru&entry=ttu',
+    linkLabel: 'Київ, Велика Окружна дорога, 100',
   },
   {
     label: {
-      uk: 'Instagram',
-      en: 'Instagram',
-      ru: 'Instagram',
+      uk: 'Facebook',
+      en: 'Facebook',
+      ru: 'Facebook',
     },
-    link: 'https://www.instagram.com',
+    link: 'https://www.facebook.com',
     linkLabel: '@',
   },
   {
@@ -542,7 +731,7 @@ export const contacts = [
       en: 'Telegram',
       ru: 'Telegram',
     },
-    link: 'https://www.instagram.com',
+    link: 'https://t.me/Aqua_like',
     linkLabel: '@',
   },
   {
@@ -551,16 +740,16 @@ export const contacts = [
       en: 'Viber',
       ru: 'Viber',
     },
-    link: 'https://www.instagram.com',
-    linkLabel: '@',
+    link: 'viber://chat?number=%2B380971147070  rel="nofollow"',
+    linkLabel: 'Viber',
   },
   {
     label: {
-      uk: 'Watss Up',
-      en: 'Watss Up',
-      ru: 'Watss Up',
+      uk: 'WhatsApp',
+      en: 'WhatsApp',
+      ru: 'WhatsApp',
     },
-    link: 'https://www.instagram.com',
+    link: 'https://wa.me/380971147070',
     linkLabel: '@',
   },
 ]

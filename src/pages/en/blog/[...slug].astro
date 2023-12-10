@@ -10,7 +10,7 @@ import SmallText from '@/components/typography/SmallText.astro'
 import Large from '@/components/typography/Large.astro'
 import Blockquote from '@/components/typography/Blockquote.astro'
 import H4 from '@/components/typography/H4.astro'
-import SmallText from '@/components/typography/SmallText.astro'
+import Logo from '@/assets/aquapumpers-high-resolution-logo-transparent.png'
 
 // Utils Imports
 import { formatDate, capitalizer } from '@/lib/utils'
@@ -32,7 +32,7 @@ type Props = CollectionEntry<'blog'>
 
 // Astro Props
 const post = Astro.props
-const { title, date, excerpt, author, categories, image } = post.data
+const { title, date, excerpt, author, categories, image, quote, category } = post.data
 
 // Astro Params
 const slug = Astro.params.slug
@@ -156,16 +156,14 @@ export const prerender = true
           >
             <div class="text-center md:py-16 md:text-left xl:py-24">
               <Blockquote>
-                “Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.”
+                {quote}
               </Blockquote>
               <div
                 class="mx-auto mt-6 sm:flex sm:items-baseline sm:justify-center md:justify-start"
               >
                 <H4><Large>{author}</Large></H4>
                 <div class="mx-5">
-                  <SmallText>Project Manager at Microsoft</SmallText>
+                  <SmallText>{category}</SmallText>
                 </div>
               </div>
               <div class="mt-5">
@@ -192,9 +190,9 @@ export const prerender = true
             </div>
 
             <div class="relative">
-              <img
-                class="md:absolute md:bottom-0 md:origin-bottom-right md:scale-110 lg:scale-75 2xl:-mt-20 2xl:scale-100"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/11/smiling-man.png"
+              <Image
+                class="md:absolute md:bottom-12 md:origin-right md:scale-55 lg:scale-30 2xl:-mt-10 2xl:scale-100"
+                src={Logo}
                 alt=""
               />
             </div>

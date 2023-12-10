@@ -4,9 +4,9 @@ import { config, fields, collection, singleton } from '@keystatic/core';
 
 export default config({
     storage: {
-      kind: 'github',
-      repo: { owner: 'aquaPumpers', name: 'BadStreetFellas' },
-},
+    kind: 'local',
+  },
+
     singletons: {
         settings: singleton({
           label: 'Settings',
@@ -30,7 +30,7 @@ export default config({
                 label: 'Avatar',
                 description: 'The avatar for this user',
                 directory: 'src/assets/avatars/',
-                publicPath: '../../assets/avatars'
+                publicPath: '../../../assets/avatars'
                 }),
               company: fields.conditional(
                 fields.checkbox({ label: 'Add Company with Description', defaultValue: false }),
@@ -48,51 +48,43 @@ export default config({
         blog: collection({
           label: 'Blog Posts',
           slugField: 'title',
-          path: 'src/content/blog/**',
+          path: 'src/content/posts/**',
           format: { contentField: 'body' },
           entryLayout: 'content',
           schema: {
-            title: fields.slug({ name: { label: 'Title' } }),
-            featuredMedia: fields.conditional(
-                // First, define a `select` field with all the available "conditions"
-                fields.select({
-                  label: 'media',
-                  description: 'Optional image/video options for an optional hero media.',
-                  options: [
-                    { label: 'No media', value: 'none' },
-                    { label: 'Image', value: 'image' },
-                    { label: 'Video', value: 'video' },
-                  ],
-                  defaultValue: 'none',
-                }),
-                {
-                  none: fields.empty(),
-                  image: fields.object({
-                    asset: fields.image({
-                      label: 'Image',
-                      directory: 'src/assets/images/posts',
-                      publicPath: '../../assets/images/posts/',
-                      validation: { isRequired: true },
-                    }),
-                    alt: fields.text({ label: 'Alt', description: 'Image alt text.' }),
-                  }),
-                  video: fields.object({
-                    url: fields.text({
-                      label: 'A YouTube video URL.',
-                      validation: { length: { min: 1 } },
-                    }),
-                    image: fields.object({
-                      asset: fields.image({
-                        label: 'Image',
-                        description: 'Thumbnail image override for the video.',
-                        directory:  'src/assets/images/posts',
-                        publicPath: '../../assets/images/posts/',
-                      }),
-                      alt: fields.text({ label: 'Alt', description: 'Image alt text.' }),
-                    }),
-                  }),
-                }
-              ),
+            title: fields.slug({ name: { label: 'title' } }),
+            excerpt: fields.text({ label: 'excerpt' }),
+            author: fields.text({ label: 'author' }),
+            quote: fields.text({
+              label: 'Quote',
+              multiline: true
+            }),
+            image: fields.image({
+              label: 'image',
+              directory: 'src/assets/blog',
+              publicPath: '../../../assets/blog'
+            }),
+            imageAlt: fields.text({ label: 'ImageAlt' }),
+            category: fields.select({
+                label: 'category',
+                description: "The categories role at the company",
+                options: [
+                  { label: 'Category', value: 'category' },
+                  { label: 'Well servicing', value: 'Well servicing' },
+                  { label: 'Well construction', value: 'well construction' },
+                  { label: 'Pump repair', value: 'pump repair' },
+                  { label: 'Autonomous sewerage', value: 'autonomous sewerage' },
+                  { label: 'Обслуживание скважин', value: 'обслуживание скважин' },
+                  { label: 'Обустройство скважин', value: 'обустройство скважин' }, 
+                  { label: 'Ремонт насосов', value: 'ремонт насосов' },
+                  { label: 'Автономная канализация', value: 'автономная канализация' },
+                  { label: 'Обслуговування свердловин', value: 'обслуговування свердловин' },
+                  { label: 'Облаштування свердловин', value: 'облаштування свердловин' },
+                  { label: 'Ремонт насосів', value: 'ремонт насосів' },
+                  { label: 'Автономна каналізація', value: 'автономна каналізація' },
+                ],
+                defaultValue: 'category'
+              }),
             seo: fields.conditional(
                 fields.checkbox({ 
                   label: 'Define custom SEO tags', 
@@ -117,21 +109,33 @@ export default config({
                   itemLabel: props => props.value
                 }
               ),
-            publishedDate: fields.date({ label: 'Published date' }),
-              videoFile: fields.pathReference({
-                label: 'Video file',
-                description: 'A reference to a video file in the `public` folder',
-                pattern: 'src/assets/**/*',
+              date: fields.date({
+                label: 'Event date',
+                description: 'The date of the event'
               }),
-              multi: fields.multiselect({
-                label: 'Category',
+              categories: fields.multiselect({
+                label: 'categories',
                 options: [
-                  { label: 'Blog', value: 'blog' },
-                  { label: 'Basketball', value: 'basketball' },
-                  { label: 'Music', value: 'music' },
-                  { label: 'Chess', value: 'chess' },
+                  { label: 'Repair', value: 'repair' },
+                  { label: 'Maintenance', value: 'maintenance' },
+                  { label: 'Installation', value: 'installation' },
+                  { label: 'Arrangement', value: 'arrangement' },
+                  { label: 'Construction', value: 'construction' },
+                  { label: 'Починка', value: 'починка' },
+                  { label: 'Обслуживание', value: 'обслуживание' },
+                  { label: 'Обустройство', value: 'обустройство' },
+                  { label: 'Установка', value: 'установка' },
+                  { label: 'Строительство', value: 'строительство' },
+                  { label: 'Ремонт', value: 'ремонт' },
+                  { label: 'Обслуговування', value: 'Обслуговування' },
+                  { label: 'Облаштування', value: 'облаштування' },
+                  { label: 'Встановлення', value: 'встановлення' },
+                  { label: 'Будівництво', value: 'будівництво' },
+                  { label: 'Services', value: 'services' }, 
+                  { label: 'Сервисы', value: 'сервисы' }, 
+                  { label: 'Сервіси', value: 'сервіси' },  
                 ],
-                defaultValue: ['blog'],
+                defaultValue: ['services'],
               }),
             body: fields.document({
                 label: 'Body',
@@ -153,7 +157,7 @@ export default config({
                 links: true,
                 images: {
                     directory: 'src/assets/images/posts',
-                    publicPath: '../../assets/images/posts/',
+                    publicPath: '../../../assets/images/posts/',
                 },
             }),
            },

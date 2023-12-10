@@ -12,6 +12,8 @@ const blogCollection = defineCollection({
       categories: z.array(z.string()),
       image: image(),
       imageAlt: z.string(),
+      quote: z.string(),
+      category: z.string(),
     }),
 })
 

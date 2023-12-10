@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
 import ServicesPumpRepair from '@/components/pumpserv/ServicesPumpRepair.astro'
 import ServicesGPumpRepair from '@/components/pumpserv/ServicesGPumpRepair.astro'
 import PumpLogo from '@/components/pumpserv/PumpLogo.astro'
+import FaqsPump from '@/components/services/FaqsPump.astro'
 
 export const prerender = true
 ---
@@ -16,5 +17,6 @@ export const prerender = true
   <Container>
     <ServicesPumpRepair />
     <ServicesGPumpRepair />
+    <FaqsPump />
   </Container>
 </BaseLayout>
